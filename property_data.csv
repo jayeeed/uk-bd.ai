@@ -1,0 +1,1001 @@
+property_id,property_type,number_of_bedrooms,amenities,seasonality,base_price,estimated_monthly_bookings,bathrooms,bed_type,cancellation_policy,cleaning_fee,host_response_rate,number_of_reviews,review_scores_rating,beds
+1,Apartment,3,"['Stove', 'Fridge', 'BBQ', 'Internet', 'Gym']",Autumn,474,15,4,Queen,Moderate,12,99,37,5,2
+2,Apartment,4,"['Laundry', 'Fridge', 'BBQ', 'Internet', 'AC', 'Gym', 'Stove']",Winter,205,26,1,Single,Moderate,27,89,113,2,5
+3,House,2,"['AC', 'Stove', 'Laundry', 'Internet', 'BBQ']",Winter,444,22,4,Queen,Flexible,41,80,146,2,1
+4,Apartment,3,['Gym'],Autumn,329,17,4,Double,Strict,16,90,121,5,4
+5,Apartment,5,['AC'],Autumn,211,16,4,Single,Strict,44,33,109,4,1
+6,Villa,2,"['Laundry', 'Stove', 'Internet', 'BBQ']",Winter,46,11,4,Double,Flexible,12,100,110,2,1
+7,Villa,1,"['Gym', 'BBQ', 'Internet', 'AC', 'Stove']",Winter,46,2,4,Queen,Strict,14,89,135,2,1
+8,Villa,2,"['Stove', 'AC', 'Internet', 'Gym', 'Laundry', 'Fridge']",Summer,405,12,1,Queen,Moderate,49,68,146,2,5
+9,House,3,"['Gym', 'BBQ', 'Internet', 'Laundry']",Winter,380,8,3,Double,Moderate,18,20,160,4,3
+10,Apartment,3,"['Laundry', 'Fridge', 'Gym', 'Stove']",Winter,135,15,3,King,Flexible,28,59,108,3,4
+11,House,1,"['AC', 'Fridge']",Winter,384,29,1,Queen,Moderate,20,96,122,4,4
+12,Apartment,2,['Laundry'],Summer,484,7,2,Queen,Flexible,10,90,150,3,3
+13,Apartment,2,['Internet'],Autumn,499,1,4,Double,Moderate,39,46,30,2,4
+14,Apartment,1,"['Laundry', 'AC']",Winter,137,7,1,Double,Strict,49,59,20,4,5
+15,Villa,2,"['Fridge', 'Gym', 'AC', 'Laundry', 'BBQ', 'Stove', 'Internet']",Autumn,178,28,1,Single,Moderate,20,50,194,4,3
+16,Villa,5,"['Laundry', 'Stove', 'Internet', 'BBQ', 'Gym', 'Fridge']",Autumn,172,7,2,Queen,Flexible,19,88,154,3,2
+17,House,3,"['AC', 'Laundry', 'Stove', 'Gym', 'BBQ', 'Internet']",Autumn,309,6,1,King,Flexible,18,43,43,2,5
+18,House,3,['Laundry'],Winter,396,20,2,Single,Moderate,38,31,194,3,3
+19,Apartment,4,"['BBQ', 'Gym', 'Stove', 'Fridge', 'Laundry', 'AC']",Autumn,277,30,2,Single,Flexible,43,93,64,5,2
+20,Apartment,5,"['Gym', 'Fridge']",Summer,328,20,4,Single,Moderate,27,24,103,2,3
+21,House,1,['Fridge'],Winter,64,3,4,Single,Moderate,12,41,49,4,1
+22,House,4,"['AC', 'BBQ', 'Gym']",Summer,39,26,2,Single,Strict,21,81,164,3,3
+23,Apartment,5,"['Internet', 'Laundry', 'Fridge', 'Gym', 'Stove']",Winter,136,4,3,King,Flexible,25,22,190,3,2
+24,House,4,"['Laundry', 'Gym']",Summer,222,13,3,King,Moderate,21,99,40,2,5
+25,House,2,"['Fridge', 'Laundry', 'Gym', 'Internet']",Autumn,418,1,1,Double,Flexible,35,25,195,3,3
+26,Apartment,3,"['Internet', 'BBQ', 'Gym', 'Laundry']",Summer,296,19,3,King,Flexible,40,74,185,2,3
+27,House,1,['Gym'],Winter,410,12,4,Queen,Moderate,48,92,88,4,5
+28,Villa,2,"['Stove', 'Gym']",Summer,382,1,3,Single,Strict,25,99,40,5,2
+29,Villa,3,"['AC', 'Stove', 'Gym', 'Laundry', 'Fridge', 'BBQ', 'Internet']",Summer,312,19,4,Double,Moderate,14,88,163,3,2
+30,Villa,2,"['AC', 'Gym', 'Internet']",Summer,422,2,4,Single,Flexible,19,67,122,2,2
+31,Villa,4,"['AC', 'Laundry', 'Fridge', 'Gym', 'BBQ', 'Stove', 'Internet']",Summer,302,20,2,Double,Flexible,18,46,188,3,3
+32,Apartment,2,['Laundry'],Summer,174,12,1,Single,Flexible,39,71,7,4,4
+33,House,5,"['Fridge', 'Laundry', 'Stove', 'Gym', 'BBQ', 'AC', 'Internet']",Autumn,287,1,2,Single,Strict,42,25,31,2,1
+34,House,1,"['BBQ', 'Stove']",Summer,461,15,1,Queen,Moderate,30,61,94,5,1
+35,Apartment,5,"['BBQ', 'Stove', 'Fridge', 'Laundry']",Winter,314,20,4,Queen,Strict,31,36,165,2,4
+36,Villa,4,"['Gym', 'Fridge', 'Laundry']",Autumn,39,15,4,Double,Flexible,46,78,22,2,5
+37,Apartment,5,"['Laundry', 'Stove', 'BBQ', 'AC']",Winter,92,12,2,Double,Flexible,31,84,39,5,5
+38,Villa,5,"['Fridge', 'Gym', 'Stove']",Winter,111,6,3,Double,Flexible,18,65,125,2,4
+39,Apartment,1,"['BBQ', 'Gym']",Summer,155,19,1,Queen,Flexible,45,57,110,2,4
+40,House,3,"['Internet', 'AC', 'Laundry']",Autumn,266,29,4,Double,Flexible,45,35,123,4,5
+41,Apartment,3,['Gym'],Summer,471,24,3,Single,Strict,38,81,134,5,4
+42,Villa,2,"['Internet', 'Stove', 'BBQ', 'Fridge', 'Laundry', 'AC', 'Gym']",Winter,448,17,4,Single,Flexible,37,52,124,5,2
+43,Apartment,4,"['Fridge', 'AC', 'Stove']",Winter,62,15,1,Single,Strict,42,63,48,4,4
+44,Villa,2,"['Stove', 'AC', 'Gym', 'Internet']",Winter,174,19,3,Single,Moderate,34,86,48,3,5
+45,House,3,"['Internet', 'Gym', 'AC']",Summer,427,24,3,King,Strict,30,55,150,5,2
+46,Apartment,2,"['Fridge', 'Stove', 'BBQ', 'Laundry', 'AC', 'Gym', 'Internet']",Winter,467,2,3,King,Flexible,20,42,61,4,5
+47,House,5,['Gym'],Winter,137,19,3,Single,Strict,47,61,47,3,1
+48,House,5,"['AC', 'Gym', 'Laundry', 'Stove', 'BBQ', 'Internet', 'Fridge']",Summer,185,4,3,Queen,Flexible,18,98,92,5,2
+49,Villa,3,"['Stove', 'Internet']",Autumn,53,28,1,Queen,Moderate,38,79,141,2,2
+50,Apartment,2,"['AC', 'BBQ', 'Laundry', 'Fridge', 'Gym', 'Internet']",Summer,473,10,2,Queen,Moderate,42,72,30,5,2
+51,Villa,1,"['AC', 'Laundry', 'BBQ', 'Internet', 'Stove', 'Gym', 'Fridge']",Autumn,61,25,3,Single,Moderate,28,80,65,3,4
+52,Villa,1,"['Fridge', 'Gym', 'AC']",Summer,71,19,2,Queen,Strict,31,92,182,5,5
+53,Villa,5,"['BBQ', 'Internet', 'Laundry']",Autumn,274,10,4,Queen,Strict,50,98,185,5,5
+54,Villa,5,"['BBQ', 'Stove', 'Gym', 'Laundry']",Winter,485,27,1,King,Moderate,46,76,37,3,2
+55,Apartment,5,"['Stove', 'AC', 'BBQ', 'Internet']",Winter,330,2,4,Queen,Moderate,28,30,176,5,3
+56,Villa,1,"['Laundry', 'BBQ']",Autumn,467,2,1,Double,Flexible,47,44,21,2,3
+57,House,3,"['Laundry', 'Fridge', 'Internet', 'BBQ', 'AC', 'Stove']",Winter,451,4,4,Single,Strict,22,96,111,5,4
+58,Villa,2,"['Laundry', 'Stove', 'Gym', 'Fridge']",Winter,150,22,1,Double,Flexible,22,75,16,4,3
+59,Villa,2,"['Stove', 'Gym', 'Laundry', 'AC']",Autumn,326,20,4,Queen,Moderate,15,54,130,3,5
+60,Apartment,3,"['Laundry', 'AC', 'Internet', 'BBQ', 'Fridge', 'Gym', 'Stove']",Autumn,275,15,3,King,Flexible,32,51,180,5,1
+61,Apartment,4,"['Fridge', 'Internet', 'BBQ', 'Gym', 'Laundry']",Autumn,157,12,4,Double,Flexible,39,77,21,2,1
+62,Villa,1,"['Internet', 'Laundry']",Autumn,160,3,4,Single,Moderate,25,40,96,4,2
+63,Villa,4,"['AC', 'Fridge', 'Gym', 'Internet', 'BBQ']",Winter,423,20,4,Queen,Flexible,35,43,169,5,3
+64,Villa,3,['Internet'],Winter,454,28,1,King,Flexible,25,37,65,5,5
+65,Villa,5,"['Laundry', 'AC', 'Internet', 'Fridge', 'BBQ', 'Stove']",Winter,135,22,4,Single,Strict,22,77,60,3,3
+66,Apartment,5,"['Gym', 'BBQ']",Autumn,307,14,1,King,Moderate,34,80,137,5,1
+67,Villa,2,"['Fridge', 'Internet', 'Stove', 'Gym']",Summer,228,6,2,Double,Flexible,36,47,50,2,4
+68,House,3,"['Laundry', 'Gym', 'BBQ', 'Internet']",Winter,113,26,3,Double,Moderate,45,26,116,2,1
+69,House,4,"['Stove', 'BBQ']",Autumn,281,8,1,King,Moderate,21,27,69,2,4
+70,Apartment,5,"['AC', 'Stove', 'Fridge', 'BBQ', 'Internet', 'Gym']",Summer,174,10,2,Single,Moderate,42,36,147,3,1
+71,Villa,2,"['Internet', 'Stove', 'Fridge', 'Laundry', 'BBQ', 'AC', 'Gym']",Summer,147,19,1,Double,Strict,12,83,118,4,4
+72,Villa,3,"['Fridge', 'AC', 'Internet', 'Laundry', 'Gym', 'Stove', 'BBQ']",Autumn,231,8,4,Double,Strict,17,23,141,2,2
+73,Apartment,4,"['Laundry', 'AC', 'Gym', 'Fridge', 'Internet', 'BBQ', 'Stove']",Summer,182,18,1,Double,Flexible,35,50,16,5,2
+74,House,1,"['Fridge', 'Stove', 'Internet', 'Gym', 'Laundry', 'BBQ', 'AC']",Autumn,280,26,2,Double,Flexible,38,86,75,4,4
+75,Apartment,3,"['Stove', 'Laundry']",Winter,366,13,4,Queen,Strict,44,57,190,5,3
+76,Villa,1,"['Laundry', 'AC', 'BBQ', 'Fridge', 'Stove', 'Internet']",Winter,438,14,1,King,Strict,49,32,180,3,2
+77,Apartment,4,"['BBQ', 'Fridge', 'Laundry', 'AC']",Autumn,366,13,1,Double,Moderate,24,88,98,3,2
+78,Apartment,5,"['Internet', 'BBQ', 'Stove', 'Fridge', 'Gym']",Winter,224,17,4,Double,Moderate,42,57,140,2,3
+79,Apartment,1,"['Gym', 'Laundry', 'Internet', 'Stove', 'Fridge', 'BBQ', 'AC']",Summer,289,1,2,King,Flexible,44,62,162,2,3
+80,Apartment,1,"['BBQ', 'AC']",Autumn,230,21,2,Double,Strict,22,41,194,4,3
+81,Villa,2,"['Stove', 'Laundry', 'BBQ', 'AC', 'Gym', 'Internet', 'Fridge']",Autumn,94,28,4,King,Moderate,14,50,136,5,4
+82,House,5,"['Gym', 'Internet', 'Fridge', 'BBQ', 'AC', 'Stove', 'Laundry']",Summer,403,27,1,Single,Moderate,30,100,130,2,4
+83,Apartment,4,"['Internet', 'AC', 'Laundry', 'Fridge', 'Gym', 'BBQ']",Winter,286,21,4,Double,Strict,31,94,57,4,2
+84,Villa,4,['Gym'],Autumn,167,24,2,King,Flexible,18,43,141,3,4
+85,Apartment,4,"['Laundry', 'BBQ', 'Gym', 'Fridge', 'Stove', 'Internet']",Summer,304,20,3,Single,Strict,25,25,37,4,1
+86,Apartment,5,"['Stove', 'Gym', 'Fridge', 'Laundry', 'AC']",Winter,461,13,2,King,Strict,12,37,85,5,1
+87,Villa,5,"['Fridge', 'Stove', 'Internet', 'BBQ']",Autumn,310,2,3,Double,Flexible,13,58,88,3,1
+88,Villa,3,['Laundry'],Summer,163,27,3,Double,Strict,19,81,186,5,1
+89,House,4,"['Gym', 'Internet', 'BBQ', 'Laundry', 'Stove', 'Fridge', 'AC']",Summer,74,20,3,Single,Moderate,24,29,19,4,1
+90,Apartment,3,['Stove'],Winter,380,15,2,Double,Strict,43,37,47,2,2
+91,House,3,['Internet'],Winter,439,20,2,Double,Moderate,32,65,115,4,3
+92,Apartment,5,"['Stove', 'Fridge', 'Laundry', 'Gym', 'AC']",Autumn,127,19,3,Double,Flexible,28,30,71,5,4
+93,House,3,"['Laundry', 'BBQ', 'AC', 'Gym', 'Internet']",Winter,123,3,3,King,Strict,50,34,189,4,4
+94,Apartment,1,"['Gym', 'Fridge', 'AC', 'Laundry']",Summer,146,3,3,Queen,Strict,44,81,30,2,3
+95,House,3,"['AC', 'Fridge', 'Internet', 'Gym', 'Laundry', 'Stove', 'BBQ']",Summer,136,22,2,King,Strict,47,71,110,5,2
+96,House,5,"['Internet', 'Laundry', 'Stove', 'Gym', 'BBQ', 'AC', 'Fridge']",Summer,430,11,2,Single,Moderate,42,30,57,4,3
+97,Villa,3,"['AC', 'Stove', 'BBQ', 'Internet', 'Laundry']",Summer,258,16,3,Single,Strict,32,26,59,3,1
+98,Apartment,2,"['Internet', 'Gym', 'Stove', 'Fridge', 'AC', 'BBQ']",Autumn,470,27,1,King,Flexible,10,29,29,5,5
+99,Villa,1,"['Stove', 'Gym', 'BBQ', 'Internet', 'Laundry', 'AC']",Autumn,164,30,2,Single,Strict,49,44,74,3,3
+100,Apartment,1,['Internet'],Winter,373,7,3,Double,Moderate,44,23,164,2,3
+101,Villa,1,"['Fridge', 'Internet', 'BBQ']",Autumn,311,27,1,Double,Moderate,37,98,175,2,3
+102,Apartment,4,['Gym'],Winter,80,8,4,Single,Moderate,24,100,80,4,2
+103,Villa,5,"['BBQ', 'Internet', 'Gym', 'Fridge']",Winter,414,13,4,Double,Strict,14,63,143,3,5
+104,Apartment,1,"['AC', 'Fridge', 'Stove']",Autumn,57,10,1,Single,Flexible,47,36,197,2,1
+105,Apartment,1,['Stove'],Autumn,407,15,4,Queen,Strict,46,84,76,2,3
+106,Villa,5,"['Internet', 'Gym', 'Fridge', 'Stove', 'Laundry', 'BBQ']",Summer,54,25,4,Queen,Moderate,12,88,60,2,5
+107,Villa,3,['Laundry'],Winter,254,15,3,King,Flexible,10,97,151,2,4
+108,House,2,"['Laundry', 'Internet', 'BBQ', 'Gym']",Summer,386,12,4,King,Moderate,44,69,45,5,2
+109,House,5,"['AC', 'Laundry', 'BBQ', 'Internet', 'Stove', 'Gym', 'Fridge']",Winter,192,20,2,Double,Flexible,21,90,58,3,2
+110,House,5,"['Fridge', 'AC', 'Stove', 'Internet', 'Gym', 'BBQ']",Summer,169,18,1,Single,Flexible,35,52,65,2,2
+111,House,3,['Internet'],Winter,124,19,4,Queen,Moderate,40,40,8,3,2
+112,Villa,1,"['Internet', 'Laundry', 'Stove']",Winter,98,5,3,Double,Moderate,16,62,150,4,1
+113,Apartment,1,"['BBQ', 'Gym']",Winter,22,27,4,Double,Strict,46,38,186,4,2
+114,Villa,5,"['Laundry', 'Stove', 'Gym', 'Internet', 'AC', 'Fridge']",Winter,109,24,4,Double,Strict,25,64,32,5,1
+115,House,5,"['Gym', 'Fridge', 'AC', 'Stove', 'Internet']",Winter,28,2,4,King,Strict,20,67,43,5,3
+116,Apartment,2,"['Stove', 'Gym', 'BBQ', 'Fridge', 'AC', 'Internet', 'Laundry']",Winter,350,17,1,Single,Moderate,16,66,20,3,4
+117,Apartment,3,"['Gym', 'BBQ', 'Stove', 'Laundry', 'Internet', 'AC']",Winter,445,13,3,Queen,Flexible,11,90,55,3,3
+118,House,5,"['AC', 'Internet', 'Gym', 'Fridge', 'Stove']",Summer,283,2,2,Single,Strict,35,44,166,5,4
+119,House,2,['Stove'],Winter,190,9,2,Queen,Moderate,16,31,118,5,2
+120,Villa,4,['Internet'],Summer,421,7,3,Queen,Moderate,37,84,161,3,1
+121,House,2,['Internet'],Winter,437,20,3,Queen,Strict,15,44,42,3,3
+122,House,4,"['Laundry', 'Fridge', 'BBQ']",Autumn,68,22,4,King,Strict,30,29,89,3,4
+123,House,5,"['Internet', 'Laundry', 'Stove']",Winter,416,16,2,King,Strict,13,75,16,2,4
+124,Villa,5,['Internet'],Autumn,164,4,1,King,Moderate,20,96,95,5,3
+125,House,5,"['Internet', 'AC', 'Gym']",Summer,470,11,2,Queen,Strict,48,73,53,2,1
+126,Apartment,3,"['Internet', 'Stove', 'AC', 'Gym']",Summer,61,9,1,Double,Flexible,20,32,126,3,3
+127,Villa,2,"['Internet', 'Stove', 'Fridge', 'Gym', 'BBQ', 'Laundry']",Autumn,320,2,1,Single,Flexible,23,70,116,5,5
+128,Apartment,3,"['AC', 'Stove']",Winter,463,7,4,Queen,Strict,19,60,116,4,5
+129,Apartment,3,"['AC', 'Internet', 'Fridge']",Winter,419,16,1,Double,Flexible,19,61,89,3,2
+130,House,5,['Gym'],Winter,284,25,3,King,Moderate,32,91,195,4,5
+131,Apartment,3,"['AC', 'Internet', 'Fridge', 'BBQ', 'Gym', 'Stove', 'Laundry']",Winter,441,7,3,Single,Moderate,42,92,86,3,3
+132,Villa,3,"['Laundry', 'BBQ', 'Stove', 'AC', 'Internet']",Winter,422,3,4,King,Moderate,38,22,187,3,1
+133,House,5,"['Internet', 'Laundry', 'Fridge', 'AC']",Autumn,212,28,4,King,Moderate,41,78,151,2,3
+134,House,5,"['BBQ', 'Gym', 'AC', 'Internet']",Autumn,152,3,1,Double,Flexible,10,95,136,3,4
+135,Villa,3,"['Gym', 'AC', 'Internet', 'Stove', 'BBQ', 'Fridge', 'Laundry']",Summer,168,13,3,Double,Flexible,45,71,21,3,3
+136,House,1,"['Gym', 'Fridge', 'BBQ', 'Internet', 'Laundry', 'Stove', 'AC']",Summer,304,5,1,Queen,Flexible,39,38,38,4,3
+137,House,3,['Fridge'],Summer,192,18,4,King,Moderate,22,49,121,5,3
+138,Apartment,5,"['Gym', 'BBQ']",Winter,47,14,3,Queen,Strict,10,29,178,5,4
+139,Apartment,5,"['BBQ', 'Laundry', 'Fridge', 'Gym', 'Stove']",Winter,97,10,4,Single,Flexible,28,68,116,5,3
+140,Apartment,5,"['Laundry', 'AC', 'Gym', 'Internet', 'BBQ']",Autumn,65,27,2,King,Moderate,31,45,71,3,1
+141,Villa,5,"['Laundry', 'Stove', 'Fridge', 'BBQ']",Autumn,353,2,1,Single,Moderate,36,42,132,5,4
+142,House,5,"['Gym', 'Fridge', 'AC']",Winter,141,1,1,Queen,Moderate,47,82,125,2,3
+143,House,1,"['AC', 'Laundry', 'Gym', 'Fridge', 'BBQ', 'Internet', 'Stove']",Winter,355,10,4,Queen,Moderate,18,100,122,2,3
+144,Villa,1,['AC'],Winter,375,16,2,Double,Moderate,11,72,123,4,3
+145,Villa,2,"['Fridge', 'AC', 'Laundry', 'BBQ']",Winter,148,21,4,Queen,Strict,11,82,200,4,3
+146,Villa,5,"['Gym', 'Stove', 'Fridge', 'AC', 'BBQ', 'Laundry']",Autumn,472,4,1,King,Moderate,24,23,186,5,1
+147,House,1,"['BBQ', 'Laundry']",Autumn,464,6,1,Single,Flexible,28,24,34,3,3
+148,House,5,"['Gym', 'Internet', 'Stove']",Autumn,310,28,2,Single,Moderate,39,32,34,3,3
+149,Apartment,1,"['Gym', 'BBQ', 'AC']",Winter,101,18,4,King,Moderate,36,40,151,2,3
+150,Villa,1,"['Fridge', 'BBQ', 'Stove', 'AC', 'Internet', 'Laundry']",Winter,312,6,2,Single,Flexible,35,37,130,4,1
+151,Villa,5,"['Stove', 'AC', 'Gym']",Summer,460,11,3,Double,Strict,15,43,178,5,4
+152,Apartment,1,"['Laundry', 'Internet', 'Stove', 'Fridge', 'BBQ', 'Gym']",Summer,121,27,3,Single,Strict,23,71,137,2,1
+153,Villa,5,"['Internet', 'AC', 'Laundry', 'Gym', 'BBQ', 'Fridge', 'Stove']",Autumn,206,21,3,King,Strict,26,54,154,3,5
+154,Apartment,4,"['Gym', 'AC', 'Stove', 'BBQ', 'Fridge', 'Laundry', 'Internet']",Summer,416,23,1,Single,Moderate,27,47,109,2,2
+155,House,1,"['AC', 'Gym', 'Internet', 'Stove', 'Fridge', 'Laundry']",Summer,140,12,1,Single,Flexible,22,43,2,5,1
+156,Apartment,5,"['Stove', 'Internet', 'AC', 'Laundry', 'Gym', 'Fridge', 'BBQ']",Summer,172,6,4,King,Flexible,14,81,64,2,1
+157,Villa,5,"['Laundry', 'AC', 'BBQ', 'Stove', 'Gym', 'Internet']",Winter,206,20,2,Single,Strict,27,69,37,4,3
+158,Apartment,3,"['Stove', 'AC', 'Laundry', 'Internet', 'BBQ', 'Gym', 'Fridge']",Winter,211,25,3,King,Moderate,34,40,118,2,3
+159,House,3,"['Laundry', 'BBQ', 'AC', 'Internet']",Summer,481,21,3,Queen,Moderate,50,96,168,5,4
+160,Apartment,2,"['Internet', 'Fridge']",Summer,34,10,1,Queen,Flexible,37,54,133,3,4
+161,Apartment,1,"['Laundry', 'Fridge', 'BBQ', 'Stove', 'Gym', 'Internet']",Autumn,186,10,1,Single,Moderate,31,70,24,2,4
+162,Villa,1,"['Fridge', 'BBQ', 'Laundry', 'Gym', 'Internet', 'Stove', 'AC']",Winter,377,27,3,King,Moderate,40,43,121,5,1
+163,Villa,4,"['Laundry', 'Internet', 'Gym', 'Stove', 'Fridge', 'AC', 'BBQ']",Winter,161,4,4,Single,Moderate,34,68,60,5,5
+164,Apartment,4,"['Laundry', 'Internet', 'Gym', 'AC', 'BBQ', 'Fridge']",Winter,383,13,2,King,Moderate,23,74,77,3,1
+165,Apartment,4,"['Stove', 'AC', 'Fridge', 'Gym']",Summer,492,23,4,Queen,Flexible,43,71,105,5,1
+166,Villa,4,"['BBQ', 'Fridge', 'Stove', 'AC']",Autumn,255,12,3,Single,Moderate,40,52,157,3,3
+167,Apartment,3,"['AC', 'Internet', 'Stove', 'Laundry', 'Gym']",Winter,273,9,3,King,Strict,27,83,68,3,2
+168,Apartment,5,['Stove'],Winter,426,16,1,Single,Moderate,23,39,64,4,2
+169,House,3,"['Stove', 'AC', 'Internet', 'Laundry', 'Gym', 'Fridge', 'BBQ']",Summer,353,2,3,Double,Moderate,41,51,76,4,1
+170,Villa,3,['Fridge'],Winter,346,8,1,Double,Strict,35,62,109,4,3
+171,House,2,"['BBQ', 'AC']",Summer,282,21,4,Double,Moderate,46,35,25,5,5
+172,House,2,"['Laundry', 'Gym', 'Internet', 'Fridge', 'AC', 'Stove']",Winter,434,20,2,Double,Strict,31,35,0,3,3
+173,Apartment,1,"['Fridge', 'Stove']",Summer,99,17,2,King,Flexible,39,72,104,4,4
+174,Apartment,2,['Fridge'],Summer,466,27,4,Double,Strict,26,30,96,5,5
+175,Villa,5,['Stove'],Summer,192,13,2,Queen,Strict,37,79,36,4,4
+176,Villa,2,"['Laundry', 'Internet', 'Stove', 'AC', 'Gym']",Winter,54,10,2,King,Moderate,37,62,142,3,3
+177,Villa,3,"['AC', 'Fridge', 'BBQ', 'Gym']",Summer,330,3,2,Double,Flexible,11,83,168,4,4
+178,Villa,4,"['Laundry', 'BBQ', 'Stove', 'AC']",Autumn,226,8,2,Single,Strict,19,61,38,4,4
+179,House,2,"['Laundry', 'Gym', 'BBQ', 'Stove', 'Internet']",Autumn,427,15,3,Double,Flexible,23,68,177,2,3
+180,House,2,"['Stove', 'AC', 'Internet', 'Laundry', 'Gym']",Summer,330,28,1,King,Moderate,11,75,192,3,5
+181,Villa,2,['Internet'],Autumn,105,22,2,Queen,Strict,34,29,190,2,5
+182,Apartment,2,"['Stove', 'Fridge', 'Internet', 'Laundry', 'AC', 'Gym', 'BBQ']",Winter,307,13,3,Double,Strict,48,36,148,3,3
+183,Villa,1,"['AC', 'Gym', 'BBQ', 'Stove']",Autumn,50,5,4,Double,Strict,36,98,134,2,2
+184,House,4,"['Stove', 'AC', 'Laundry']",Autumn,494,12,3,Single,Moderate,36,96,134,3,4
+185,Villa,1,"['Laundry', 'Stove', 'Fridge']",Summer,92,22,3,Double,Flexible,15,80,39,5,2
+186,Apartment,3,"['Fridge', 'Gym', 'AC', 'Laundry']",Summer,451,5,1,Double,Flexible,43,33,7,3,4
+187,Apartment,1,"['Stove', 'Laundry', 'BBQ']",Summer,388,30,3,Queen,Flexible,23,73,11,4,5
+188,Villa,2,"['Internet', 'AC', 'Gym', 'Fridge', 'Stove', 'BBQ']",Winter,285,8,1,King,Moderate,15,23,91,3,2
+189,House,2,"['Internet', 'Laundry', 'Stove', 'Gym', 'BBQ']",Winter,97,21,3,Queen,Strict,50,25,145,3,1
+190,Villa,5,"['Fridge', 'Gym', 'Stove', 'AC', 'Internet', 'BBQ']",Winter,463,21,1,Double,Flexible,27,22,24,3,4
+191,House,1,"['Stove', 'Fridge', 'Internet', 'BBQ']",Autumn,454,2,4,Double,Strict,49,49,197,5,1
+192,Apartment,4,"['Fridge', 'Gym', 'Internet', 'AC', 'Laundry']",Autumn,360,1,3,Double,Moderate,37,24,51,4,1
+193,Villa,1,"['AC', 'Stove']",Summer,365,7,3,Queen,Strict,37,79,159,4,5
+194,House,5,"['Gym', 'Laundry']",Autumn,265,17,3,Queen,Strict,38,32,65,3,4
+195,House,4,"['Stove', 'Fridge', 'Gym']",Autumn,125,18,4,Single,Flexible,41,98,87,3,3
+196,Villa,5,"['Fridge', 'Internet', 'Gym', 'Stove', 'Laundry']",Autumn,174,29,3,Double,Moderate,46,85,22,5,3
+197,Villa,2,"['Fridge', 'BBQ']",Winter,472,30,4,King,Flexible,27,89,137,2,1
+198,House,5,"['Gym', 'BBQ', 'Stove', 'Fridge', 'AC', 'Internet', 'Laundry']",Autumn,258,29,4,King,Flexible,21,41,127,3,2
+199,Villa,1,"['BBQ', 'AC', 'Stove', 'Laundry']",Summer,94,13,2,King,Flexible,35,89,103,5,1
+200,Apartment,5,"['Fridge', 'Internet', 'Gym', 'BBQ']",Summer,490,25,1,King,Moderate,17,20,107,4,5
+201,Villa,1,"['Gym', 'Internet', 'Laundry', 'BBQ', 'Stove', 'AC']",Autumn,377,13,2,King,Flexible,47,80,15,4,1
+202,Villa,1,"['Gym', 'Fridge']",Summer,465,11,3,King,Flexible,46,24,192,2,1
+203,House,2,"['Stove', 'Gym', 'BBQ']",Winter,302,19,4,King,Moderate,20,49,67,4,2
+204,Apartment,2,"['BBQ', 'Internet', 'AC', 'Stove', 'Gym', 'Fridge']",Autumn,62,4,2,Double,Moderate,40,69,166,3,4
+205,Villa,5,"['Internet', 'BBQ', 'Stove', 'Laundry']",Summer,412,26,1,King,Moderate,35,78,190,4,3
+206,Apartment,1,"['Internet', 'Stove', 'Gym', 'AC', 'Laundry']",Winter,466,11,4,Double,Flexible,14,81,10,2,5
+207,Apartment,2,"['Fridge', 'BBQ']",Summer,430,28,3,Queen,Strict,32,99,192,4,5
+208,House,5,"['AC', 'Internet', 'Gym']",Summer,209,21,2,Single,Moderate,41,55,185,4,2
+209,House,4,"['BBQ', 'Fridge', 'Stove', 'Gym', 'Internet', 'Laundry']",Winter,255,17,3,Double,Flexible,33,79,119,3,4
+210,Villa,1,"['AC', 'Stove', 'Laundry', 'Gym', 'Fridge', 'BBQ', 'Internet']",Autumn,409,20,2,Double,Strict,19,95,110,4,1
+211,Villa,1,"['Internet', 'BBQ', 'AC', 'Gym', 'Stove', 'Fridge', 'Laundry']",Summer,132,3,1,Single,Strict,16,26,56,4,1
+212,Apartment,2,"['Gym', 'AC', 'Stove', 'BBQ', 'Fridge', 'Internet']",Autumn,97,19,2,Queen,Moderate,42,26,47,3,4
+213,House,5,"['Fridge', 'Stove', 'Laundry', 'BBQ', 'AC']",Autumn,160,15,1,Queen,Strict,14,69,160,2,1
+214,Apartment,3,"['AC', 'Fridge', 'BBQ', 'Stove', 'Internet', 'Gym']",Summer,167,15,1,Single,Moderate,20,28,47,3,3
+215,Villa,2,"['Laundry', 'AC', 'Stove', 'BBQ', 'Gym', 'Internet', 'Fridge']",Winter,441,12,1,Queen,Flexible,38,62,192,4,4
+216,House,2,['Laundry'],Winter,211,20,2,Queen,Moderate,19,93,13,3,5
+217,Villa,3,"['BBQ', 'AC', 'Fridge', 'Stove']",Winter,495,21,3,Double,Strict,36,33,109,4,1
+218,House,2,"['AC', 'Laundry', 'BBQ']",Summer,108,4,1,Double,Moderate,44,86,14,5,1
+219,Apartment,5,"['Internet', 'BBQ', 'Fridge', 'AC', 'Gym']",Autumn,316,18,1,King,Moderate,12,40,199,2,3
+220,Villa,5,['BBQ'],Autumn,456,23,1,Single,Strict,42,20,11,5,4
+221,House,3,"['AC', 'Gym', 'Fridge']",Winter,36,18,2,Double,Flexible,29,89,173,4,3
+222,House,5,"['Gym', 'Laundry', 'Stove', 'BBQ', 'Fridge', 'AC']",Summer,202,5,2,Queen,Moderate,18,98,93,5,5
+223,Villa,3,"['AC', 'Fridge', 'Stove', 'Internet', 'Gym', 'Laundry', 'BBQ']",Winter,177,24,1,Double,Strict,30,28,115,2,3
+224,House,3,"['AC', 'Fridge', 'Laundry', 'Stove', 'Gym', 'BBQ', 'Internet']",Autumn,125,23,4,King,Moderate,32,28,120,2,2
+225,Apartment,4,"['Stove', 'Laundry', 'BBQ', 'Gym', 'AC', 'Fridge']",Winter,104,7,1,King,Moderate,17,57,79,5,2
+226,House,2,"['Gym', 'Fridge', 'Internet', 'BBQ', 'Laundry', 'Stove']",Winter,143,28,2,Single,Moderate,44,28,19,4,4
+227,Villa,2,['Fridge'],Winter,288,17,4,Queen,Moderate,24,26,35,2,5
+228,House,5,['Laundry'],Autumn,371,20,4,King,Flexible,11,73,55,5,3
+229,Apartment,5,"['Gym', 'AC', 'Internet', 'Fridge']",Winter,91,12,4,Queen,Flexible,35,93,90,3,4
+230,Apartment,1,"['Internet', 'BBQ', 'Laundry', 'AC', 'Stove', 'Gym', 'Fridge']",Autumn,368,20,4,Single,Flexible,11,57,69,5,5
+231,Apartment,3,"['Stove', 'AC', 'BBQ']",Summer,464,19,2,Queen,Moderate,32,37,159,2,5
+232,House,1,"['Internet', 'BBQ', 'Laundry', 'Stove']",Winter,233,25,2,Double,Strict,17,91,156,5,2
+233,Villa,5,"['Laundry', 'AC', 'Gym', 'BBQ', 'Internet', 'Fridge', 'Stove']",Summer,227,4,1,Queen,Moderate,33,52,180,4,4
+234,Apartment,2,"['Gym', 'Fridge', 'Internet', 'Laundry']",Autumn,324,25,4,King,Moderate,34,95,67,4,4
+235,Apartment,2,['Stove'],Winter,39,7,4,Queen,Moderate,17,98,179,4,1
+236,Apartment,1,"['Stove', 'Gym']",Winter,381,29,2,King,Flexible,27,56,131,5,5
+237,Apartment,3,['AC'],Winter,122,14,3,Queen,Flexible,37,36,84,3,3
+238,Villa,4,['Laundry'],Summer,479,1,3,Double,Moderate,39,45,31,3,1
+239,House,1,"['Laundry', 'BBQ', 'Stove', 'Internet', 'Gym', 'AC', 'Fridge']",Summer,346,13,3,Single,Flexible,23,79,186,2,5
+240,House,2,"['BBQ', 'Fridge', 'AC', 'Stove']",Summer,115,30,2,King,Flexible,11,79,41,3,3
+241,Villa,2,"['Fridge', 'Laundry', 'Internet', 'Stove']",Autumn,61,3,2,Double,Strict,20,43,2,5,1
+242,House,1,"['BBQ', 'Gym', 'Fridge', 'Laundry']",Autumn,154,22,1,Double,Moderate,18,94,61,5,5
+243,Villa,3,"['Gym', 'BBQ', 'Internet', 'AC', 'Laundry', 'Fridge', 'Stove']",Summer,323,8,3,King,Moderate,21,32,25,5,1
+244,House,3,"['AC', 'Internet', 'Fridge', 'Laundry']",Winter,122,24,4,King,Strict,20,86,56,5,2
+245,Villa,2,"['Laundry', 'BBQ', 'Internet', 'Stove', 'AC', 'Fridge', 'Gym']",Winter,364,8,1,Double,Moderate,41,65,36,5,1
+246,House,4,"['BBQ', 'Internet', 'AC']",Summer,253,15,1,King,Strict,29,96,188,2,3
+247,House,4,"['AC', 'BBQ', 'Laundry', 'Fridge', 'Stove', 'Internet', 'Gym']",Autumn,127,5,3,Double,Flexible,17,92,83,2,4
+248,Apartment,2,"['Fridge', 'AC', 'Laundry', 'Internet']",Winter,390,15,1,Queen,Moderate,16,72,138,4,3
+249,Apartment,3,"['Stove', 'Gym']",Winter,376,3,2,Single,Moderate,48,94,19,4,3
+250,Villa,5,"['Gym', 'AC', 'Laundry', 'Fridge', 'BBQ', 'Stove']",Winter,189,11,4,King,Flexible,39,60,104,5,5
+251,Villa,3,"['AC', 'Laundry']",Autumn,359,10,1,Queen,Strict,42,88,120,3,5
+252,Apartment,4,"['BBQ', 'Internet']",Winter,249,26,3,King,Moderate,14,67,67,3,3
+253,Apartment,3,"['Fridge', 'Internet', 'Gym']",Autumn,479,19,1,Double,Flexible,38,63,183,4,3
+254,House,5,"['Fridge', 'AC']",Autumn,54,20,4,Queen,Moderate,28,40,193,4,5
+255,Apartment,2,"['Internet', 'Laundry', 'Fridge', 'BBQ', 'Stove', 'AC', 'Gym']",Autumn,321,28,2,Single,Strict,44,25,74,4,3
+256,Apartment,5,"['Stove', 'Internet', 'Laundry', 'BBQ', 'Gym', 'AC', 'Fridge']",Summer,140,15,2,Double,Flexible,42,28,11,2,3
+257,Apartment,4,"['Internet', 'Stove', 'Fridge', 'Gym']",Autumn,198,29,1,Double,Flexible,44,64,141,2,5
+258,Apartment,5,"['Gym', 'Fridge']",Summer,444,24,1,Single,Strict,12,100,18,3,1
+259,Apartment,2,"['Internet', 'Gym', 'Stove', 'AC']",Summer,161,9,3,Queen,Flexible,16,93,75,2,2
+260,Apartment,2,['Gym'],Winter,47,12,4,Single,Moderate,25,43,32,4,5
+261,Villa,3,"['Fridge', 'Gym', 'Internet']",Winter,427,2,3,Single,Moderate,37,69,42,4,4
+262,House,5,"['Gym', 'Laundry', 'Stove', 'Fridge', 'Internet', 'AC', 'BBQ']",Autumn,123,3,3,Queen,Strict,32,60,112,3,2
+263,Apartment,2,"['BBQ', 'Fridge', 'AC', 'Laundry']",Autumn,380,4,1,Single,Moderate,34,21,175,5,2
+264,Villa,3,['AC'],Autumn,309,20,3,Queen,Flexible,41,50,132,4,3
+265,House,5,"['Gym', 'BBQ', 'AC', 'Internet', 'Stove']",Summer,436,25,4,Double,Strict,43,48,186,4,5
+266,Apartment,5,"['AC', 'Internet', 'Gym', 'Laundry']",Winter,61,9,3,Queen,Strict,40,82,105,2,5
+267,House,4,"['BBQ', 'Internet', 'Laundry', 'Fridge', 'AC']",Winter,29,11,3,Queen,Flexible,33,71,157,5,1
+268,Villa,3,['Internet'],Autumn,195,11,4,Single,Flexible,42,62,40,5,4
+269,Apartment,5,"['Fridge', 'AC', 'Stove', 'Internet', 'BBQ']",Summer,457,1,3,Single,Strict,26,75,111,4,2
+270,Apartment,5,"['BBQ', 'Gym', 'Stove']",Summer,256,7,3,King,Flexible,38,41,45,5,5
+271,Villa,3,"['BBQ', 'Fridge', 'AC', 'Stove', 'Internet', 'Laundry', 'Gym']",Summer,195,13,2,Single,Strict,12,50,17,2,3
+272,Villa,1,"['Internet', 'Fridge', 'BBQ', 'Stove', 'AC', 'Gym', 'Laundry']",Winter,342,14,2,Queen,Moderate,39,100,33,3,1
+273,Villa,1,"['Gym', 'BBQ', 'Fridge']",Autumn,194,15,4,Double,Flexible,50,78,183,3,3
+274,Apartment,4,"['AC', 'BBQ', 'Internet', 'Laundry']",Autumn,96,20,1,Queen,Flexible,46,24,135,5,1
+275,Apartment,1,"['Gym', 'Stove', 'AC', 'Fridge', 'Internet', 'BBQ']",Summer,451,9,1,King,Flexible,19,74,165,4,4
+276,Apartment,1,"['Gym', 'Internet']",Autumn,366,3,3,Double,Moderate,12,80,108,3,3
+277,House,1,"['Fridge', 'BBQ']",Summer,155,5,2,Double,Flexible,10,72,144,4,1
+278,House,5,"['AC', 'Stove', 'BBQ', 'Gym', 'Internet']",Winter,108,9,1,Queen,Strict,29,67,160,2,2
+279,Apartment,4,['Stove'],Summer,61,13,4,King,Moderate,34,20,96,3,5
+280,Villa,2,"['Stove', 'Laundry', 'BBQ', 'Internet']",Summer,178,16,2,Queen,Strict,32,26,76,4,3
+281,Villa,2,['Fridge'],Winter,62,8,4,King,Flexible,24,66,37,4,3
+282,Apartment,3,"['Fridge', 'Gym', 'BBQ', 'Laundry', 'Internet']",Summer,171,25,2,King,Strict,17,21,109,2,3
+283,Villa,5,['BBQ'],Summer,374,20,4,Single,Strict,49,84,31,4,1
+284,Apartment,2,"['Internet', 'AC', 'BBQ', 'Laundry']",Autumn,334,22,2,Double,Moderate,25,39,83,5,5
+285,Apartment,1,"['Gym', 'Internet', 'Laundry', 'Stove', 'BBQ', 'AC']",Autumn,495,2,1,Queen,Strict,34,48,183,5,1
+286,Apartment,4,"['Stove', 'Gym', 'Fridge', 'Laundry', 'AC', 'Internet']",Summer,427,26,4,Single,Strict,22,55,82,4,3
+287,Villa,2,"['Laundry', 'BBQ', 'Internet', 'AC']",Summer,299,7,1,King,Moderate,39,36,191,3,5
+288,Villa,2,"['Fridge', 'Gym', 'AC', 'Laundry', 'BBQ']",Winter,138,14,2,Single,Moderate,20,100,174,5,4
+289,House,1,['Fridge'],Summer,384,23,4,Single,Strict,33,88,110,4,5
+290,Apartment,4,['Stove'],Autumn,59,13,2,Queen,Strict,14,85,13,2,2
+291,Apartment,1,['Stove'],Summer,161,7,3,Queen,Strict,30,81,24,4,5
+292,Apartment,3,"['Fridge', 'Internet', 'BBQ', 'Gym', 'AC', 'Stove']",Autumn,409,28,1,Single,Moderate,26,57,101,3,4
+293,Apartment,2,['AC'],Autumn,413,21,3,King,Moderate,16,37,68,2,1
+294,House,5,['Laundry'],Autumn,179,16,3,Double,Flexible,28,70,48,5,4
+295,Apartment,1,"['Internet', 'Fridge']",Summer,500,26,4,Single,Moderate,10,76,165,4,2
+296,Villa,1,"['Stove', 'BBQ', 'Fridge', 'Laundry', 'AC']",Autumn,64,11,3,Double,Moderate,10,48,136,2,4
+297,Apartment,5,"['BBQ', 'AC', 'Internet']",Summer,424,8,4,King,Flexible,24,58,100,3,2
+298,Apartment,1,"['AC', 'Stove', 'Fridge']",Summer,318,14,2,King,Moderate,27,57,106,5,1
+299,House,3,"['Stove', 'Gym', 'Fridge', 'Internet']",Winter,256,29,2,Single,Strict,15,47,137,4,3
+300,House,4,"['AC', 'Laundry']",Winter,230,20,1,King,Strict,26,68,196,4,4
+301,House,4,"['Gym', 'BBQ', 'Laundry', 'Fridge', 'AC', 'Stove']",Autumn,115,17,1,Queen,Flexible,44,85,179,4,3
+302,Villa,3,"['Stove', 'Internet', 'Laundry', 'Gym', 'AC', 'Fridge']",Autumn,170,27,3,King,Strict,48,68,106,5,3
+303,House,3,"['Internet', 'Laundry', 'Fridge']",Autumn,452,3,3,Single,Strict,17,89,23,5,4
+304,Apartment,2,"['BBQ', 'Fridge', 'Gym', 'Internet', 'Laundry', 'Stove']",Summer,123,16,3,Double,Moderate,42,75,183,3,2
+305,House,4,['AC'],Autumn,225,18,2,Queen,Strict,22,92,105,3,4
+306,Villa,2,"['Stove', 'AC', 'BBQ', 'Internet', 'Fridge']",Summer,95,7,1,King,Moderate,45,36,82,2,3
+307,Villa,1,"['BBQ', 'Gym', 'Fridge', 'AC', 'Laundry']",Summer,407,10,1,Double,Moderate,31,88,127,3,4
+308,Villa,3,['Stove'],Winter,89,20,2,Queen,Moderate,30,100,47,2,5
+309,Apartment,3,"['Laundry', 'AC', 'Gym', 'Fridge', 'Stove']",Summer,436,28,1,Single,Flexible,15,94,13,4,5
+310,Villa,1,"['BBQ', 'Internet', 'Gym', 'Laundry', 'Fridge', 'AC']",Winter,154,23,1,Double,Strict,11,71,101,3,2
+311,Apartment,4,"['BBQ', 'Stove', 'Internet', 'Gym', 'Laundry', 'Fridge']",Summer,24,13,4,Single,Moderate,11,53,158,2,3
+312,Villa,2,"['AC', 'Fridge', 'Gym']",Summer,26,3,3,Double,Strict,20,82,1,5,2
+313,House,5,"['Gym', 'BBQ']",Autumn,167,22,2,Queen,Flexible,27,54,169,5,3
+314,Apartment,4,"['Fridge', 'BBQ', 'Internet', 'AC', 'Laundry', 'Stove', 'Gym']",Summer,251,27,3,Double,Moderate,49,56,40,3,2
+315,House,1,"['Stove', 'Gym', 'BBQ', 'Internet', 'Fridge']",Winter,290,1,3,Single,Strict,39,36,193,2,1
+316,Villa,3,"['Internet', 'BBQ', 'AC', 'Laundry']",Winter,422,23,1,Single,Moderate,44,63,0,3,2
+317,Villa,3,"['BBQ', 'Internet', 'Gym', 'AC']",Summer,486,26,1,Double,Moderate,29,47,106,3,5
+318,Apartment,4,"['AC', 'Laundry', 'Gym', 'Internet']",Autumn,33,18,3,Single,Flexible,14,90,93,5,4
+319,House,4,['Internet'],Summer,397,22,2,Queen,Strict,27,35,58,3,1
+320,Villa,2,"['AC', 'Gym', 'BBQ', 'Stove', 'Fridge', 'Internet', 'Laundry']",Summer,258,16,2,Queen,Moderate,29,75,55,2,4
+321,Villa,2,"['Fridge', 'Stove', 'Gym']",Autumn,439,28,1,Single,Moderate,41,76,129,4,1
+322,House,5,"['AC', 'BBQ', 'Fridge', 'Stove']",Winter,319,7,4,Queen,Moderate,34,89,68,5,2
+323,Villa,4,"['Gym', 'AC', 'BBQ', 'Laundry']",Autumn,63,14,2,Double,Flexible,32,23,191,3,1
+324,Villa,5,"['Stove', 'BBQ']",Autumn,293,14,3,Queen,Strict,43,45,40,2,5
+325,House,5,"['BBQ', 'Fridge', 'AC', 'Laundry', 'Gym', 'Stove']",Summer,270,22,1,Double,Flexible,33,82,73,3,4
+326,Villa,4,"['AC', 'Fridge', 'Internet']",Summer,324,7,4,King,Flexible,12,51,160,5,1
+327,Apartment,2,"['AC', 'BBQ', 'Internet']",Summer,85,26,2,Single,Moderate,40,44,3,5,3
+328,House,4,"['Gym', 'BBQ', 'AC', 'Laundry', 'Stove', 'Internet', 'Fridge']",Autumn,84,1,1,King,Flexible,43,89,27,2,5
+329,House,5,"['Laundry', 'Internet']",Winter,120,27,3,Single,Moderate,31,23,36,3,4
+330,Apartment,1,"['AC', 'Internet', 'BBQ', 'Laundry', 'Gym', 'Stove', 'Fridge']",Winter,351,8,2,Single,Strict,23,57,3,5,2
+331,Apartment,5,"['AC', 'Fridge', 'Internet', 'Stove']",Winter,64,1,1,Single,Flexible,47,46,118,2,1
+332,House,1,"['Internet', 'Laundry', 'Gym', 'BBQ', 'Stove', 'AC']",Summer,477,8,3,Double,Strict,28,73,195,5,3
+333,Apartment,3,"['Gym', 'Laundry', 'Internet', 'Fridge', 'Stove', 'BBQ', 'AC']",Summer,469,5,3,King,Flexible,29,86,43,5,4
+334,Apartment,2,"['Internet', 'Laundry', 'Gym', 'AC', 'BBQ', 'Fridge']",Autumn,261,18,2,Single,Strict,29,49,53,3,1
+335,Villa,3,"['Gym', 'Fridge', 'Internet']",Autumn,49,5,4,Queen,Strict,42,60,87,3,2
+336,House,4,"['BBQ', 'Internet', 'AC', 'Gym', 'Laundry', 'Stove']",Winter,215,2,1,Single,Flexible,44,29,147,4,5
+337,House,1,"['AC', 'BBQ', 'Internet']",Autumn,252,19,2,Double,Strict,20,66,131,3,3
+338,Apartment,1,['Laundry'],Winter,73,6,3,Single,Strict,10,38,105,5,2
+339,Villa,5,"['Internet', 'BBQ', 'AC', 'Gym']",Winter,148,8,4,King,Moderate,38,27,32,3,4
+340,Villa,4,"['Stove', 'AC', 'Laundry', 'Fridge']",Summer,150,11,2,Single,Strict,20,56,98,4,4
+341,House,4,['Laundry'],Summer,317,16,2,Queen,Moderate,26,90,7,2,2
+342,Villa,5,"['Stove', 'AC', 'Laundry', 'Internet', 'Gym', 'BBQ']",Autumn,30,25,1,Double,Strict,14,40,54,4,1
+343,Apartment,3,"['Gym', 'Laundry']",Summer,281,30,2,King,Strict,17,80,81,5,5
+344,Villa,1,"['AC', 'BBQ', 'Gym', 'Fridge', 'Stove', 'Internet', 'Laundry']",Summer,245,30,1,King,Flexible,46,24,180,4,5
+345,House,4,"['Stove', 'BBQ', 'Fridge', 'AC']",Autumn,291,27,2,Single,Strict,28,30,34,2,1
+346,Villa,4,"['Stove', 'BBQ', 'Fridge', 'Internet', 'Laundry']",Autumn,494,30,2,Double,Strict,27,51,12,2,3
+347,Villa,5,"['Gym', 'AC', 'Internet', 'Stove', 'Fridge', 'BBQ']",Autumn,70,22,4,King,Strict,23,82,109,5,4
+348,Villa,3,"['Fridge', 'Stove']",Summer,200,14,1,Double,Moderate,43,50,61,5,2
+349,Villa,2,"['AC', 'Fridge', 'Laundry', 'BBQ', 'Internet', 'Gym', 'Stove']",Summer,409,18,1,Single,Strict,50,76,28,3,5
+350,House,3,['AC'],Summer,357,12,4,King,Strict,46,94,178,5,2
+351,Apartment,4,"['BBQ', 'Laundry', 'Fridge']",Summer,277,8,4,King,Strict,33,48,171,3,1
+352,House,1,"['Laundry', 'Stove', 'AC']",Winter,87,23,3,Queen,Moderate,27,73,73,4,3
+353,Villa,5,['Laundry'],Summer,348,17,1,Single,Flexible,12,74,54,2,5
+354,Villa,2,"['Fridge', 'Stove', 'Laundry', 'Internet']",Winter,79,3,2,King,Moderate,49,100,59,2,1
+355,Villa,4,"['Stove', 'Internet', 'Gym', 'Fridge', 'BBQ']",Autumn,70,10,2,Single,Flexible,41,99,52,3,1
+356,House,2,"['Laundry', 'Gym']",Summer,135,26,1,Queen,Moderate,29,49,126,2,5
+357,Apartment,1,"['AC', 'Stove']",Summer,128,12,3,Double,Strict,40,24,42,2,4
+358,Apartment,4,"['BBQ', 'Internet']",Summer,279,26,3,Double,Moderate,40,41,177,5,2
+359,Villa,4,['BBQ'],Winter,196,5,4,Queen,Moderate,24,20,15,4,1
+360,Apartment,1,"['AC', 'Fridge', 'Laundry', 'Internet']",Summer,409,2,4,Single,Strict,16,20,169,3,4
+361,Villa,4,"['AC', 'BBQ', 'Laundry', 'Gym', 'Stove']",Winter,486,10,3,Single,Moderate,41,64,48,4,3
+362,Apartment,3,['Laundry'],Autumn,462,18,1,Double,Strict,11,33,100,5,4
+363,House,5,"['Gym', 'Stove', 'AC', 'Fridge', 'BBQ']",Summer,488,21,4,King,Strict,39,62,192,2,5
+364,Apartment,1,"['Stove', 'BBQ', 'Laundry', 'Gym', 'AC', 'Fridge']",Summer,35,12,1,King,Strict,27,24,77,3,2
+365,House,3,"['AC', 'Internet', 'Stove']",Winter,475,12,2,Single,Moderate,33,91,30,2,3
+366,Apartment,1,"['Gym', 'Laundry', 'Stove']",Summer,339,7,3,Single,Flexible,10,79,177,3,2
+367,Apartment,1,"['BBQ', 'Stove', 'Gym', 'AC']",Summer,451,21,2,Single,Strict,31,28,174,2,2
+368,Apartment,3,"['Fridge', 'AC', 'BBQ', 'Gym']",Summer,34,5,2,Single,Strict,27,100,131,4,5
+369,Apartment,2,"['BBQ', 'Gym', 'Internet', 'AC', 'Laundry', 'Stove']",Autumn,149,8,4,King,Flexible,47,77,76,2,3
+370,House,3,"['Stove', 'Laundry', 'Fridge', 'AC']",Winter,130,22,3,King,Strict,29,48,58,5,5
+371,Villa,1,"['AC', 'Gym', 'Fridge', 'Stove', 'BBQ', 'Internet']",Autumn,140,3,2,Single,Strict,46,33,153,2,1
+372,Villa,5,"['Stove', 'BBQ', 'Fridge', 'Laundry']",Autumn,193,2,3,Single,Flexible,35,66,64,3,3
+373,Villa,5,"['Fridge', 'BBQ', 'Stove', 'Laundry', 'Gym']",Winter,416,19,1,Single,Flexible,17,72,68,5,4
+374,Apartment,3,"['Internet', 'Stove', 'Gym', 'AC', 'Fridge']",Autumn,383,11,1,Queen,Moderate,32,76,12,4,2
+375,House,1,"['BBQ', 'Stove', 'Fridge', 'Gym']",Winter,481,8,4,Double,Moderate,48,72,72,3,5
+376,Villa,2,"['BBQ', 'Laundry', 'Fridge']",Summer,279,3,4,Queen,Moderate,44,26,45,3,4
+377,Villa,4,"['Laundry', 'Stove', 'Internet', 'Gym']",Summer,131,13,4,King,Moderate,26,35,84,3,3
+378,House,4,"['Laundry', 'BBQ']",Winter,251,11,3,Queen,Moderate,18,90,121,4,1
+379,Villa,5,"['Fridge', 'Stove', 'AC', 'Gym', 'BBQ', 'Laundry', 'Internet']",Autumn,303,13,3,Double,Moderate,34,68,102,5,5
+380,Villa,2,"['AC', 'BBQ', 'Stove']",Winter,347,5,1,King,Strict,24,84,193,3,3
+381,House,5,"['Internet', 'AC', 'Stove', 'Gym', 'Laundry']",Summer,370,18,1,Single,Moderate,39,78,54,3,1
+382,Villa,5,"['BBQ', 'Internet', 'Stove', 'Laundry', 'Fridge', 'Gym', 'AC']",Winter,286,13,4,Single,Moderate,24,37,26,3,4
+383,Villa,2,"['Internet', 'Gym', 'AC', 'Laundry', 'Fridge']",Winter,117,27,1,Single,Flexible,33,31,115,2,5
+384,House,2,"['Internet', 'AC', 'BBQ', 'Stove', 'Gym', 'Laundry']",Summer,440,6,1,King,Moderate,22,64,7,2,5
+385,Apartment,5,"['AC', 'BBQ', 'Internet', 'Fridge', 'Gym', 'Stove', 'Laundry']",Autumn,394,13,1,Queen,Strict,11,71,10,2,3
+386,Villa,4,"['Internet', 'Fridge', 'AC', 'Stove', 'Gym', 'Laundry', 'BBQ']",Autumn,303,11,2,Queen,Flexible,26,63,45,2,3
+387,House,1,['Stove'],Autumn,105,25,1,Queen,Strict,36,78,81,4,2
+388,House,3,"['Fridge', 'Gym', 'Internet']",Winter,400,17,2,King,Strict,47,27,145,5,2
+389,House,1,"['BBQ', 'Internet', 'Gym', 'Stove', 'AC', 'Laundry', 'Fridge']",Autumn,439,22,3,Double,Strict,39,26,158,4,1
+390,Villa,2,['Laundry'],Summer,143,5,4,Single,Flexible,14,67,185,3,5
+391,House,1,['Laundry'],Autumn,197,25,2,Single,Flexible,14,60,143,3,1
+392,House,2,"['BBQ', 'Internet', 'AC']",Autumn,463,25,2,King,Strict,23,100,60,5,1
+393,House,3,"['Gym', 'Internet']",Winter,239,29,1,King,Strict,16,40,171,5,1
+394,Villa,1,"['BBQ', 'Fridge', 'AC', 'Laundry', 'Stove', 'Internet', 'Gym']",Autumn,127,11,4,Single,Moderate,43,52,110,4,2
+395,Villa,2,"['Gym', 'Internet', 'Fridge']",Autumn,368,28,2,Double,Moderate,10,21,159,2,2
+396,Apartment,1,"['AC', 'BBQ']",Autumn,482,28,4,Queen,Moderate,33,85,108,5,5
+397,Apartment,5,"['Internet', 'BBQ', 'Fridge', 'Stove', 'Gym', 'Laundry']",Autumn,22,2,3,Double,Flexible,39,21,200,5,5
+398,Villa,4,"['Gym', 'Stove', 'Fridge', 'Laundry']",Summer,398,16,2,Single,Strict,44,43,154,3,5
+399,Villa,2,"['BBQ', 'Fridge', 'Gym']",Autumn,150,14,1,Queen,Strict,27,48,31,3,1
+400,Villa,1,"['Laundry', 'BBQ', 'Fridge', 'Internet', 'Gym']",Summer,48,30,3,King,Flexible,50,26,159,5,4
+401,Villa,4,['Gym'],Winter,466,16,1,Single,Flexible,10,64,169,5,4
+402,Apartment,1,"['Laundry', 'Fridge', 'Internet', 'AC', 'Gym']",Autumn,368,1,2,King,Flexible,26,89,6,4,2
+403,Villa,4,"['Fridge', 'BBQ', 'Laundry', 'AC', 'Internet']",Autumn,204,14,3,King,Moderate,27,20,43,2,2
+404,House,3,"['Gym', 'AC', 'Fridge', 'BBQ', 'Internet', 'Laundry']",Autumn,91,18,1,Double,Moderate,19,49,51,3,4
+405,Apartment,3,"['Stove', 'Laundry', 'Fridge', 'Internet', 'Gym']",Summer,88,13,3,King,Moderate,14,76,197,2,4
+406,Villa,4,"['Laundry', 'AC', 'Internet', 'Fridge']",Winter,32,11,2,Single,Moderate,45,68,145,3,2
+407,Villa,3,"['Fridge', 'AC', 'Stove']",Summer,200,3,2,King,Flexible,22,87,27,5,1
+408,Villa,1,"['Fridge', 'Laundry', 'Stove']",Winter,223,23,1,Queen,Strict,45,72,4,5,2
+409,Villa,3,"['Gym', 'AC']",Winter,424,22,3,Single,Strict,34,24,148,4,5
+410,House,2,"['Laundry', 'AC', 'Stove', 'BBQ', 'Fridge', 'Gym', 'Internet']",Autumn,456,21,3,King,Flexible,28,43,76,3,1
+411,Villa,5,"['Laundry', 'Fridge', 'BBQ', 'Stove', 'AC', 'Gym', 'Internet']",Autumn,185,1,2,Double,Flexible,10,65,144,2,3
+412,House,4,"['Fridge', 'AC', 'Stove', 'BBQ', 'Internet', 'Laundry', 'Gym']",Autumn,136,2,1,Queen,Strict,40,59,48,4,2
+413,Villa,2,"['Gym', 'Stove', 'Fridge', 'Laundry', 'BBQ']",Summer,43,26,3,King,Strict,33,79,76,4,1
+414,Villa,3,"['Internet', 'Stove']",Summer,406,17,3,Double,Flexible,47,22,84,3,1
+415,Villa,5,"['Fridge', 'Internet']",Winter,132,18,4,Single,Flexible,15,84,94,2,4
+416,House,1,"['Laundry', 'BBQ', 'Gym', 'Internet', 'AC', 'Stove', 'Fridge']",Autumn,493,18,4,Single,Strict,34,65,12,5,5
+417,House,1,['AC'],Winter,153,22,4,Queen,Strict,16,32,114,3,4
+418,House,2,"['Stove', 'Internet', 'Gym', 'Laundry']",Summer,340,30,2,Single,Strict,29,71,52,2,3
+419,Villa,5,['Laundry'],Winter,195,11,4,King,Strict,27,84,81,3,5
+420,Villa,2,"['Fridge', 'Stove', 'AC', 'BBQ']",Summer,472,15,1,Double,Strict,43,66,33,4,3
+421,Apartment,1,"['Gym', 'Laundry', 'Stove']",Autumn,452,8,2,Queen,Flexible,50,45,161,4,1
+422,Apartment,2,"['Fridge', 'AC', 'Stove', 'BBQ', 'Gym', 'Laundry']",Summer,297,12,2,Double,Moderate,29,67,147,3,4
+423,Villa,1,"['Gym', 'Laundry']",Summer,48,11,2,Single,Moderate,16,75,66,5,3
+424,Villa,2,['AC'],Summer,34,24,2,Queen,Flexible,22,55,9,4,3
+425,House,3,['Laundry'],Autumn,98,12,4,Queen,Moderate,17,97,171,4,4
+426,Apartment,1,"['Gym', 'AC', 'Internet', 'Stove', 'BBQ']",Autumn,116,1,1,Double,Strict,17,32,198,3,3
+427,Villa,5,"['Internet', 'Stove', 'AC', 'BBQ', 'Fridge', 'Laundry']",Autumn,339,15,1,Queen,Strict,47,84,117,4,1
+428,Apartment,1,"['Fridge', 'BBQ', 'Laundry', 'Gym', 'Stove']",Summer,214,28,3,Double,Moderate,25,69,182,2,4
+429,Apartment,5,"['Gym', 'Laundry', 'AC', 'Fridge', 'BBQ', 'Stove']",Winter,400,3,2,Single,Strict,30,21,59,3,5
+430,House,2,"['Gym', 'Stove', 'Laundry', 'BBQ', 'AC', 'Internet', 'Fridge']",Autumn,382,24,2,Queen,Moderate,49,21,4,2,3
+431,House,3,"['Gym', 'Internet', 'AC', 'Laundry', 'Stove']",Autumn,335,23,1,Queen,Flexible,10,29,11,5,5
+432,Villa,1,"['BBQ', 'Laundry', 'AC']",Autumn,155,2,3,Single,Strict,24,39,78,5,4
+433,Villa,3,"['Stove', 'Internet', 'AC', 'Laundry', 'Gym']",Autumn,128,7,4,Double,Strict,48,82,117,2,2
+434,House,1,"['BBQ', 'Fridge', 'Stove', 'AC', 'Laundry', 'Gym']",Autumn,116,5,4,Single,Moderate,17,60,34,2,4
+435,Villa,5,"['Fridge', 'Internet', 'BBQ']",Winter,177,30,3,Single,Flexible,44,95,30,4,4
+436,Villa,1,"['Gym', 'BBQ', 'Stove', 'AC', 'Laundry']",Autumn,380,6,2,King,Strict,18,94,23,5,4
+437,House,4,"['AC', 'BBQ', 'Fridge', 'Gym', 'Internet', 'Stove', 'Laundry']",Summer,261,27,3,Queen,Strict,49,58,53,2,2
+438,House,3,"['Internet', 'AC', 'Fridge']",Winter,405,28,4,Double,Flexible,42,61,94,5,4
+439,Villa,1,['AC'],Winter,270,29,3,Single,Strict,16,40,164,2,1
+440,Apartment,1,"['Laundry', 'Stove', 'AC', 'Fridge']",Autumn,39,29,2,King,Moderate,22,65,94,4,1
+441,Apartment,1,"['BBQ', 'Gym', 'AC', 'Laundry', 'Internet', 'Stove', 'Fridge']",Winter,58,29,3,Double,Strict,42,85,60,5,3
+442,Villa,5,"['BBQ', 'Internet']",Winter,28,7,4,Single,Flexible,25,67,42,2,5
+443,Apartment,4,['Internet'],Autumn,283,15,1,King,Strict,37,63,136,3,2
+444,Apartment,4,"['BBQ', 'Laundry', 'AC', 'Stove', 'Fridge']",Summer,100,15,4,Double,Flexible,24,28,162,2,5
+445,House,1,"['Fridge', 'BBQ', 'Gym', 'AC', 'Laundry', 'Internet', 'Stove']",Autumn,127,10,2,King,Strict,30,78,91,2,3
+446,House,2,"['Laundry', 'BBQ', 'AC', 'Internet', 'Fridge', 'Stove', 'Gym']",Winter,462,28,4,Single,Strict,42,28,44,2,3
+447,House,4,"['Gym', 'Laundry', 'Fridge', 'AC', 'Internet', 'BBQ']",Autumn,271,16,2,Queen,Strict,14,49,69,2,2
+448,Villa,4,"['Laundry', 'Gym', 'Stove']",Winter,389,5,3,Queen,Strict,40,35,164,5,4
+449,Apartment,3,"['Stove', 'AC', 'BBQ', 'Gym', 'Internet', 'Laundry']",Summer,114,9,1,King,Flexible,35,94,85,5,3
+450,Apartment,1,"['AC', 'Fridge', 'Laundry', 'Stove', 'Gym', 'BBQ', 'Internet']",Summer,424,4,3,Queen,Flexible,19,63,25,2,4
+451,House,5,"['Internet', 'Stove', 'BBQ']",Summer,32,24,4,Queen,Moderate,43,88,146,3,4
+452,House,5,['AC'],Winter,273,25,3,King,Flexible,28,43,192,4,2
+453,Villa,3,"['Internet', 'BBQ', 'Stove', 'AC']",Summer,254,1,3,Queen,Flexible,24,80,84,5,2
+454,House,2,"['Gym', 'Laundry', 'Internet', 'Fridge', 'AC']",Autumn,67,6,4,Queen,Strict,47,23,72,5,3
+455,Apartment,2,"['Internet', 'Stove', 'Gym', 'AC']",Winter,342,6,4,Single,Moderate,34,23,14,2,1
+456,Villa,1,"['Laundry', 'Fridge']",Autumn,428,1,3,Queen,Strict,45,98,55,2,2
+457,Villa,4,"['AC', 'Stove', 'Laundry', 'Gym', 'Internet', 'Fridge']",Winter,444,27,4,Single,Moderate,19,63,150,2,5
+458,House,2,"['Laundry', 'Gym']",Autumn,57,8,2,Double,Flexible,23,75,153,4,5
+459,Apartment,1,"['Stove', 'Gym', 'BBQ']",Autumn,203,15,4,Single,Flexible,43,84,141,5,1
+460,House,2,"['Gym', 'Internet', 'BBQ', 'Fridge']",Summer,55,16,3,Queen,Moderate,45,73,117,3,1
+461,House,2,"['Laundry', 'Gym', 'AC', 'BBQ']",Summer,413,11,2,Double,Moderate,11,68,104,5,2
+462,Villa,3,"['Stove', 'Gym', 'Laundry', 'BBQ', 'Fridge', 'Internet', 'AC']",Summer,285,29,3,King,Flexible,23,97,96,4,1
+463,Villa,3,"['Gym', 'Fridge']",Winter,183,27,4,Double,Flexible,21,28,35,4,1
+464,House,2,"['Internet', 'BBQ', 'Stove', 'Gym']",Winter,409,24,4,Double,Flexible,28,58,165,3,4
+465,Apartment,2,"['AC', 'Stove', 'Gym', 'BBQ']",Winter,109,28,2,Single,Flexible,15,31,169,5,4
+466,Apartment,1,"['BBQ', 'Laundry', 'Internet', 'Fridge', 'AC', 'Gym', 'Stove']",Summer,295,29,4,Double,Flexible,46,40,46,2,4
+467,Villa,4,['Stove'],Winter,228,17,2,King,Strict,29,47,168,3,3
+468,Villa,4,"['Fridge', 'AC']",Winter,97,18,1,Single,Flexible,18,88,172,3,2
+469,Apartment,1,['BBQ'],Summer,386,22,4,Queen,Flexible,24,88,58,2,4
+470,Villa,3,"['Gym', 'Fridge', 'AC', 'Stove', 'Internet']",Autumn,367,9,3,King,Moderate,43,63,81,4,3
+471,House,1,"['Gym', 'Fridge']",Autumn,181,24,3,Double,Moderate,27,26,11,3,4
+472,Villa,1,"['Stove', 'Laundry', 'AC', 'Gym', 'Fridge', 'BBQ']",Winter,126,19,2,King,Moderate,29,41,0,4,2
+473,House,4,"['Internet', 'Fridge', 'AC', 'Gym', 'Stove', 'Laundry']",Summer,464,26,4,King,Moderate,44,75,3,2,3
+474,House,3,"['Stove', 'Internet', 'BBQ', 'Fridge']",Autumn,369,16,3,Queen,Moderate,20,58,79,4,5
+475,House,3,['AC'],Summer,266,22,3,Single,Strict,42,47,106,2,3
+476,Villa,1,"['Gym', 'Internet']",Winter,112,5,1,Queen,Moderate,31,20,179,5,4
+477,Villa,3,['AC'],Autumn,137,29,3,King,Strict,18,27,45,2,3
+478,House,5,['Laundry'],Autumn,148,30,4,King,Strict,23,38,64,2,2
+479,House,2,"['AC', 'Gym', 'Fridge', 'Internet', 'Stove', 'Laundry', 'BBQ']",Autumn,118,14,4,Queen,Moderate,42,59,73,4,5
+480,House,4,"['Internet', 'Stove', 'Fridge', 'Laundry']",Winter,463,29,1,Single,Strict,33,76,192,5,4
+481,House,2,['BBQ'],Autumn,493,24,1,King,Strict,27,59,112,3,2
+482,Villa,3,"['Internet', 'AC', 'Fridge', 'Stove']",Winter,499,25,4,Single,Moderate,35,87,111,3,5
+483,Villa,1,"['BBQ', 'Laundry', 'Fridge', 'Gym', 'Stove']",Summer,176,15,2,King,Flexible,20,89,10,3,2
+484,Villa,1,"['BBQ', 'Internet', 'Laundry', 'Stove', 'Fridge', 'Gym', 'AC']",Summer,359,12,2,Single,Strict,28,31,71,2,5
+485,Villa,2,['BBQ'],Winter,401,11,3,Queen,Strict,21,77,119,3,2
+486,Apartment,5,"['Laundry', 'BBQ', 'AC', 'Stove', 'Fridge']",Winter,248,25,4,Double,Strict,19,91,24,3,3
+487,House,4,"['BBQ', 'Fridge', 'Gym', 'Laundry', 'Internet']",Autumn,418,13,2,Double,Moderate,26,89,185,5,1
+488,House,3,"['Laundry', 'Fridge', 'Gym', 'BBQ', 'Internet', 'AC', 'Stove']",Summer,57,8,1,Double,Strict,12,46,89,3,1
+489,House,4,"['BBQ', 'AC', 'Laundry']",Winter,102,24,3,Queen,Strict,40,69,122,5,3
+490,Apartment,4,"['Laundry', 'BBQ', 'Fridge', 'Internet', 'Gym', 'AC', 'Stove']",Autumn,23,6,3,Double,Flexible,29,44,120,3,2
+491,Apartment,3,['BBQ'],Autumn,49,9,2,King,Flexible,20,49,125,5,4
+492,Apartment,1,['Internet'],Autumn,33,3,4,King,Strict,38,42,152,5,1
+493,Villa,4,['Fridge'],Winter,35,17,2,King,Moderate,10,85,195,4,5
+494,Apartment,4,['Fridge'],Winter,494,15,3,Single,Strict,45,51,192,4,1
+495,House,2,"['Gym', 'Stove', 'Fridge', 'AC', 'Laundry']",Summer,151,2,4,Queen,Strict,35,86,24,4,1
+496,House,3,"['AC', 'Stove', 'BBQ', 'Internet', 'Gym', 'Fridge', 'Laundry']",Autumn,495,28,3,Single,Moderate,29,98,109,4,5
+497,Villa,4,"['Fridge', 'AC', 'Internet', 'Gym', 'Laundry', 'BBQ']",Winter,315,19,1,Queen,Flexible,48,48,141,2,2
+498,Villa,5,"['Stove', 'Fridge']",Autumn,367,22,1,Single,Strict,15,61,192,2,1
+499,Apartment,1,"['Gym', 'Laundry', 'Internet', 'AC', 'Fridge']",Summer,146,6,1,Queen,Flexible,45,59,30,2,1
+500,Villa,2,"['BBQ', 'Fridge', 'Stove', 'Laundry', 'Gym', 'Internet']",Winter,24,14,3,Double,Flexible,22,37,103,4,5
+501,Villa,5,['Laundry'],Autumn,112,25,3,Single,Flexible,12,28,74,3,3
+502,House,2,['BBQ'],Winter,307,18,1,Double,Flexible,32,94,193,3,2
+503,Villa,1,"['BBQ', 'Internet', 'Fridge']",Summer,366,16,4,King,Moderate,23,75,15,2,1
+504,Apartment,1,['BBQ'],Autumn,318,14,1,King,Flexible,50,98,84,2,1
+505,Apartment,3,"['Laundry', 'Gym', 'BBQ', 'Fridge', 'Stove', 'AC', 'Internet']",Autumn,148,7,1,Single,Moderate,36,58,157,3,1
+506,House,5,['Fridge'],Autumn,341,8,1,Single,Strict,29,49,131,4,2
+507,Apartment,1,"['Stove', 'BBQ', 'Gym']",Summer,52,14,4,Queen,Moderate,20,23,36,4,2
+508,Villa,5,"['Gym', 'Laundry', 'AC', 'Stove', 'Fridge', 'Internet', 'BBQ']",Winter,36,9,1,King,Flexible,15,80,116,4,5
+509,Apartment,3,"['Laundry', 'AC', 'Fridge', 'Stove', 'Gym', 'Internet', 'BBQ']",Autumn,200,25,1,Single,Flexible,16,73,200,3,3
+510,Villa,4,"['BBQ', 'Stove', 'Fridge']",Winter,397,7,4,Single,Strict,49,41,169,3,2
+511,Villa,4,"['Fridge', 'BBQ', 'Laundry', 'Stove', 'AC']",Winter,434,30,3,Single,Moderate,18,24,87,2,4
+512,House,1,"['BBQ', 'Internet', 'AC', 'Gym', 'Laundry', 'Fridge']",Summer,372,10,3,Double,Moderate,48,98,124,4,2
+513,House,5,['Gym'],Winter,83,12,3,Double,Strict,29,73,87,5,1
+514,House,2,"['BBQ', 'Internet', 'Stove', 'Fridge', 'Gym', 'Laundry']",Summer,481,6,2,King,Moderate,31,31,39,3,3
+515,Apartment,4,"['Stove', 'Fridge']",Summer,459,11,4,Double,Strict,10,93,116,3,1
+516,Apartment,4,"['Stove', 'AC', 'Fridge', 'Internet']",Autumn,294,2,4,Queen,Strict,18,77,141,3,2
+517,Villa,4,"['Laundry', 'BBQ', 'Internet', 'Fridge', 'Stove', 'AC']",Autumn,261,4,2,Double,Flexible,19,49,89,2,3
+518,Apartment,3,"['Stove', 'Fridge', 'BBQ']",Winter,29,12,2,Double,Flexible,30,20,195,5,2
+519,Apartment,2,"['Laundry', 'AC', 'Stove']",Autumn,474,8,1,Queen,Flexible,48,78,38,4,2
+520,House,3,"['Fridge', 'Internet', 'AC']",Autumn,222,7,1,Double,Strict,19,86,50,3,3
+521,House,4,"['AC', 'BBQ', 'Internet', 'Laundry']",Autumn,270,8,3,Queen,Flexible,11,76,29,2,4
+522,Villa,2,"['AC', 'Laundry']",Autumn,322,14,3,Single,Flexible,31,81,76,5,2
+523,House,5,"['Stove', 'Internet', 'Fridge', 'AC']",Autumn,228,19,1,Double,Flexible,34,87,101,4,4
+524,House,2,"['Fridge', 'BBQ', 'Gym', 'AC']",Summer,379,25,2,Single,Moderate,13,91,24,2,5
+525,House,1,"['Gym', 'Fridge', 'AC', 'BBQ', 'Internet', 'Stove']",Winter,294,18,3,Double,Moderate,35,21,145,3,4
+526,Apartment,1,"['Gym', 'BBQ']",Autumn,477,22,2,Double,Strict,42,27,84,3,1
+527,Apartment,2,"['Laundry', 'Fridge', 'Gym', 'BBQ', 'Internet', 'Stove']",Autumn,329,2,2,King,Flexible,46,47,143,4,1
+528,Villa,5,"['Stove', 'Internet']",Winter,357,9,3,Double,Moderate,46,97,128,4,2
+529,House,4,"['Internet', 'AC']",Autumn,407,25,4,King,Strict,36,37,61,5,1
+530,Villa,4,"['Laundry', 'Internet', 'AC']",Summer,441,11,2,King,Flexible,23,42,153,2,3
+531,Villa,2,"['AC', 'Fridge', 'Gym']",Winter,261,1,4,Queen,Moderate,12,78,88,4,2
+532,House,2,"['Stove', 'Gym']",Summer,169,12,1,Double,Strict,50,90,109,4,1
+533,Villa,4,"['BBQ', 'Laundry', 'Stove', 'AC', 'Gym', 'Fridge', 'Internet']",Summer,55,5,1,Queen,Strict,12,94,69,5,4
+534,Villa,3,['Fridge'],Summer,89,18,2,Single,Strict,30,33,20,3,5
+535,Apartment,2,"['Fridge', 'Internet']",Winter,146,20,1,King,Flexible,17,87,8,4,4
+536,House,3,"['Stove', 'BBQ', 'Gym', 'Fridge', 'AC', 'Laundry', 'Internet']",Summer,272,1,3,King,Moderate,27,81,141,2,2
+537,Apartment,4,"['AC', 'Internet', 'BBQ', 'Laundry', 'Gym', 'Stove']",Winter,153,4,4,Double,Moderate,38,83,164,4,2
+538,Apartment,5,"['Gym', 'BBQ', 'Fridge', 'Internet', 'AC', 'Laundry', 'Stove']",Summer,246,30,1,Double,Flexible,15,76,96,3,2
+539,House,3,"['Stove', 'Fridge', 'Gym', 'Internet', 'AC']",Winter,154,11,4,Single,Flexible,17,23,162,4,5
+540,Apartment,5,"['BBQ', 'Internet', 'AC']",Summer,133,30,2,King,Moderate,17,84,8,4,3
+541,Apartment,4,"['Laundry', 'AC', 'Internet']",Winter,294,1,2,Queen,Flexible,19,53,141,4,1
+542,House,3,"['Stove', 'Gym', 'BBQ', 'Internet']",Summer,455,7,3,Queen,Flexible,31,67,38,4,4
+543,House,1,"['Stove', 'AC', 'BBQ', 'Gym', 'Internet', 'Fridge', 'Laundry']",Summer,212,23,4,Single,Flexible,14,32,136,2,1
+544,Villa,3,"['BBQ', 'Laundry', 'Fridge']",Summer,283,14,2,Double,Strict,19,82,45,4,3
+545,Villa,2,"['Laundry', 'BBQ']",Summer,104,8,1,Single,Moderate,39,90,90,2,3
+546,Villa,5,"['Laundry', 'AC', 'Gym', 'BBQ', 'Fridge']",Summer,217,16,1,Queen,Strict,34,51,78,2,2
+547,Apartment,3,"['Laundry', 'Internet', 'Stove', 'BBQ', 'AC', 'Gym', 'Fridge']",Autumn,257,24,4,King,Flexible,30,72,140,4,3
+548,Villa,4,"['AC', 'BBQ', 'Laundry', 'Internet', 'Gym']",Autumn,183,13,2,Queen,Moderate,39,92,25,4,5
+549,Villa,4,"['AC', 'BBQ', 'Fridge', 'Gym', 'Laundry']",Summer,369,30,1,King,Moderate,31,68,106,5,1
+550,House,3,"['Laundry', 'Stove', 'Internet', 'Gym', 'BBQ', 'AC']",Summer,39,21,1,Queen,Flexible,28,73,22,3,2
+551,House,3,"['Stove', 'AC']",Winter,292,27,3,Double,Moderate,47,58,168,5,1
+552,Apartment,5,['Fridge'],Summer,356,13,3,Double,Flexible,23,49,145,2,4
+553,House,4,"['Fridge', 'Gym', 'Stove', 'AC', 'Internet', 'Laundry', 'BBQ']",Winter,69,15,3,Single,Moderate,38,75,183,4,1
+554,Villa,5,['BBQ'],Autumn,353,14,4,Single,Flexible,15,53,28,4,4
+555,Apartment,2,"['AC', 'BBQ']",Winter,306,17,3,Single,Flexible,10,97,126,4,5
+556,House,4,"['Fridge', 'Laundry', 'AC', 'BBQ', 'Stove']",Summer,301,6,3,King,Moderate,15,86,169,3,3
+557,House,5,"['Gym', 'AC', 'Internet', 'Laundry', 'Stove', 'BBQ']",Summer,163,27,4,Single,Moderate,33,25,29,3,5
+558,Villa,1,"['Stove', 'Internet', 'Laundry', 'BBQ', 'AC']",Winter,247,5,2,Queen,Flexible,42,33,80,5,3
+559,Villa,1,"['Internet', 'AC', 'Stove', 'Fridge', 'Gym', 'Laundry']",Summer,176,15,2,Double,Strict,30,58,53,3,4
+560,House,4,"['AC', 'BBQ', 'Stove', 'Gym', 'Internet', 'Laundry', 'Fridge']",Summer,366,4,2,Queen,Moderate,35,58,109,3,2
+561,House,3,"['Internet', 'AC', 'Stove', 'BBQ', 'Fridge', 'Laundry', 'Gym']",Summer,33,19,1,Single,Moderate,38,28,116,2,5
+562,Apartment,3,"['Stove', 'Internet', 'Fridge', 'Laundry', 'AC']",Summer,162,26,2,Double,Strict,40,29,53,2,4
+563,Villa,2,"['Internet', 'Laundry', 'Fridge', 'Gym']",Summer,260,10,3,Single,Flexible,28,96,154,5,5
+564,House,3,"['Fridge', 'BBQ', 'AC', 'Laundry']",Winter,207,24,4,King,Strict,16,83,58,2,2
+565,House,3,"['Internet', 'Gym', 'Laundry', 'Stove', 'AC', 'BBQ']",Autumn,180,22,2,King,Flexible,33,87,86,4,4
+566,Apartment,5,"['Fridge', 'BBQ', 'Gym', 'Laundry', 'Internet', 'Stove']",Summer,287,25,3,Double,Strict,45,90,49,4,5
+567,House,3,"['Internet', 'Laundry', 'Stove', 'BBQ', 'Gym']",Winter,189,15,1,King,Strict,36,46,123,2,3
+568,Apartment,3,"['Stove', 'Internet', 'AC', 'Gym', 'Fridge']",Summer,271,26,1,Single,Strict,45,28,183,2,4
+569,House,2,"['AC', 'Laundry', 'Gym', 'Fridge', 'BBQ', 'Internet', 'Stove']",Summer,496,5,2,King,Moderate,14,76,60,4,4
+570,Villa,2,"['BBQ', 'Laundry', 'Stove', 'Fridge', 'Gym']",Summer,254,15,3,King,Strict,43,79,79,4,4
+571,Apartment,5,"['AC', 'Laundry', 'Gym', 'Fridge']",Summer,169,29,4,Queen,Moderate,34,20,93,3,4
+572,Villa,4,['BBQ'],Winter,273,24,1,King,Moderate,42,32,104,2,4
+573,Apartment,2,"['AC', 'Stove']",Autumn,449,14,3,Single,Flexible,15,77,66,3,4
+574,Apartment,1,"['AC', 'Internet', 'BBQ', 'Gym', 'Laundry', 'Fridge']",Winter,450,1,3,King,Moderate,12,74,137,4,2
+575,Villa,2,"['BBQ', 'Internet']",Summer,197,29,4,King,Moderate,44,34,177,2,1
+576,Apartment,2,"['Stove', 'Internet']",Winter,103,6,3,King,Moderate,21,27,122,5,3
+577,Apartment,1,"['AC', 'Laundry', 'Gym', 'Internet', 'Stove']",Autumn,381,27,1,Queen,Moderate,10,46,96,5,4
+578,Villa,4,"['Fridge', 'AC', 'Internet', 'BBQ', 'Gym']",Summer,32,14,1,King,Moderate,28,89,98,5,2
+579,Apartment,2,"['Internet', 'Laundry', 'AC']",Autumn,429,20,4,Queen,Strict,45,75,136,5,4
+580,Apartment,1,"['BBQ', 'Stove', 'AC']",Autumn,229,10,4,King,Flexible,44,54,93,5,5
+581,Villa,2,"['Fridge', 'Laundry']",Summer,84,14,1,Single,Flexible,11,63,195,2,2
+582,House,4,"['BBQ', 'AC', 'Fridge', 'Internet', 'Laundry']",Autumn,376,15,2,Double,Strict,44,44,8,3,2
+583,Apartment,3,"['Stove', 'Internet', 'BBQ', 'AC']",Summer,230,20,1,King,Moderate,38,73,80,3,4
+584,House,4,['Gym'],Autumn,25,26,1,Single,Moderate,18,29,109,2,4
+585,Villa,5,"['BBQ', 'Stove', 'Fridge', 'Laundry', 'Internet']",Autumn,433,16,4,Single,Moderate,13,79,191,3,5
+586,House,1,"['Fridge', 'AC']",Autumn,99,26,4,King,Strict,41,83,151,3,4
+587,Apartment,5,"['BBQ', 'Stove', 'Internet', 'Laundry', 'Gym']",Summer,184,5,1,Single,Strict,46,20,47,2,3
+588,House,2,"['Stove', 'Gym']",Summer,32,21,2,King,Flexible,18,75,144,4,1
+589,Apartment,2,"['Internet', 'Fridge', 'Gym', 'BBQ', 'Laundry', 'AC', 'Stove']",Summer,488,8,1,Single,Strict,30,76,191,2,2
+590,Apartment,2,['BBQ'],Winter,299,3,1,Double,Strict,19,40,54,2,3
+591,Villa,4,"['AC', 'Internet', 'Stove', 'BBQ', 'Gym']",Autumn,468,17,1,Double,Strict,37,38,6,2,5
+592,Apartment,4,"['BBQ', 'Gym', 'Stove', 'Laundry']",Winter,77,28,2,Double,Strict,19,37,131,3,1
+593,Villa,2,"['Internet', 'Fridge', 'Laundry', 'Gym', 'AC', 'BBQ', 'Stove']",Autumn,499,29,2,Single,Flexible,20,26,151,2,4
+594,Apartment,4,"['AC', 'Laundry', 'Internet']",Summer,24,30,3,Queen,Flexible,33,42,189,5,1
+595,Apartment,2,"['Internet', 'Gym', 'Stove']",Winter,438,30,2,King,Moderate,24,24,36,5,5
+596,Villa,1,"['AC', 'BBQ', 'Fridge']",Autumn,230,13,3,King,Flexible,25,27,191,2,3
+597,Villa,4,"['Internet', 'AC', 'Stove']",Summer,61,21,1,Single,Strict,49,78,117,5,5
+598,House,4,"['Fridge', 'BBQ', 'Internet', 'Gym', 'AC', 'Laundry', 'Stove']",Winter,110,8,1,Single,Strict,45,25,51,2,2
+599,Villa,2,"['Internet', 'BBQ', 'Stove', 'Laundry', 'Gym']",Summer,458,1,4,Double,Strict,26,68,57,4,2
+600,Villa,1,"['Laundry', 'Internet', 'Stove', 'Gym', 'AC', 'Fridge', 'BBQ']",Summer,65,17,3,Single,Strict,20,51,99,5,2
+601,Villa,5,"['Internet', 'Stove', 'BBQ', 'AC']",Autumn,69,12,4,King,Flexible,17,64,51,4,4
+602,House,5,"['Laundry', 'Internet', 'Fridge']",Winter,66,29,4,Queen,Flexible,20,26,144,2,1
+603,Villa,2,"['Laundry', 'Gym', 'Fridge', 'Internet', 'AC']",Winter,388,1,4,Queen,Flexible,32,24,182,2,5
+604,House,3,"['Laundry', 'AC', 'Stove', 'Fridge', 'Internet', 'BBQ']",Autumn,437,26,4,Single,Flexible,50,89,77,3,5
+605,Villa,5,"['Laundry', 'Internet', 'Gym', 'Fridge']",Summer,178,19,3,Double,Moderate,39,82,23,5,2
+606,Apartment,3,"['Gym', 'BBQ', 'Internet', 'Stove', 'Fridge', 'Laundry']",Autumn,409,12,4,Queen,Strict,19,60,130,2,1
+607,Apartment,5,['Internet'],Summer,360,27,4,Queen,Moderate,34,23,141,2,1
+608,Villa,5,"['Internet', 'Stove', 'AC', 'Fridge', 'Laundry']",Autumn,85,13,3,Single,Flexible,50,80,77,5,3
+609,House,2,"['Internet', 'BBQ', 'Laundry']",Winter,83,16,2,King,Strict,37,40,82,2,2
+610,House,3,"['Gym', 'Fridge', 'BBQ', 'Internet']",Autumn,447,9,1,Double,Moderate,43,87,36,2,5
+611,Villa,4,['AC'],Winter,139,23,4,King,Strict,46,60,74,4,5
+612,Villa,1,"['BBQ', 'Laundry', 'Stove']",Summer,60,29,4,Queen,Strict,10,41,48,2,4
+613,Apartment,2,"['Laundry', 'Stove', 'Fridge']",Autumn,209,1,1,Single,Flexible,42,43,60,4,2
+614,Villa,1,"['Internet', 'Stove']",Autumn,207,29,1,King,Strict,30,97,157,2,4
+615,Apartment,1,"['Internet', 'Laundry']",Summer,276,27,4,Queen,Flexible,38,50,71,4,2
+616,House,4,"['Gym', 'AC', 'Laundry', 'Internet', 'Stove', 'BBQ']",Autumn,285,19,3,Queen,Flexible,28,57,24,5,3
+617,House,3,"['Fridge', 'Gym', 'Laundry', 'AC', 'Stove', 'BBQ']",Winter,238,30,3,King,Moderate,16,40,107,3,1
+618,Villa,1,"['AC', 'Stove', 'Internet']",Winter,424,6,1,Queen,Strict,37,26,171,3,4
+619,House,4,"['Gym', 'BBQ', 'Internet', 'Stove', 'Laundry', 'Fridge', 'AC']",Autumn,381,3,3,Queen,Flexible,44,79,151,4,4
+620,House,3,"['Laundry', 'BBQ', 'Internet', 'Stove']",Winter,218,19,1,King,Strict,34,52,183,2,5
+621,House,4,['Gym'],Autumn,456,1,3,Double,Moderate,40,81,3,5,1
+622,Apartment,1,"['AC', 'Gym', 'Fridge', 'Laundry', 'Stove', 'Internet', 'BBQ']",Summer,328,10,3,Double,Flexible,46,58,102,5,1
+623,House,2,"['BBQ', 'Gym', 'AC', 'Internet']",Summer,496,24,4,Single,Strict,35,34,199,4,2
+624,Villa,5,"['BBQ', 'Gym', 'Fridge', 'AC']",Summer,236,23,4,King,Moderate,24,98,46,5,3
+625,Villa,5,"['BBQ', 'AC', 'Gym', 'Laundry', 'Fridge', 'Stove', 'Internet']",Summer,232,12,1,King,Moderate,28,44,74,3,4
+626,Apartment,2,['Stove'],Autumn,53,26,4,Queen,Moderate,21,51,77,5,3
+627,Apartment,5,"['Laundry', 'Gym', 'Fridge', 'BBQ']",Autumn,26,5,4,Double,Flexible,10,22,101,4,2
+628,House,3,"['Stove', 'AC']",Summer,49,1,1,Queen,Moderate,16,87,134,5,1
+629,Apartment,2,"['Laundry', 'BBQ', 'Stove', 'Fridge', 'Internet']",Autumn,360,8,1,Single,Flexible,47,38,8,4,4
+630,Villa,3,"['Gym', 'BBQ', 'Internet', 'Fridge']",Summer,447,24,4,Double,Strict,49,83,76,2,3
+631,Villa,1,"['Stove', 'Laundry', 'BBQ', 'Gym', 'AC', 'Internet']",Autumn,412,30,4,Single,Flexible,35,73,200,4,5
+632,Apartment,1,"['BBQ', 'Gym', 'Laundry', 'AC', 'Internet', 'Stove']",Summer,134,11,1,Queen,Flexible,29,74,39,5,4
+633,House,2,"['BBQ', 'Laundry', 'Gym', 'AC', 'Fridge', 'Internet', 'Stove']",Summer,114,6,3,Queen,Flexible,32,41,170,2,4
+634,Villa,1,"['AC', 'Gym', 'Fridge', 'Stove', 'Laundry']",Autumn,410,16,1,Queen,Flexible,22,100,111,4,1
+635,Apartment,2,"['BBQ', 'Stove', 'Gym', 'Fridge', 'Internet']",Summer,236,9,3,Single,Strict,22,94,49,3,5
+636,Villa,2,"['AC', 'Laundry']",Autumn,485,17,3,King,Moderate,50,34,31,2,5
+637,House,2,"['AC', 'Laundry', 'Gym', 'Fridge', 'Internet', 'Stove']",Autumn,473,10,4,Queen,Strict,12,28,102,2,5
+638,Villa,1,"['BBQ', 'Gym', 'Laundry', 'Stove', 'Internet']",Winter,295,5,1,Single,Strict,47,35,70,2,3
+639,House,5,"['Stove', 'BBQ', 'Laundry', 'Fridge']",Winter,332,18,4,Single,Strict,23,74,55,3,3
+640,Apartment,2,"['Laundry', 'AC', 'Stove', 'Fridge', 'BBQ', 'Internet', 'Gym']",Summer,195,7,1,Queen,Flexible,25,83,179,3,3
+641,House,1,"['BBQ', 'Internet', 'Gym']",Autumn,186,8,1,King,Moderate,38,45,181,2,3
+642,Villa,2,"['Gym', 'AC']",Winter,181,19,3,Single,Moderate,27,43,175,3,4
+643,Villa,3,"['Fridge', 'Gym', 'Stove', 'Internet', 'BBQ', 'AC']",Summer,380,7,3,Double,Moderate,17,29,63,5,4
+644,Villa,2,"['Gym', 'Laundry']",Winter,190,25,4,Single,Strict,47,94,123,2,5
+645,Apartment,3,"['Stove', 'Laundry', 'BBQ']",Winter,253,2,4,Single,Flexible,46,84,83,5,4
+646,Apartment,3,"['Internet', 'Fridge', 'AC', 'Laundry', 'BBQ', 'Gym']",Autumn,338,30,2,Queen,Strict,48,55,26,4,4
+647,Villa,3,['Internet'],Autumn,94,2,2,Single,Strict,10,94,85,2,5
+648,Villa,1,['Laundry'],Summer,440,11,3,King,Moderate,16,61,37,3,1
+649,Villa,3,"['Fridge', 'Stove', 'AC', 'Internet', 'Laundry']",Summer,464,28,1,Queen,Moderate,50,30,40,3,3
+650,House,1,"['Internet', 'AC']",Autumn,219,24,3,Queen,Flexible,16,76,112,5,4
+651,Villa,3,"['Fridge', 'Internet', 'Laundry']",Summer,450,14,3,King,Flexible,23,49,72,5,1
+652,Villa,5,"['Gym', 'Laundry', 'BBQ', 'Internet', 'Stove']",Summer,466,11,1,Queen,Strict,30,70,115,5,5
+653,Villa,4,"['Fridge', 'AC', 'Laundry', 'BBQ', 'Internet', 'Gym']",Summer,322,29,1,King,Moderate,41,55,154,4,5
+654,Apartment,5,"['Fridge', 'Gym', 'AC', 'Internet', 'BBQ']",Autumn,451,22,4,Single,Moderate,30,58,19,3,4
+655,Villa,1,"['Internet', 'Laundry', 'BBQ', 'Fridge', 'Stove', 'Gym']",Autumn,256,20,2,Double,Strict,49,84,41,5,4
+656,Apartment,5,"['Laundry', 'Internet']",Summer,189,8,2,Queen,Flexible,12,98,66,3,1
+657,House,4,"['Stove', 'AC', 'Fridge', 'Gym', 'BBQ', 'Internet']",Summer,158,30,2,Double,Moderate,38,22,115,2,4
+658,Apartment,1,"['BBQ', 'AC', 'Laundry', 'Gym', 'Internet', 'Fridge']",Autumn,491,8,4,Single,Moderate,42,49,136,4,1
+659,Villa,1,"['Gym', 'Stove', 'Internet']",Winter,316,22,4,King,Strict,43,21,17,4,2
+660,House,5,"['BBQ', 'AC', 'Gym', 'Fridge', 'Laundry', 'Stove']",Summer,157,10,2,Double,Moderate,15,75,194,5,3
+661,Villa,5,"['Stove', 'Internet', 'BBQ']",Summer,412,17,1,Double,Flexible,27,98,173,4,3
+662,Villa,4,"['Stove', 'AC', 'Laundry', 'Fridge', 'Internet']",Summer,387,20,1,Single,Flexible,46,20,18,2,5
+663,House,1,['Stove'],Autumn,41,6,2,Double,Strict,20,60,136,2,5
+664,House,1,"['Fridge', 'Stove', 'Gym', 'Laundry', 'Internet', 'AC']",Autumn,465,13,4,Double,Moderate,36,73,71,4,1
+665,Villa,5,"['BBQ', 'AC', 'Internet', 'Gym', 'Stove', 'Fridge']",Summer,145,28,3,Single,Moderate,18,58,184,5,2
+666,Apartment,3,"['Fridge', 'Internet', 'BBQ', 'Gym', 'AC', 'Stove']",Summer,185,30,2,Double,Flexible,32,82,137,3,3
+667,Villa,2,"['Gym', 'Stove', 'Internet', 'Fridge', 'AC', 'BBQ', 'Laundry']",Autumn,396,23,4,Queen,Flexible,29,67,108,2,3
+668,House,4,['Fridge'],Autumn,401,30,3,Single,Strict,34,62,147,2,1
+669,Apartment,4,"['Stove', 'Internet', 'Gym', 'Fridge']",Summer,398,20,3,Single,Strict,31,65,118,2,1
+670,Apartment,1,"['Fridge', 'Gym', 'AC', 'BBQ', 'Internet', 'Stove', 'Laundry']",Autumn,457,7,4,Double,Flexible,32,84,17,2,3
+671,Villa,3,"['Internet', 'Gym', 'BBQ', 'AC', 'Fridge', 'Laundry', 'Stove']",Autumn,72,13,2,Double,Moderate,42,54,55,3,4
+672,House,4,"['Laundry', 'AC']",Summer,143,20,3,Queen,Flexible,39,100,98,3,3
+673,Apartment,3,"['AC', 'Gym', 'Stove', 'Fridge', 'Laundry', 'BBQ']",Winter,283,25,1,King,Flexible,49,70,176,5,5
+674,House,3,"['Gym', 'Fridge']",Winter,459,5,4,Queen,Moderate,47,70,113,2,4
+675,Villa,4,"['Internet', 'Fridge', 'BBQ', 'Laundry', 'Stove', 'AC', 'Gym']",Summer,67,14,3,Double,Flexible,16,87,149,4,5
+676,Apartment,4,"['Gym', 'Fridge']",Winter,63,8,4,Single,Strict,22,25,182,5,3
+677,Apartment,3,"['Fridge', 'Laundry', 'BBQ', 'Gym']",Autumn,33,26,3,Single,Flexible,38,88,165,2,2
+678,Apartment,4,"['Laundry', 'Stove', 'Gym', 'AC', 'BBQ', 'Internet']",Autumn,93,17,2,Single,Moderate,38,84,3,4,5
+679,Apartment,4,"['Gym', 'BBQ', 'Stove', 'Internet', 'Fridge', 'Laundry']",Autumn,103,30,1,Single,Strict,31,39,118,3,3
+680,Apartment,2,"['BBQ', 'Internet', 'Laundry']",Autumn,285,2,2,Double,Flexible,23,93,187,5,4
+681,Apartment,1,['Internet'],Autumn,331,15,2,Single,Moderate,43,66,194,3,4
+682,Villa,5,"['BBQ', 'Gym', 'Laundry']",Autumn,278,22,4,Queen,Strict,12,62,24,4,5
+683,Villa,4,['Stove'],Winter,181,4,4,Double,Moderate,40,45,124,5,4
+684,Apartment,4,['Laundry'],Summer,182,23,1,King,Moderate,43,26,167,5,1
+685,Apartment,1,"['Gym', 'BBQ', 'Stove', 'AC', 'Laundry', 'Fridge']",Summer,209,23,2,King,Moderate,10,28,45,3,1
+686,Apartment,1,"['Gym', 'Laundry']",Summer,428,21,4,King,Strict,11,26,2,4,3
+687,Apartment,2,"['AC', 'BBQ', 'Stove']",Winter,295,1,2,King,Strict,35,26,188,2,3
+688,Apartment,1,"['BBQ', 'AC', 'Internet', 'Fridge']",Summer,464,16,2,King,Flexible,49,53,185,4,1
+689,House,5,"['BBQ', 'Fridge', 'Laundry']",Winter,237,24,4,Queen,Flexible,17,28,154,5,1
+690,Villa,3,"['BBQ', 'Internet', 'Laundry', 'Fridge', 'AC', 'Gym', 'Stove']",Winter,418,1,3,King,Moderate,12,66,107,4,5
+691,Villa,4,"['AC', 'BBQ', 'Fridge', 'Laundry', 'Stove', 'Internet', 'Gym']",Autumn,360,12,1,Queen,Strict,10,77,139,4,2
+692,Apartment,4,"['Gym', 'BBQ', 'Stove', 'AC', 'Internet']",Winter,63,11,1,Single,Strict,30,38,42,3,1
+693,Villa,5,"['BBQ', 'Laundry']",Winter,99,26,4,King,Flexible,32,96,68,4,3
+694,Apartment,2,"['Stove', 'Fridge', 'Laundry', 'Internet', 'AC', 'BBQ', 'Gym']",Autumn,326,2,1,King,Flexible,20,58,57,2,3
+695,House,3,"['BBQ', 'Stove', 'Fridge']",Winter,156,27,3,Double,Strict,17,74,195,4,1
+696,Apartment,5,"['AC', 'Internet', 'Fridge', 'Stove', 'BBQ', 'Laundry']",Summer,311,15,2,Queen,Moderate,31,89,117,4,1
+697,House,5,"['Laundry', 'Internet', 'Gym', 'Stove']",Winter,190,20,1,Double,Flexible,41,71,21,5,3
+698,House,2,"['Gym', 'AC', 'Fridge', 'Laundry', 'BBQ', 'Stove', 'Internet']",Winter,356,22,4,Single,Strict,29,64,115,5,1
+699,Apartment,4,"['AC', 'Internet']",Summer,82,7,4,Double,Flexible,46,93,43,4,1
+700,House,5,"['Stove', 'Internet', 'Gym', 'AC', 'Fridge']",Winter,134,29,2,Queen,Strict,26,31,73,3,5
+701,House,4,"['Internet', 'Stove', 'Gym', 'BBQ']",Summer,337,30,3,King,Moderate,48,76,156,2,5
+702,House,5,"['Internet', 'Gym', 'Laundry', 'AC', 'Stove']",Winter,498,24,4,King,Moderate,11,70,146,5,3
+703,House,3,"['Fridge', 'AC', 'Laundry', 'Internet', 'Stove', 'Gym', 'BBQ']",Autumn,230,13,1,Queen,Moderate,29,31,102,3,4
+704,Apartment,4,"['Gym', 'Laundry', 'Fridge', 'AC']",Summer,385,16,4,Double,Moderate,32,92,69,5,5
+705,Villa,1,"['Laundry', 'Gym', 'Internet', 'Fridge', 'Stove']",Autumn,438,3,4,Single,Strict,27,71,42,4,1
+706,House,5,"['Fridge', 'AC', 'Stove', 'Laundry', 'Gym', 'Internet', 'BBQ']",Summer,383,7,4,Double,Strict,47,87,33,2,5
+707,Villa,4,"['Internet', 'AC', 'Fridge', 'Laundry']",Winter,399,30,4,Double,Strict,38,22,172,2,4
+708,House,5,"['Stove', 'Internet']",Winter,375,30,1,King,Flexible,19,68,132,5,5
+709,House,2,"['BBQ', 'Fridge', 'AC']",Winter,216,19,2,Double,Strict,42,21,50,2,4
+710,House,2,"['BBQ', 'Stove', 'Gym', 'Fridge', 'Internet']",Summer,414,27,3,Single,Strict,32,87,190,4,5
+711,Villa,4,"['Gym', 'AC', 'BBQ', 'Fridge', 'Stove', 'Laundry', 'Internet']",Summer,379,4,3,Single,Strict,10,84,105,2,4
+712,House,1,"['Stove', 'AC', 'Internet', 'BBQ', 'Fridge']",Autumn,32,17,3,King,Strict,42,66,16,5,4
+713,House,1,"['Stove', 'AC']",Autumn,221,19,1,Queen,Flexible,29,76,199,5,1
+714,House,2,"['BBQ', 'Laundry', 'Internet']",Summer,43,16,1,Single,Moderate,38,67,139,2,4
+715,House,5,['AC'],Winter,90,6,1,Double,Flexible,39,35,20,5,1
+716,Villa,2,"['Gym', 'Internet', 'BBQ', 'Fridge']",Autumn,194,13,1,King,Flexible,28,75,49,4,3
+717,Villa,2,"['Stove', 'Gym', 'AC', 'Internet', 'Fridge', 'BBQ', 'Laundry']",Summer,400,26,3,Double,Flexible,48,34,182,3,4
+718,Apartment,3,"['Laundry', 'Gym']",Autumn,332,23,1,Single,Flexible,31,85,157,2,4
+719,Apartment,1,['BBQ'],Winter,420,3,1,King,Strict,27,48,49,4,1
+720,Villa,3,"['Laundry', 'Internet', 'AC']",Winter,160,20,2,King,Flexible,47,24,113,3,4
+721,Villa,5,['Stove'],Winter,75,25,2,King,Strict,10,64,112,2,5
+722,Villa,2,['Laundry'],Autumn,340,7,4,Double,Strict,33,22,55,3,4
+723,Apartment,3,"['Gym', 'Laundry', 'BBQ', 'AC', 'Internet', 'Fridge']",Autumn,295,10,1,Queen,Strict,35,33,129,2,4
+724,Villa,1,"['Stove', 'BBQ', 'Laundry', 'Fridge', 'Gym', 'Internet', 'AC']",Summer,53,29,4,Single,Moderate,49,38,57,2,1
+725,House,1,"['Fridge', 'Internet', 'AC', 'BBQ']",Summer,309,6,2,Queen,Flexible,17,21,31,4,2
+726,House,5,"['AC', 'Internet', 'Laundry', 'Gym', 'Stove', 'BBQ', 'Fridge']",Winter,126,21,2,King,Strict,42,37,199,4,4
+727,Villa,5,"['Internet', 'Laundry']",Winter,377,5,4,Double,Flexible,31,80,176,2,5
+728,Villa,5,"['BBQ', 'AC']",Winter,63,20,1,King,Flexible,12,55,141,2,5
+729,Villa,3,"['AC', 'BBQ']",Winter,435,29,3,Single,Strict,25,73,104,5,5
+730,Apartment,4,"['Fridge', 'BBQ']",Winter,204,6,3,Single,Moderate,25,56,161,3,2
+731,Villa,2,"['BBQ', 'Gym', 'Laundry', 'Stove', 'AC', 'Fridge']",Winter,186,8,2,Double,Strict,31,68,130,5,4
+732,Villa,5,"['Fridge', 'Laundry', 'Internet', 'Gym', 'Stove', 'BBQ', 'AC']",Winter,476,30,2,Single,Moderate,48,74,186,5,3
+733,Villa,3,"['BBQ', 'Gym', 'Fridge']",Summer,414,4,1,Double,Strict,14,85,66,3,3
+734,Villa,2,"['AC', 'Fridge']",Winter,483,13,2,Double,Moderate,30,66,134,5,3
+735,Apartment,2,"['Stove', 'AC', 'Fridge', 'Gym', 'BBQ']",Summer,373,5,3,King,Moderate,37,67,90,5,4
+736,Apartment,4,"['AC', 'Laundry', 'Fridge', 'Stove', 'Internet']",Summer,442,26,3,Single,Flexible,19,96,4,3,2
+737,House,5,"['Laundry', 'Fridge', 'BBQ', 'Internet', 'Stove', 'AC']",Winter,196,23,3,Double,Flexible,39,82,10,5,1
+738,Villa,1,"['Laundry', 'AC', 'Fridge']",Summer,350,15,4,Single,Flexible,39,47,9,3,5
+739,Villa,2,"['BBQ', 'Gym', 'Fridge', 'Stove', 'Laundry', 'AC', 'Internet']",Autumn,406,1,3,Single,Strict,22,29,187,5,2
+740,House,2,"['Internet', 'BBQ', 'Gym', 'Laundry']",Autumn,26,30,1,Double,Moderate,31,79,87,3,3
+741,House,5,"['Fridge', 'Internet', 'Gym', 'Laundry']",Winter,246,21,4,Double,Flexible,42,38,42,3,4
+742,House,5,"['Fridge', 'Stove', 'Laundry', 'Gym', 'Internet', 'BBQ']",Winter,192,29,2,Single,Strict,44,38,188,5,3
+743,Villa,4,"['Stove', 'Internet']",Winter,37,6,3,Single,Flexible,23,34,124,5,4
+744,House,2,"['BBQ', 'Laundry', 'Stove', 'Fridge', 'Gym', 'AC', 'Internet']",Summer,443,3,3,Double,Moderate,32,52,147,4,5
+745,House,5,"['Internet', 'BBQ', 'Gym']",Summer,89,27,1,Double,Flexible,21,99,139,2,5
+746,House,5,"['Gym', 'AC', 'Fridge', 'Stove', 'Laundry', 'Internet']",Winter,27,29,2,King,Flexible,41,87,98,2,4
+747,Villa,1,"['Internet', 'Gym', 'BBQ']",Summer,50,28,2,Queen,Strict,31,67,74,2,1
+748,Villa,2,"['BBQ', 'AC', 'Internet', 'Gym', 'Laundry', 'Fridge', 'Stove']",Summer,461,28,2,Queen,Flexible,19,86,47,2,3
+749,Villa,3,"['Internet', 'Laundry', 'Fridge']",Winter,62,25,2,King,Moderate,38,47,176,2,3
+750,Apartment,5,"['Laundry', 'Stove', 'Gym', 'BBQ']",Winter,480,18,4,Queen,Moderate,26,36,125,2,1
+751,Apartment,2,['Stove'],Winter,70,15,1,Double,Flexible,22,82,133,2,2
+752,Apartment,1,"['Internet', 'Stove', 'Laundry', 'BBQ', 'AC']",Winter,448,27,1,King,Moderate,40,34,0,3,5
+753,House,1,"['Laundry', 'Fridge', 'BBQ', 'AC', 'Stove']",Winter,497,3,2,King,Strict,13,21,197,5,5
+754,House,1,"['Laundry', 'Gym', 'AC']",Winter,43,14,2,Double,Flexible,15,80,129,2,5
+755,House,4,"['BBQ', 'Stove', 'Fridge', 'Laundry', 'AC']",Autumn,367,4,1,King,Moderate,22,48,185,5,5
+756,House,5,"['BBQ', 'AC']",Summer,242,11,4,King,Moderate,31,29,44,5,1
+757,House,5,"['Stove', 'BBQ', 'Fridge']",Winter,449,9,2,Queen,Strict,34,23,94,4,2
+758,Villa,4,"['AC', 'Stove', 'Laundry', 'Internet', 'Fridge']",Summer,142,29,3,Double,Strict,37,87,29,4,1
+759,Apartment,5,"['BBQ', 'Laundry', 'Internet', 'Stove', 'AC', 'Fridge', 'Gym']",Summer,229,14,3,Double,Strict,27,31,146,5,2
+760,Villa,3,"['Gym', 'BBQ', 'Stove', 'AC', 'Internet']",Winter,213,11,2,Double,Moderate,11,50,56,5,1
+761,Apartment,3,['AC'],Autumn,295,16,3,Queen,Strict,17,63,47,3,1
+762,Apartment,2,"['BBQ', 'Fridge', 'Gym', 'Laundry', 'AC', 'Stove']",Winter,476,4,4,Queen,Moderate,43,33,11,5,2
+763,Villa,4,"['BBQ', 'Stove', 'Gym', 'Internet']",Winter,239,2,2,Double,Flexible,43,85,93,3,3
+764,House,2,"['Gym', 'AC', 'Internet', 'Stove', 'Laundry']",Summer,458,18,2,Single,Moderate,21,82,16,5,2
+765,Villa,4,"['BBQ', 'Fridge', 'AC', 'Laundry', 'Internet', 'Gym', 'Stove']",Autumn,166,22,3,Queen,Flexible,13,96,6,3,3
+766,House,2,['Laundry'],Winter,439,30,4,King,Strict,48,51,0,3,5
+767,House,5,"['Stove', 'BBQ', 'Internet', 'Laundry', 'Gym', 'AC']",Winter,100,8,4,Queen,Strict,15,22,153,5,4
+768,Villa,2,"['Stove', 'BBQ', 'Fridge', 'AC', 'Internet']",Summer,263,18,2,King,Moderate,40,51,92,2,5
+769,Apartment,3,"['Gym', 'Fridge', 'BBQ', 'AC', 'Laundry', 'Internet']",Autumn,233,8,3,Single,Strict,30,61,47,2,4
+770,Apartment,1,"['Internet', 'BBQ']",Autumn,385,23,3,Single,Strict,20,79,16,4,2
+771,Villa,2,"['Internet', 'BBQ', 'Gym', 'Fridge', 'AC', 'Stove', 'Laundry']",Summer,456,19,2,King,Strict,27,72,21,2,4
+772,Apartment,5,"['Internet', 'AC', 'Fridge', 'Gym', 'BBQ']",Winter,448,18,4,Queen,Moderate,26,24,17,2,1
+773,House,1,"['Laundry', 'Stove', 'Fridge', 'BBQ']",Autumn,350,16,1,King,Strict,22,61,96,5,2
+774,Villa,4,"['BBQ', 'Internet']",Autumn,304,12,2,Single,Moderate,46,35,104,5,2
+775,Villa,5,"['Laundry', 'Stove', 'Gym']",Autumn,24,22,3,Double,Flexible,24,97,52,3,2
+776,Apartment,1,"['Laundry', 'Fridge', 'Gym', 'AC']",Winter,20,15,4,Single,Moderate,18,54,90,3,3
+777,Apartment,2,"['BBQ', 'Fridge', 'Laundry', 'AC', 'Stove', 'Gym']",Summer,20,2,4,Double,Flexible,31,72,95,2,2
+778,House,1,"['Gym', 'Laundry', 'BBQ', 'Fridge', 'Stove', 'AC']",Summer,260,17,2,Single,Moderate,44,24,184,2,3
+779,Apartment,2,"['Laundry', 'Internet']",Winter,459,2,4,Single,Moderate,41,75,8,3,2
+780,House,3,"['AC', 'Gym', 'BBQ', 'Laundry', 'Internet']",Winter,236,13,3,King,Strict,28,77,21,3,4
+781,Villa,4,"['Fridge', 'AC', 'Laundry', 'Stove', 'Internet']",Winter,377,23,4,Double,Flexible,11,95,110,3,5
+782,Apartment,5,"['Stove', 'Gym', 'Fridge']",Winter,321,9,3,King,Moderate,18,96,0,2,4
+783,Apartment,4,"['Internet', 'Gym', 'Fridge', 'BBQ', 'Laundry']",Summer,212,3,2,Double,Strict,17,23,44,3,1
+784,Villa,1,"['Gym', 'Internet', 'Laundry', 'AC']",Summer,412,6,3,Single,Moderate,48,32,128,4,5
+785,Apartment,5,"['Fridge', 'Internet', 'Stove', 'AC', 'Gym', 'Laundry', 'BBQ']",Summer,46,27,4,Single,Flexible,33,52,108,2,2
+786,House,2,"['Internet', 'Fridge']",Summer,288,28,1,Queen,Flexible,37,34,196,5,1
+787,House,3,"['AC', 'Laundry', 'Fridge', 'Stove', 'Gym', 'BBQ']",Summer,165,29,3,Double,Flexible,50,72,48,3,3
+788,Apartment,2,"['BBQ', 'Stove', 'AC', 'Internet']",Autumn,325,4,1,Double,Flexible,50,58,4,3,4
+789,Villa,2,"['Stove', 'AC', 'Gym', 'Laundry', 'Internet', 'BBQ', 'Fridge']",Summer,463,16,4,King,Strict,39,74,7,2,4
+790,Villa,5,"['BBQ', 'Internet', 'Laundry', 'AC', 'Gym', 'Fridge']",Autumn,446,4,3,Single,Moderate,14,68,200,4,1
+791,House,1,"['BBQ', 'Laundry']",Autumn,152,27,1,Queen,Strict,47,26,104,5,3
+792,Villa,5,"['Fridge', 'Laundry']",Summer,209,2,4,Queen,Strict,42,75,168,3,2
+793,House,3,"['Laundry', 'Stove', 'Gym', 'AC']",Summer,70,6,3,Queen,Moderate,15,83,156,3,5
+794,House,4,"['BBQ', 'AC', 'Stove', 'Internet']",Autumn,164,2,2,Single,Moderate,19,77,98,4,5
+795,Apartment,4,['Gym'],Autumn,229,20,2,King,Flexible,24,72,126,4,1
+796,Apartment,1,"['Gym', 'Laundry', 'Stove', 'Internet', 'Fridge', 'BBQ', 'AC']",Summer,381,12,4,Double,Strict,17,38,133,5,4
+797,House,5,"['Gym', 'AC', 'Fridge', 'Stove']",Winter,413,11,4,Single,Moderate,23,90,88,2,1
+798,House,4,"['Stove', 'Laundry', 'Gym', 'Fridge', 'Internet', 'BBQ', 'AC']",Autumn,74,14,1,Single,Moderate,48,31,57,2,5
+799,Apartment,1,"['Internet', 'Stove']",Autumn,151,3,2,King,Moderate,33,90,197,3,5
+800,Apartment,3,"['Laundry', 'Stove', 'Internet', 'Fridge', 'AC', 'Gym', 'BBQ']",Autumn,391,3,2,Queen,Flexible,21,59,57,5,4
+801,House,2,"['Gym', 'Laundry', 'AC', 'Stove']",Summer,431,17,3,Queen,Strict,50,89,103,2,2
+802,House,4,"['Internet', 'Stove', 'Fridge', 'AC']",Winter,92,2,3,Double,Strict,36,92,108,3,2
+803,Apartment,1,['Laundry'],Autumn,346,16,4,Double,Strict,46,34,10,4,1
+804,Apartment,1,"['AC', 'Gym', 'Fridge', 'BBQ', 'Laundry']",Summer,223,23,4,Double,Flexible,11,100,128,3,1
+805,Villa,3,"['Laundry', 'BBQ', 'Fridge', 'Gym']",Winter,419,10,2,King,Moderate,18,67,107,2,4
+806,House,5,"['AC', 'Laundry', 'BBQ', 'Gym', 'Fridge', 'Stove', 'Internet']",Winter,327,15,2,Queen,Strict,31,20,13,4,5
+807,Apartment,5,"['BBQ', 'Laundry', 'Stove', 'Gym']",Summer,152,10,3,Single,Moderate,44,57,88,3,3
+808,House,5,['AC'],Autumn,257,10,4,King,Strict,12,75,172,4,5
+809,Apartment,2,"['Laundry', 'AC', 'Gym', 'Fridge', 'Stove', 'Internet', 'BBQ']",Winter,335,12,4,King,Strict,17,55,124,2,2
+810,Villa,2,"['BBQ', 'Gym']",Summer,288,29,4,Single,Strict,38,79,170,2,4
+811,Villa,5,"['Stove', 'Fridge', 'BBQ', 'Internet', 'Laundry', 'Gym', 'AC']",Summer,305,7,2,Single,Moderate,12,66,129,2,4
+812,Apartment,1,"['Internet', 'Gym', 'BBQ', 'AC']",Summer,298,12,4,King,Flexible,31,63,128,3,1
+813,House,4,"['Internet', 'AC', 'Laundry']",Summer,85,29,4,Single,Strict,45,64,54,2,5
+814,Villa,5,"['Laundry', 'Stove', 'BBQ']",Summer,54,11,3,Double,Strict,16,50,104,4,4
+815,House,3,"['Stove', 'Internet', 'AC', 'Laundry', 'Fridge', 'Gym']",Winter,78,30,2,Single,Strict,13,45,192,3,5
+816,Apartment,3,"['Laundry', 'BBQ', 'Stove']",Winter,221,8,2,Single,Strict,31,39,48,5,4
+817,House,3,"['AC', 'Gym', 'Internet', 'Laundry', 'Stove', 'Fridge', 'BBQ']",Summer,361,4,1,Queen,Flexible,13,69,191,2,5
+818,House,1,"['BBQ', 'Fridge']",Summer,483,23,4,Single,Flexible,44,44,183,5,4
+819,Villa,1,"['BBQ', 'Gym', 'Fridge', 'AC', 'Stove', 'Internet']",Autumn,109,27,3,Double,Strict,49,73,75,2,2
+820,House,2,"['Gym', 'BBQ', 'AC', 'Fridge']",Winter,48,2,2,Single,Strict,20,51,77,5,5
+821,Villa,4,['BBQ'],Autumn,265,5,2,Double,Flexible,11,26,66,4,2
+822,Villa,2,"['Internet', 'AC', 'Gym']",Winter,97,19,4,King,Strict,15,32,102,3,3
+823,Apartment,5,"['Stove', 'BBQ', 'Laundry']",Summer,475,19,2,Queen,Moderate,28,77,16,4,3
+824,House,5,"['Stove', 'AC', 'Gym', 'Fridge']",Summer,458,1,1,King,Moderate,12,29,147,3,3
+825,House,1,"['Gym', 'Fridge', 'Laundry', 'AC', 'BBQ', 'Internet']",Summer,252,28,4,King,Strict,10,24,116,4,2
+826,Apartment,5,['Fridge'],Winter,434,19,2,Double,Flexible,19,27,93,5,4
+827,Villa,1,"['Stove', 'AC', 'Internet']",Autumn,306,8,1,Single,Strict,50,49,96,4,3
+828,Apartment,1,"['Internet', 'Gym']",Winter,490,27,1,Queen,Flexible,22,65,186,2,4
+829,Villa,5,"['Gym', 'Laundry']",Winter,271,11,3,Single,Moderate,19,23,184,4,2
+830,Apartment,2,"['Fridge', 'Stove']",Summer,185,3,2,King,Strict,38,80,99,3,1
+831,House,5,"['BBQ', 'Gym', 'Laundry', 'AC', 'Fridge', 'Stove', 'Internet']",Winter,148,19,2,Double,Strict,47,81,35,3,4
+832,House,4,"['AC', 'Stove', 'Fridge']",Autumn,110,9,3,Queen,Strict,22,69,50,5,5
+833,House,5,"['Laundry', 'BBQ', 'AC', 'Internet', 'Gym', 'Fridge', 'Stove']",Winter,161,16,3,King,Moderate,18,23,146,4,3
+834,Villa,4,"['BBQ', 'Laundry', 'Internet', 'Fridge', 'AC', 'Stove', 'Gym']",Autumn,55,4,3,Queen,Flexible,50,41,78,5,5
+835,Villa,5,"['Fridge', 'Stove']",Winter,336,27,4,Double,Moderate,12,100,74,3,3
+836,House,3,"['Laundry', 'Gym', 'Internet', 'AC']",Autumn,355,2,1,King,Flexible,14,74,105,4,1
+837,House,4,"['Stove', 'AC', 'Laundry', 'Internet', 'Fridge', 'Gym']",Summer,423,12,1,Single,Flexible,46,47,129,3,1
+838,Apartment,1,"['Laundry', 'Gym', 'Fridge']",Summer,183,17,3,Queen,Flexible,32,51,91,4,2
+839,Villa,3,"['Internet', 'BBQ', 'Fridge', 'Gym', 'Laundry']",Summer,245,2,1,Single,Flexible,20,99,60,5,4
+840,Apartment,4,"['Laundry', 'Stove', 'Internet', 'BBQ', 'AC', 'Gym', 'Fridge']",Summer,156,17,3,Single,Flexible,36,33,192,5,5
+841,Villa,4,"['BBQ', 'Laundry', 'Stove', 'Internet']",Summer,456,12,2,King,Moderate,31,92,30,2,3
+842,Apartment,4,"['Internet', 'Fridge']",Winter,456,27,3,Double,Strict,13,24,192,3,4
+843,Villa,5,"['Internet', 'Laundry', 'Fridge']",Autumn,318,23,3,Double,Strict,18,79,26,3,5
+844,House,5,"['AC', 'Gym']",Winter,189,19,1,Double,Moderate,18,69,38,2,5
+845,Apartment,2,"['Laundry', 'BBQ']",Winter,66,27,3,Single,Flexible,32,71,71,3,3
+846,Villa,5,"['BBQ', 'AC', 'Fridge', 'Laundry', 'Gym', 'Stove', 'Internet']",Autumn,272,4,3,Queen,Moderate,31,88,68,3,5
+847,House,3,"['BBQ', 'Fridge', 'Gym']",Summer,383,23,3,Queen,Moderate,37,58,127,2,3
+848,House,1,"['BBQ', 'Stove', 'Gym', 'Fridge', 'Internet']",Autumn,294,10,3,Queen,Moderate,36,91,71,3,5
+849,Villa,5,"['AC', 'Internet', 'BBQ', 'Stove']",Autumn,274,26,2,King,Moderate,40,36,77,3,2
+850,Apartment,2,"['Fridge', 'Internet', 'Gym', 'Stove']",Summer,148,28,2,Double,Flexible,46,38,196,2,2
+851,Villa,1,"['Laundry', 'AC', 'Fridge']",Autumn,367,22,1,Double,Strict,28,26,51,4,4
+852,Apartment,2,"['Laundry', 'Internet', 'Gym', 'Fridge', 'Stove', 'AC']",Autumn,308,27,2,King,Strict,50,83,10,5,2
+853,Villa,3,"['Internet', 'Gym', 'Stove', 'Laundry', 'BBQ']",Winter,81,11,1,Queen,Moderate,12,25,27,4,5
+854,Villa,5,"['Gym', 'Stove']",Autumn,175,19,4,Single,Flexible,41,31,28,5,4
+855,House,2,"['Fridge', 'Stove', 'AC', 'Gym', 'Laundry', 'BBQ']",Summer,23,5,4,King,Strict,47,56,8,2,4
+856,House,2,"['Laundry', 'BBQ']",Summer,333,29,4,Double,Moderate,49,97,144,2,3
+857,Villa,5,['BBQ'],Autumn,81,28,4,Queen,Strict,25,62,25,5,5
+858,Apartment,5,"['Gym', 'Internet', 'Laundry', 'Stove', 'AC', 'Fridge', 'BBQ']",Summer,323,5,2,Single,Flexible,33,88,154,5,5
+859,Villa,2,"['Gym', 'Stove', 'Fridge', 'Internet']",Autumn,381,9,1,Single,Strict,47,89,133,4,2
+860,House,3,['AC'],Autumn,358,19,2,Single,Flexible,34,25,6,4,2
+861,House,1,"['Gym', 'Fridge']",Autumn,78,7,2,Single,Flexible,23,55,109,4,5
+862,Villa,2,"['Internet', 'Fridge', 'BBQ', 'Stove']",Autumn,387,17,3,Queen,Moderate,14,76,106,2,1
+863,Apartment,1,"['Laundry', 'AC', 'Fridge', 'Internet', 'Stove']",Winter,191,5,4,Queen,Strict,16,54,169,2,2
+864,Apartment,3,"['AC', 'Internet', 'Stove', 'Laundry', 'BBQ', 'Gym', 'Fridge']",Summer,200,4,4,Single,Moderate,50,66,18,3,4
+865,Apartment,1,"['Internet', 'BBQ', 'Gym', 'Laundry', 'Stove']",Summer,294,17,4,Queen,Moderate,29,34,114,5,3
+866,Apartment,3,"['Stove', 'BBQ']",Summer,351,3,1,Queen,Strict,15,49,66,2,3
+867,House,2,"['Gym', 'BBQ', 'AC']",Summer,227,11,1,King,Strict,26,55,84,5,3
+868,Villa,2,"['BBQ', 'Fridge', 'Gym', 'AC']",Winter,298,23,2,Double,Flexible,13,48,131,4,3
+869,Villa,3,"['Stove', 'Gym', 'AC', 'BBQ']",Winter,35,25,4,Double,Flexible,42,80,107,2,3
+870,Apartment,4,"['Laundry', 'AC', 'Fridge', 'Gym']",Summer,302,24,1,King,Strict,23,31,35,3,5
+871,Apartment,2,"['Internet', 'Stove', 'Fridge']",Autumn,45,16,1,Queen,Strict,38,77,36,2,3
+872,Apartment,1,"['Internet', 'AC', 'Laundry']",Summer,167,6,4,King,Strict,11,98,93,3,4
+873,Villa,1,"['Laundry', 'Fridge', 'Stove', 'Gym', 'AC']",Summer,280,21,2,Queen,Moderate,43,45,24,5,5
+874,Apartment,5,"['Stove', 'BBQ', 'Internet', 'AC', 'Fridge']",Autumn,70,25,4,Double,Moderate,20,49,96,2,1
+875,Apartment,1,"['Stove', 'AC', 'Internet', 'Gym', 'Laundry']",Autumn,488,22,1,Queen,Moderate,27,54,130,5,3
+876,Apartment,5,"['Internet', 'AC', 'BBQ']",Winter,110,6,3,Queen,Strict,34,39,6,4,3
+877,House,1,['BBQ'],Winter,203,13,1,Queen,Moderate,20,36,124,2,5
+878,House,3,"['Internet', 'Laundry', 'AC', 'BBQ']",Winter,98,14,2,King,Strict,44,69,43,2,3
+879,Villa,5,"['Laundry', 'Stove', 'AC', 'Gym', 'Internet', 'Fridge']",Autumn,421,10,3,Queen,Strict,12,95,13,2,4
+880,Apartment,5,"['Internet', 'BBQ', 'Fridge', 'AC', 'Laundry']",Winter,124,8,2,Double,Strict,26,64,1,4,3
+881,Apartment,3,['Fridge'],Winter,194,15,4,Double,Strict,16,81,86,3,2
+882,Apartment,1,"['Internet', 'AC', 'BBQ']",Autumn,429,18,3,Single,Strict,10,85,167,4,5
+883,Villa,2,"['Stove', 'AC', 'BBQ', 'Laundry', 'Fridge']",Summer,438,8,3,Single,Moderate,11,32,67,4,3
+884,Apartment,1,"['Internet', 'Laundry', 'AC', 'Gym']",Summer,465,5,3,Single,Flexible,37,56,152,5,1
+885,House,2,"['Fridge', 'Internet', 'AC', 'Laundry', 'Gym', 'BBQ']",Autumn,347,4,2,Queen,Moderate,30,57,94,5,3
+886,House,1,"['Internet', 'Laundry', 'Fridge']",Autumn,105,27,4,Queen,Strict,19,37,142,4,1
+887,Apartment,2,['Internet'],Winter,71,10,1,King,Strict,11,35,177,4,3
+888,Villa,4,"['Stove', 'AC', 'Internet', 'Laundry', 'BBQ', 'Gym', 'Fridge']",Summer,242,7,4,Single,Moderate,28,47,103,5,4
+889,Villa,2,"['Fridge', 'Stove', 'AC', 'Internet']",Winter,327,11,3,Single,Flexible,49,23,20,3,1
+890,Villa,3,"['Internet', 'Laundry', 'Stove', 'AC', 'Gym']",Winter,454,22,4,Single,Flexible,37,38,29,2,1
+891,Villa,3,"['Laundry', 'AC', 'Stove']",Winter,455,22,1,Single,Flexible,10,74,23,5,2
+892,Villa,5,"['Gym', 'Stove', 'Laundry', 'AC']",Summer,166,22,3,Single,Strict,33,70,83,3,1
+893,Apartment,3,"['BBQ', 'Gym', 'Stove']",Autumn,378,24,4,Double,Moderate,11,20,79,3,5
+894,House,2,"['Internet', 'Gym', 'Fridge']",Winter,443,28,2,Queen,Moderate,20,85,108,4,1
+895,House,2,"['AC', 'Internet', 'BBQ']",Autumn,310,1,2,Single,Strict,43,68,42,5,4
+896,House,2,"['Laundry', 'Fridge', 'BBQ', 'Gym']",Summer,233,2,4,Double,Flexible,46,61,194,5,4
+897,Apartment,2,['Fridge'],Winter,274,19,2,Queen,Flexible,46,21,73,3,4
+898,Villa,3,"['AC', 'Fridge', 'Stove', 'Internet', 'Gym', 'Laundry', 'BBQ']",Summer,98,10,4,Single,Flexible,29,25,144,4,5
+899,Apartment,5,"['Laundry', 'BBQ']",Winter,394,30,3,Single,Flexible,11,63,107,3,1
+900,Apartment,5,['AC'],Winter,185,23,3,King,Strict,38,52,110,3,3
+901,House,1,"['Stove', 'BBQ', 'Laundry', 'Gym', 'Internet']",Summer,155,8,3,King,Strict,34,81,26,2,2
+902,Apartment,4,['Stove'],Winter,184,25,4,Queen,Strict,46,44,59,2,2
+903,Villa,2,"['Internet', 'Gym']",Winter,82,20,2,Queen,Strict,42,66,153,2,2
+904,Villa,1,"['Internet', 'Gym', 'BBQ']",Summer,491,5,4,King,Moderate,36,66,13,4,5
+905,Villa,3,"['Stove', 'Gym', 'Fridge', 'Laundry', 'AC']",Autumn,177,11,2,Queen,Moderate,46,40,142,5,3
+906,House,1,"['Gym', 'Internet', 'Laundry', 'AC', 'BBQ', 'Stove', 'Fridge']",Winter,184,4,4,Double,Strict,17,55,4,3,3
+907,Villa,5,"['AC', 'Laundry', 'Internet', 'Fridge', 'Stove', 'Gym']",Winter,462,13,1,Single,Flexible,36,75,134,5,2
+908,Apartment,1,"['Gym', 'AC', 'BBQ']",Winter,234,21,2,Double,Moderate,43,66,125,2,1
+909,House,3,"['Laundry', 'BBQ', 'Gym', 'AC', 'Fridge', 'Internet', 'Stove']",Summer,112,30,1,King,Strict,45,70,179,5,4
+910,House,1,['Internet'],Winter,202,6,2,Single,Strict,34,35,12,2,5
+911,Apartment,3,"['Stove', 'Fridge', 'Gym', 'Laundry', 'AC', 'Internet', 'BBQ']",Summer,324,18,4,Double,Strict,18,68,77,5,1
+912,Apartment,1,"['BBQ', 'Laundry', 'Stove', 'Internet', 'AC', 'Gym']",Winter,199,1,2,Double,Moderate,26,40,147,3,5
+913,Villa,2,['Gym'],Summer,119,11,2,King,Flexible,19,75,175,2,5
+914,Villa,5,"['BBQ', 'Fridge', 'Stove', 'Internet', 'Laundry', 'AC']",Autumn,271,23,3,Double,Moderate,24,80,169,2,5
+915,House,1,"['AC', 'Internet', 'Laundry']",Autumn,175,3,3,Queen,Flexible,22,68,158,2,3
+916,Villa,4,"['Gym', 'Fridge']",Summer,183,18,4,Single,Moderate,46,57,104,5,5
+917,Apartment,3,"['Stove', 'AC', 'Internet', 'BBQ', 'Laundry', 'Fridge']",Autumn,143,14,1,King,Strict,33,66,49,2,3
+918,Apartment,3,"['AC', 'Fridge', 'BBQ']",Autumn,25,9,4,Queen,Strict,18,50,153,4,4
+919,House,3,"['Gym', 'BBQ', 'Fridge', 'Laundry', 'Stove', 'Internet', 'AC']",Summer,143,15,1,Double,Moderate,50,92,29,4,4
+920,Villa,1,"['Internet', 'Gym', 'Stove', 'Fridge', 'AC', 'Laundry', 'BBQ']",Summer,36,10,1,Queen,Moderate,50,48,54,4,5
+921,Villa,2,"['Laundry', 'AC']",Summer,354,28,1,Single,Strict,40,86,79,3,4
+922,Villa,2,"['Stove', 'Internet']",Winter,428,19,1,Single,Moderate,38,89,16,2,5
+923,House,4,"['Internet', 'BBQ', 'AC', 'Laundry']",Autumn,180,5,4,King,Strict,38,46,176,2,3
+924,Villa,3,"['Internet', 'AC', 'Laundry', 'Stove', 'Fridge']",Autumn,368,19,3,Single,Flexible,30,46,9,4,4
+925,Villa,1,['Stove'],Winter,479,23,1,Double,Strict,35,33,7,3,3
+926,Apartment,3,['Laundry'],Winter,239,9,3,King,Moderate,41,53,194,5,2
+927,House,1,"['Fridge', 'Laundry', 'Gym', 'AC']",Autumn,318,8,3,Queen,Flexible,30,84,100,4,4
+928,Apartment,3,"['Laundry', 'AC']",Autumn,70,8,4,Queen,Moderate,48,61,23,4,2
+929,Villa,5,"['Gym', 'Stove', 'BBQ', 'Internet', 'Fridge', 'AC']",Summer,406,25,1,Double,Flexible,20,35,110,3,2
+930,Villa,1,"['Stove', 'Fridge', 'BBQ', 'Internet']",Summer,245,17,1,King,Moderate,26,73,141,4,4
+931,Villa,1,"['Laundry', 'Fridge', 'AC', 'BBQ', 'Internet', 'Gym']",Summer,386,12,4,Double,Flexible,50,86,146,4,5
+932,House,3,"['Fridge', 'AC', 'Laundry', 'Stove', 'Internet', 'BBQ', 'Gym']",Summer,268,1,2,King,Flexible,21,22,115,5,5
+933,House,4,"['BBQ', 'Laundry', 'AC']",Autumn,144,2,1,Single,Strict,24,53,67,5,4
+934,Villa,1,"['Fridge', 'AC', 'Internet', 'BBQ']",Winter,255,10,3,Double,Moderate,34,56,148,2,5
+935,House,3,"['Fridge', 'Gym', 'BBQ', 'Laundry', 'Internet', 'Stove']",Summer,387,29,3,King,Flexible,24,87,38,5,3
+936,House,3,"['Gym', 'Laundry', 'Internet', 'Fridge', 'Stove']",Winter,88,2,2,Single,Flexible,11,72,79,5,2
+937,House,2,['Stove'],Summer,314,23,4,King,Flexible,19,68,159,3,4
+938,House,3,"['Laundry', 'Fridge', 'AC', 'Gym', 'Internet']",Winter,499,29,2,Double,Flexible,14,59,64,2,5
+939,Apartment,3,"['Stove', 'Fridge', 'Internet', 'Gym', 'Laundry', 'AC', 'BBQ']",Winter,112,9,3,Single,Flexible,18,92,9,2,4
+940,Apartment,1,"['Internet', 'Stove', 'Fridge', 'AC', 'BBQ']",Summer,186,29,4,Queen,Flexible,20,76,127,5,1
+941,House,5,"['Fridge', 'Laundry']",Autumn,222,25,1,Single,Flexible,27,35,76,5,1
+942,Villa,1,"['Internet', 'Fridge', 'AC', 'Gym', 'BBQ']",Autumn,226,4,1,Queen,Strict,18,84,150,4,2
+943,Villa,5,"['Fridge', 'Internet', 'Gym']",Autumn,488,3,3,Double,Strict,12,91,101,3,1
+944,Apartment,5,"['BBQ', 'Internet']",Winter,249,23,2,Double,Strict,19,99,25,4,4
+945,Apartment,4,"['Internet', 'Laundry', 'Stove', 'AC', 'BBQ', 'Gym', 'Fridge']",Summer,250,21,1,Queen,Moderate,26,74,123,5,3
+946,House,5,"['Fridge', 'BBQ', 'Stove', 'AC', 'Laundry', 'Gym']",Winter,99,22,3,Queen,Moderate,19,25,30,3,4
+947,House,5,"['Stove', 'Fridge', 'Laundry', 'Gym', 'AC', 'BBQ']",Summer,231,14,1,Queen,Strict,16,42,135,4,1
+948,Apartment,1,"['BBQ', 'Gym', 'AC', 'Laundry', 'Stove', 'Fridge']",Summer,176,10,2,King,Strict,13,90,28,3,1
+949,Villa,3,"['BBQ', 'Internet', 'AC']",Autumn,411,13,3,King,Flexible,15,74,159,4,1
+950,Apartment,5,"['Stove', 'Fridge', 'Laundry', 'Gym']",Winter,341,25,2,Double,Flexible,49,36,185,3,2
+951,House,4,['Stove'],Autumn,276,29,4,Queen,Flexible,46,76,41,2,1
+952,House,5,"['Gym', 'Stove', 'Fridge', 'Internet', 'BBQ', 'AC', 'Laundry']",Summer,186,17,1,Single,Moderate,36,35,22,5,1
+953,Apartment,2,['Gym'],Autumn,87,18,1,Single,Strict,26,90,32,3,1
+954,Apartment,2,['Internet'],Autumn,41,20,2,King,Flexible,17,29,35,4,3
+955,House,3,"['BBQ', 'Fridge']",Winter,358,16,4,Single,Moderate,24,46,116,5,2
+956,Apartment,1,"['Laundry', 'Stove', 'AC']",Winter,23,7,2,Double,Moderate,11,69,115,3,1
+957,Apartment,1,"['AC', 'BBQ', 'Internet', 'Fridge', 'Stove']",Winter,143,26,2,King,Flexible,50,82,108,4,4
+958,House,1,"['AC', 'Stove', 'Gym', 'Internet', 'Laundry', 'Fridge']",Winter,122,19,4,Queen,Moderate,44,23,76,3,2
+959,Villa,1,"['Internet', 'Fridge', 'BBQ', 'Gym']",Winter,478,3,4,Queen,Moderate,30,30,117,5,1
+960,Villa,4,"['Stove', 'Fridge']",Winter,476,6,4,Single,Moderate,50,31,167,4,2
+961,Villa,5,['Fridge'],Winter,104,22,1,Double,Strict,36,72,117,2,2
+962,House,5,['Laundry'],Autumn,378,30,4,Queen,Flexible,24,38,155,3,3
+963,House,5,"['Fridge', 'AC', 'Laundry', 'Gym', 'BBQ']",Summer,112,27,3,Single,Moderate,45,53,44,3,2
+964,Villa,3,['Fridge'],Summer,372,12,4,King,Moderate,26,75,54,2,3
+965,Villa,2,"['Stove', 'Laundry', 'Fridge', 'Internet', 'AC', 'BBQ', 'Gym']",Autumn,55,4,1,Queen,Moderate,39,22,71,4,2
+966,House,1,"['Stove', 'Laundry', 'Internet', 'AC', 'BBQ', 'Gym', 'Fridge']",Autumn,102,5,3,King,Moderate,29,74,71,4,4
+967,Villa,2,"['Fridge', 'Stove', 'Laundry', 'Gym']",Winter,126,9,2,Double,Moderate,41,20,167,2,5
+968,House,1,['Stove'],Winter,231,10,2,Queen,Flexible,44,24,133,2,4
+969,Apartment,3,"['Internet', 'AC', 'Laundry']",Summer,380,17,3,King,Strict,42,92,68,3,2
+970,House,3,"['Gym', 'BBQ', 'Laundry', 'Fridge']",Autumn,476,30,2,Queen,Moderate,19,64,62,2,1
+971,House,4,"['BBQ', 'AC', 'Laundry', 'Stove', 'Internet', 'Gym']",Winter,233,16,2,Single,Strict,41,49,108,2,1
+972,House,3,"['AC', 'Gym', 'Fridge', 'Laundry', 'Internet', 'Stove', 'BBQ']",Autumn,64,24,4,King,Flexible,38,81,138,4,1
+973,Apartment,3,"['Laundry', 'AC', 'BBQ', 'Fridge', 'Gym', 'Stove', 'Internet']",Autumn,160,30,1,King,Strict,12,41,79,4,4
+974,Apartment,3,"['Stove', 'Internet', 'Fridge', 'BBQ', 'Laundry', 'Gym']",Winter,116,1,2,King,Strict,21,20,26,5,5
+975,House,2,"['Fridge', 'Internet']",Winter,373,9,3,King,Strict,43,70,4,3,4
+976,Villa,5,"['Stove', 'Gym', 'Laundry', 'BBQ', 'Fridge']",Autumn,133,22,1,King,Flexible,44,46,18,2,2
+977,Villa,4,"['BBQ', 'Internet', 'Laundry', 'Gym', 'AC']",Winter,23,22,3,Queen,Flexible,15,95,23,3,5
+978,Apartment,4,"['Internet', 'Stove']",Summer,239,11,1,Double,Moderate,33,23,90,5,2
+979,Villa,1,"['AC', 'BBQ', 'Gym', 'Stove', 'Internet', 'Laundry', 'Fridge']",Summer,91,11,4,King,Strict,32,90,85,4,5
+980,Villa,5,"['AC', 'Stove', 'Gym']",Autumn,297,10,3,Double,Moderate,48,57,140,5,1
+981,House,5,"['Internet', 'BBQ', 'Gym', 'Fridge', 'Stove', 'AC']",Autumn,20,24,3,King,Flexible,25,34,8,5,4
+982,House,5,"['Stove', 'Internet', 'BBQ', 'Laundry', 'AC', 'Fridge']",Autumn,269,29,2,Double,Flexible,30,81,42,4,3
+983,House,5,"['Laundry', 'Gym', 'AC', 'Internet', 'BBQ', 'Stove']",Summer,498,16,1,Single,Flexible,46,40,63,4,2
+984,Apartment,4,"['Internet', 'Fridge', 'Stove', 'BBQ']",Autumn,496,8,1,Queen,Strict,31,97,182,2,4
+985,Villa,5,"['Laundry', 'Stove', 'BBQ', 'Fridge', 'AC']",Summer,20,15,3,Queen,Moderate,27,58,65,2,4
+986,Villa,2,"['BBQ', 'Internet', 'Fridge', 'Laundry']",Autumn,170,16,1,Queen,Strict,18,96,28,4,4
+987,Apartment,5,['BBQ'],Autumn,113,14,3,Queen,Flexible,50,85,175,2,5
+988,House,4,"['AC', 'Laundry', 'Internet']",Autumn,291,6,4,Single,Strict,17,76,20,3,3
+989,House,3,"['Gym', 'Internet']",Winter,159,16,2,Double,Flexible,30,64,52,5,4
+990,Villa,2,"['Internet', 'AC', 'Laundry', 'Stove', 'BBQ', 'Gym']",Winter,412,23,1,King,Moderate,40,87,91,2,1
+991,Apartment,3,"['Gym', 'Stove', 'Internet', 'BBQ', 'AC', 'Laundry']",Autumn,159,5,4,King,Moderate,15,21,74,3,3
+992,Villa,2,"['AC', 'Internet', 'Gym', 'Fridge', 'BBQ', 'Stove', 'Laundry']",Winter,228,4,4,Double,Flexible,14,100,85,3,1
+993,Villa,3,['AC'],Winter,324,18,1,King,Strict,18,57,106,2,3
+994,Apartment,1,"['Laundry', 'Fridge', 'AC', 'Stove', 'Internet', 'BBQ']",Autumn,437,1,1,King,Strict,36,54,91,2,2
+995,Apartment,2,"['BBQ', 'Internet', 'Fridge', 'Gym', 'Stove']",Winter,399,26,2,King,Strict,21,85,182,5,1
+996,Villa,5,"['Fridge', 'Internet']",Autumn,117,23,1,Queen,Moderate,31,56,84,2,1
+997,Villa,4,"['Laundry', 'Stove', 'AC', 'Internet', 'BBQ']",Winter,169,9,1,Double,Strict,38,55,51,2,4
+998,Apartment,5,"['Internet', 'AC']",Autumn,152,23,2,King,Strict,48,97,109,4,3
+999,House,2,"['Laundry', 'Internet', 'Gym', 'Stove', 'BBQ', 'AC']",Winter,289,16,4,King,Flexible,22,45,163,2,2
+1000,House,5,['Stove'],Winter,89,20,1,Single,Strict,43,36,15,3,1
