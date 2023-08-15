@@ -1,4 +1,5 @@
 .venv
 db\__pycache__
 models\__pycache__
+routes\__pycache__
 routes\recommend_routes.py

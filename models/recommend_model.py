@@ -1,9 +1,9 @@
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.neighbors import NearestNeighbors
 import pandas as pd
+from bson import ObjectId
 from db.db_config import get_data, recommended_collection
 
-       
 encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')
 
 def preprocess_data(data_df):
@@ -23,7 +23,7 @@ def train_model(all_features):
     return model
 
 def get_recommendations(data):
-    data_df = get_data()  # Retrieve data from the database, e.g., properties_collection.find()
+    data_df = get_data()
 
     all_features = preprocess_data(data_df)
     model = train_model(all_features)
@@ -43,11 +43,23 @@ def get_recommendations(data):
     recommended_property_ids = data_df.iloc[indices[0][1:], data_df.columns.get_loc('property_id')].tolist()
     
     return recommended_property_ids
-
-def save_recommendations(user_id, search_params, recommended_property_ids):
-    recommended_collection.insert_one({
-        "user_id": user_id,
-        "search_parameters": {key: value for key, value in search_params.items() if key != "user_id"},
-        "recommended_properties": recommended_property_ids
-    })
+    
+def save_recommendations(_id, search_params, recommended_property_ids):
+    save_id = ObjectId(_id)  # Convert user_id to ObjectId
+    
+    # Update the document for the user with a new "search_parameters" array
+    recommended_collection.update_one(
+        {"_id": save_id},
+        {"$push": {"search_parameters": search_params},
+         "$set": {"recommended_properties": recommended_property_ids}},
+        upsert=True  # Create a new document if user_id_obj doesn't exist
+    )
+    
+def save_success(_id, selected_property_id):
+    success_id = ObjectId(_id)  # Convert user_id to ObjectId
+    
+    recommended_collection.update_one(
+        {"_id": success_id, "recommended_properties": selected_property_id},
+        {"$set": {"success": selected_property_id}}
+    )
 

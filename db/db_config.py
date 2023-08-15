@@ -7,6 +7,6 @@ properties_collection = db['properties']
 recommended_collection = db['recommended_properties']
 
 def get_data():
-    data_from_mongodb = properties_collection.find()  # Modify query if needed
+    data_from_mongodb = properties_collection.find()
     data_df = pd.DataFrame(data_from_mongodb)
     return data_df
