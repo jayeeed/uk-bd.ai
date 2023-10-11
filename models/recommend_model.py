@@ -44,22 +44,49 @@ def get_recommendations(data):
     
     return recommended_property_ids
     
-def save_recommendations(_id, search_params, recommended_property_ids):
-    save_id = ObjectId(_id)  # Convert user_id to ObjectId
+def save_recommendations(user_id, search_params, recommended_property_ids):
+    user_id_obj = ObjectId(user_id)  # Convert user_id to ObjectId
     
-    # Update the document for the user with a new "search_parameters" array
+    # Exclude "_id" from the search parameters
+    search_params.pop("_id", None)
+
+    # Create a new search entry containing search parameters, recommended properties, and success
+    search_entry = {
+        "search_parameters": search_params,
+        "recommended_properties": recommended_property_ids,
+    }
+
+    # Update the document for the user with the new search entry
     recommended_collection.update_one(
-        {"_id": save_id},
-        {"$push": {"search_parameters": search_params},
-         "$set": {"recommended_properties": recommended_property_ids}},
+        {"_id": user_id_obj},
+        {"$push": {"search_entries": search_entry}},
         upsert=True  # Create a new document if user_id_obj doesn't exist
     )
     
 def save_success(_id, selected_property_id):
     success_id = ObjectId(_id)  # Convert user_id to ObjectId
-    
-    recommended_collection.update_one(
-        {"_id": success_id, "recommended_properties": selected_property_id},
-        {"$set": {"success": selected_property_id}}
-    )
 
+    # Find the document for the user
+    user_document = recommended_collection.find_one({"_id": success_id})
+
+    if user_document:
+        # If the user document exists, check if the "success" field already exists
+        if "selected_properties" in user_document:
+            # If it exists, fetch the existing "success" field as a list
+            success_list = user_document["selected_properties"]
+            # Append the new selected_property_id to the list
+            success_list.append(selected_property_id)
+            # Update the user document with the new "success" list
+            recommended_collection.update_one(
+                {"_id": success_id},
+                {"$set": {"selected_properties": success_list}}
+            )
+        else:
+            # If it doesn't exist, create a new list with the selected_property_id
+            recommended_collection.update_one(
+                {"_id": success_id},
+                {"$set": {"selected_properties": [selected_property_id]}}
+            )
+    else:
+        # If the user document doesn't exist, create a new document with the "success" field as a list
+        recommended_collection.insert_one({"_id": success_id, "selected_properties": [selected_property_id]})
