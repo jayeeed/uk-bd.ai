@@ -70,13 +70,13 @@ def save_success(_id, selected_property_id):
     user_document = recommended_collection.find_one({"_id": success_id})
 
     if user_document:
-        # If the user document exists, check if the "success" field already exists
+        # If the user document exists, check if the "selected_properties" field already exists
         if "selected_properties" in user_document:
-            # If it exists, fetch the existing "success" field as a list
+            # If it exists, fetch the existing "selected_properties" field as a list
             success_list = user_document["selected_properties"]
             # Append the new selected_property_id to the list
             success_list.append(selected_property_id)
-            # Update the user document with the new "success" list
+            # Update the user document with the new "selected_properties" list
             recommended_collection.update_one(
                 {"_id": success_id},
                 {"$set": {"selected_properties": success_list}}
@@ -88,5 +88,5 @@ def save_success(_id, selected_property_id):
                 {"$set": {"selected_properties": [selected_property_id]}}
             )
     else:
-        # If the user document doesn't exist, create a new document with the "success" field as a list
+        # If the user document doesn't exist, create a new document with the "selected_properties" field as a list
         recommended_collection.insert_one({"_id": success_id, "selected_properties": [selected_property_id]})
