@@ -5,7 +5,7 @@ from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
+# CORS(app, resources={r"/api/search": {"origins": "http://localhost:3009"}})
 
 app.register_blueprint(search_properties_route)
 app.register_blueprint(property_routes)

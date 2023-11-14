@@ -7,7 +7,12 @@ from db.db_config import get_data, recommended_collection
 encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')
 
 def preprocess_data(data_df):
+    
+    property_df = data_df.drop(columns=['_id', 'userId', 'title', 'images', 'description',
+                        'decideReservations', 'discounts', 'status', 'createdAt', 'updatedAt', '__v'])
+    
     categorical_features = ["property_type", "amenities", "seasonality", "bed_type", "cancellation_policy"]
+    
     numerical_features = ["number_of_bedrooms", "base_price", "estimated_monthly_bookings", "bathrooms",
                           "cleaning_fee", "host_response_rate", "number_of_reviews", "review_scores_rating", "beds"]
 

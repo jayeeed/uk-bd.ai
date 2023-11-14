@@ -1,8 +1,10 @@
 from flask import Blueprint, request, jsonify
 from models.recommend_model import get_recommendations, save_recommendations, save_success
+from flask_cors import CORS, cross_origin
 
 search_properties_route = Blueprint('search_properties_route', __name__)
 
+CORS(search_properties_route, resources={r"/api/search": {"origins": "http://localhost:3009"}})
 
 @search_properties_route.route('/api/search', methods=['POST'])
 def search_properties():
