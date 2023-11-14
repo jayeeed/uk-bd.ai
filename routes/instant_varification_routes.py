@@ -30,7 +30,7 @@ def upload_file():
     
     file = request.files['file']
     filename = 'uploaded_data_file' + "." + file.filename.rsplit(".", 1)[1]
-    file.save("static/temp/" + filename)
+    file.save(os.path.join(str(current_working_directory) + "/static/temp/" + filename))
     
     ai_methods.text_extracter(filename)  # assuming text_extracter() returns text as a string
     

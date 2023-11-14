@@ -1,3 +1,3 @@
 name: MD. ABUL BASHAR
-dob: 31090 1999
+dob: 31 Dec is...
 nid: 1504945484

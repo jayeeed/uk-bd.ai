@@ -1,5 +1,5 @@
-from ocr_app.utils.image_preprocessing import image_to_text
-from ocr_app import extract_texts_file, searched_data_file, os ,re
+from instant_varification.ocr_app.utils.image_preprocessing import image_to_text
+from instant_varification.ocr_app import extract_texts_file, searched_data_file, os ,re
 
 #import os, re
 # current_directory = os.getcwd()

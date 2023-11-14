@@ -18,9 +18,11 @@ import os
 current_working_directory = os.getcwd()
 print(current_working_directory)
 
-extract_texts_file = current_working_directory + "instant_varification/output/output_of_scanned_image_to_text.txt"
+# os.path.join(str(current_working_directory)
 
-searched_data_file = current_working_directory + "instant_varification/output/searched_data_file.txt"
+extract_texts_file = current_working_directory + "/instant_varification/output/output_of_scanned_image_to_text.txt"
+
+searched_data_file = current_working_directory + "/instant_varification/output/searched_data_file.txt"
 
 searched_file = "output\searched_to_text.txt"
 
