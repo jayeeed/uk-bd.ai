@@ -1,7 +1,7 @@
 from flask import Flask
 from routes.recommend_routes import search_properties_route
 from routes.property_routes import property_routes
-from flask_cors import CORS, cross_origin
+# from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
