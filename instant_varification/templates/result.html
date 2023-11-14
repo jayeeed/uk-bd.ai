@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OCR AI</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='my_icon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='r_style.css') }}">
+</head>
+<body>
+  <div class="split">
+	<div class=" text-container">
+        <h1 class="title">Extracted text</h1>
+		<br/>
+        {% if summery %}
+        <textarea class="text-area text">{{ summery }}</textarea>
+        {% else %}
+        <textarea class="text-area text">{{ text }}</textarea>
+        {% endif %}
+      </div>
+      <div class=" image-container">
+        <h2 class="title">Uploded Image</h2>
+		<br/>
+        <div class="image-viewer">
+          <img src="{{ url_for('static', filename=filename) }}" alt="{{ filename }}">
+        </div>
+      </div>
+    </div>
+    <div class="col-container">
+      <div class="col col-9">
+        <h4 class="download">Summarize text file:</h4>
+        <p class="download">
+          <button class="btn-download">
+            <a href="{{ url_for('summerize') }}" class="btn-download-link">Summarize</a>
+          </button>
+        </p>
+      </div>
+      <div class="col col-3">
+        <h4 class="download">Download text file:</h4>
+        <p class="download">
+          <button class="btn-download">
+            <a href="{{ url_for('download_file') }}" class="btn-download-link">Download</a>
+          </button>
+        </p>
+      </div>
+      <div class="col col-3">
+        <h4 class="download">Go Back To Home:</h4>
+        <p class="download">
+          <button class="btn-download">
+            <a href="{{ url_for('upload_file') }}" class="btn-download-link">Go Back</a>
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
