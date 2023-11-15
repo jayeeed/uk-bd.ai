@@ -1,52 +1,107 @@
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import LabelEncoder
 from sklearn.neighbors import NearestNeighbors
 import pandas as pd
+from tqdm import tqdm
 from bson import ObjectId
-from db.db_config import get_data, recommended_collection
-
-encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')
-
+from db.db_config import get_data, recommended_collection, bookings_collection
 def preprocess_data(data_df):
     
+    ##################################################################
+
     property_df = data_df.drop(columns=['_id', 'userId', 'title', 'images', 'description',
-                        'decideReservations', 'discounts', 'status', 'createdAt', 'updatedAt', '__v'])
-    
-    categorical_features = ["property_type", "amenities", "seasonality", "bed_type", "cancellation_policy"]
-    
-    numerical_features = ["number_of_bedrooms", "base_price", "estimated_monthly_bookings", "bathrooms",
-                          "cleaning_fee", "host_response_rate", "number_of_reviews", "review_scores_rating", "beds"]
+                            'decideReservations', 'discounts', 'status', 'createdAt', 'updatedAt', '__v'])
 
-    encoded_features = encoder.fit_transform(data_df[categorical_features])
-    all_features = pd.concat([data_df[numerical_features], pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))], axis=1)
+    # property_df.dropna(inplace=True)
+    # property_df['lat'] = property_df['located'].apply(lambda x: x['lat'])
+    # property_df['lon'] = property_df['located'].apply(lambda x: x['lon'])
+    # locations = property_df[['lat', 'lon']].values
 
+    # Extract values from 'guests' object and create new columns
+    property_df['bedrooms'] = property_df['guests'].apply(lambda x: x['bedrooms'])
+    property_df['beds'] = property_df['guests'].apply(lambda x: x['beds'])
+    property_df['bathrooms'] = property_df['guests'].apply(
+        lambda x: x['bathrooms'])
+    property_df['guests'] = property_df['guests'].apply(lambda x: x['guests'])
+
+    numeric_features = ["bedrooms", "price", "bathrooms", "beds", "guests"]
+    numeric_df = property_df[numeric_features]
+
+    # Function to expand the 'amenitiesIds' array into separate columns
+    def expand_amenities(row):
+        amenities = row['amenitiesIds']
+        expanded_amenities = {}
+        for i in range(len(amenities)):
+            column_name = f'amenitiesIds[{i}]'
+            expanded_amenities[column_name] = amenities[i]
+        return pd.Series(expanded_amenities)
+
+    # Apply the expansion function to each row and concatenate the result
+    expanded_amenities_df = property_df.apply(expand_amenities, axis=1)
+
+    # Merge the expanded amenities DataFrame with the original DataFrame
+    property_df = pd.concat([property_df, expanded_amenities_df], axis=1)
+
+    # Function to expand the 'address' object into separate columns
+    def expand_address(row):
+        address_data = row['address']
+        expanded_address = {}
+        for key, value in address_data.items():
+            column_name = f'address.{key}'
+            expanded_address[column_name] = value
+        return pd.Series(expanded_address)
+
+    # Apply the expansion function to each row and concatenate the result
+    expanded_address_df = property_df.apply(expand_address, axis=1)
+
+    # Merge the expanded address DataFrame with the original DataFrame
+    property_df = pd.concat([property_df, expanded_address_df], axis=1)
+
+    # Define categorical features
+    categorical_features = ['placeDescribesId', 'typeOfPlaceId'] + \
+        list(expanded_amenities_df.columns) + list(expanded_address_df.columns)
+
+    categorical_df = property_df[categorical_features].fillna(
+        property_df[categorical_features].mode().iloc[0])
+
+    label_encoder = LabelEncoder()
+    for feature in categorical_features:
+        categorical_df[feature] = label_encoder.fit_transform(
+            categorical_df[feature])
+
+    # Combine numeric and categorical DataFrames
+    all_features = pd.concat([numeric_df, categorical_df], axis=1)
+    
     return all_features
 
 def train_model(all_features):
-    model = NearestNeighbors(n_neighbors=6, metric='euclidean')
+    model = NearestNeighbors(n_neighbors=5, metric='euclidean')
     model.fit(all_features)
     
     return model
+    
+# Assuming this function is in your_module
+def get_recommendations(renter_user_id):
+    # Fetching previous booking data for the renter
+    previous_bookings = bookings_collection.find({"renterUserId": ObjectId(renter_user_id)})
 
-def get_recommendations(data):
+    # Extracting property IDs from previous bookings
+    booked_property_ids = [str(booking["propertyId"]) for booking in previous_bookings]
+
+    # Fetching all data
     data_df = get_data()
+
+    # Filtering out properties that the renter has booked before
+    data_df = data_df[~data_df["_id"].isin(booked_property_ids)]
 
     all_features = preprocess_data(data_df)
     model = train_model(all_features)
 
-    user_params = [data["number_of_bedrooms"], data["base_price"], data["estimated_monthly_bookings"], data["bathrooms"],
-                   data["cleaning_fee"], data["host_response_rate"], data["number_of_reviews"], data["review_scores_rating"], data["beds"],
-                   *[1 if data["property_type"] == category else 0 for category in encoder.categories_[0]],
-                   *[1 if amenity in data["amenities"] else 0 for amenity in encoder.categories_[1]],
-                   *[1 if data["seasonality"] == category else 0 for category in encoder.categories_[2]],
-                   *[1 if data["bed_type"] == category else 0 for category in encoder.categories_[3]],
-                   *[1 if data["cancellation_policy"] == category else 0 for category in encoder.categories_[4]]
-                   ]
+    # Getting recommendations for the renter
+    _, indices = model.kneighbors()
 
-    user_params = [user_params]
-    _, indices = model.kneighbors(user_params)
+    # Showing top 4 recommended properties that the renter has not booked before
+    recommended_property_ids = [str(data_df.iloc[index]["_id"]) for index in indices[0][1:5]]
 
-    recommended_property_ids = data_df.iloc[indices[0][1:], data_df.columns.get_loc('property_id')].tolist()
-    
     return recommended_property_ids
     
 def save_recommendations(user_id, search_params, recommended_property_ids):
