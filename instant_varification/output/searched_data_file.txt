@@ -1,6 +1,4 @@
 nid: 
-Name: 
-Date of Birth:: 
 invoiceNo: 1699717261
-name: MD. ABUL BASHAR
-dob: 31090 1999
+name: 
+dob: 

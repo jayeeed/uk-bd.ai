@@ -10,43 +10,43 @@ from instant_varification.ocr_app import extract_texts_file, searched_data_file,
 
 
 
-info = {}
+info = {
+        "nid": "",
+        "invoiceNo": "",
+        "name": "",
+        "dob": ""
+    }
+
 key_list = ["ID NO", "Name:" ,"Date of Birth:"]
 
 def text_open():
-    searched_lines=[]
-
+    searched_lines=[]         
     with open(extract_texts_file, "r", encoding="utf-8") as f:
         for index, line in enumerate(f):
-#Invoice no: 1699717261
             if re.search(r'ID NO:', line):
-                    id_match = re.search(r'\d+', line)
-                    if id_match:
-                        info["nid"] = int(id_match.group())
-            else:
-                info["nid"] = ""
-            
+                id_match = re.search(r'\d+', line)
+                if id_match:
+                    info["nid"] = int(id_match.group())
+
             if re.search(r'Invoice no:', line):
-                    id_match = re.search(r'\d+', line)
-                    if id_match:
-                        info["invoiceNo"] = int(id_match.group())
+                id_match = re.search(r'\d+', line)
+                if id_match:
+                    info["invoiceNo"] = int(id_match.group())
 
             if re.search(r'Name:|Date of Birth:', line):
                 if line not in searched_lines:
                     if "Name:" in line:
-                        info["name"] = line.split(":")[1].strip() # extract and strip name
+                        info["name"] = line.split(":")[1].strip()  # extract name
                     elif "Date of Birth:" in line:
-                        info["dob"] = line.split(":")[1].strip() # extract and strip date of birth
-            else:
-                info["Name"] = ""
-                info["Date of Birth:"] = ""
-                
-
+                        info["dob"] = line.split(":")[1].strip()  # strip date of birth
+                        
+                        
     with open(searched_data_file, "w") as fw:
         for key, value in info.items():
             fw.write(f"{key}: {value}\n")
 
     print(info)
+    
     return info
 
 

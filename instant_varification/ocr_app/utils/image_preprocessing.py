@@ -81,7 +81,7 @@ def image_pre_process(image_path):
     # thresholded = binary.filter(ImageFilter.MedianFilter(size=3))
 
     # Apply Gaussian blur to remove noise
-    blurred = gray.filter(ImageFilter.GaussianBlur(radius=1))
+    blurred = gray.filter(ImageFilter.GaussianBlur(radius=0.9))
     # Binarize the image using thresholding
     thresholded = blurred.point(lambda x: 255 if x > 128 else 0, mode="1")
     print(" \n image blured and thresholded successful ")

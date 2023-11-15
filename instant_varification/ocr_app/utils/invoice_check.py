@@ -4,19 +4,17 @@ def info_matching(info):
     import pymongo
     client = pymongo.MongoClient("mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/")
     db = client["airbnb"]
-    
 
     if db != None :
         print("db connected")
 
-        # print("nid :",info["nid"])
         if info["nid"]:
             query = {"nid": info["nid"]}
             print("nid :",info["nid"])
         else:
             query = {"invoiceId": info["invoiceNo"]}
             print("invoiceNo :",info["invoiceNo"])
-        # query = {"name": "bashar"}
+
 
         
 
@@ -38,12 +36,13 @@ def info_matching(info):
 
         # user = users_collection.find_one(query)
         if user is not None:
-            print("National ID found in users table ==> ", user["email"])
+            print("National-ID found in users collection ==> ", user["email"])
             return "Id Found"
         elif invoice_checked is not None:
+            print("Invoice-ID found in booking collection ==> ", invoice_checked["invoiceId"])
             return "Invoice Found"
         else:
-            print("National ID or Invoice not found in users table")
+            print("National ID or Invoice not found in Database")
     return 0
 
     # if db != None :

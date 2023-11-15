@@ -1,5 +1,8 @@
 .venv
+env
 venv
+__pycache__
 db/__pycache__
 models/__pycache__
 routes/__pycache__
+instant_varification/__pycache__

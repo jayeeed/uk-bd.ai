@@ -1,15 +1,65 @@
-গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+Host Info:
 
-’ Government of the People's Republic of Bangladesh
+bashar
+bashar@example.com
+0123456789
 
-Temporary National ID Card / সাময়িক জাতীয় পরিচয় পত্র
+Booking information:
+Property address
 
-নাম: মোঃ আবুল বাসার
-Name: MD. ABUL BASHAR
+Check in
 
-পিতা: মোঃ মাসুদ করিম
+Check out
 
-মাতা: মোসাঃ পারুল পারভীন
-Date of Birth: 31090 1999
-ID NO: 1504945484
+Stay days
 
+Guest
+
+Currency
+
+Payment information:
+Per night
+
+Discount percentage
+($15000 * 1) Nights
+
+Long stay discount
+
+UK-BD Invoice
+
+Invoice no: 1699717261
+Invoice date: 11-11-2023
+
+Bill to:
+bashar
+
+bashar@example.com
+0123456789
+
+elephant Road, , , , Bangladesh -
+2023-11-11
+
+2023-11-12
+
+L
+
+Adults: 0, Children: 3, Infants: 1,
+
+pets: 0
+
+usd
+
+Price
+
+$15000
+
+5%
+
+$15000
+
+$750
+01450 service fee $1500
+
+Note: Total : $15750.00
+
+Thank you for your business.

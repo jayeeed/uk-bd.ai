@@ -31,6 +31,7 @@ def update_collection(user_id, regex_data):
         },
         upsert=True
     )
+    
 
     if result:
         print("filtered")
