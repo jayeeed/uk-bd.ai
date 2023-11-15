@@ -1,57 +1,107 @@
-from flask import Flask, request, jsonify, make_response
-import pandas as pd
+from flask import request, jsonify, make_response, Blueprint
+from sklearn.impute import SimpleImputer
+from sklearn.neighbors import NearestNeighbors
+from price_prediction.price import X_test_scaled,HistGradientBoostingRegressor_model,google_locations,property_df
+# import pandas as pd
 import numpy as np
 from textblob import TextBlob
-from flask_cors import CORS, cross_origin
-from app import mongo
+# from flask_cors import CORS, cross_origin
+# from app import mongo
 
-price_prediction_routes = Blueprint('price_prediction_routes', __name__)
+price_predict_routes = Blueprint('price_predict_routes', __name__)
 
-@property_routes.route('/api/property/<property_id>', methods=['GET'])
-def get_property_details(property_id):
-    property_data = properties_collection.find_one({"property_id": int(property_id)})
-    
-    if property_data:
-        # Convert ObjectId to a string for JSON serialization
-        property_data['_id'] = str(property_data['_id'])
-        
-        return jsonify(property_data)
+
+
+# @app.route('/predict', methods=['POST', 'OPTIONS'])
+# @cross_origin(origin="localhost", headers=["Content-Type", "authorization"])
+@price_predict_routes.route('/price', methods=['POST', 'OPTIONS'])
+def handle_price_options():
+    if request.method == 'OPTIONS':
+        response = make_response()
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        # response.headers.add("Access-Control-Allow-Origin", "http://localhost:3003")
+        response.headers.add("Access-Control-Allow-Headers", "Content-Type")
+        response.headers.add("Access-Control-Allow-Methods", "OPTIONS, POST")
+        return response
+
+    elif request.method == 'POST':
+        responseData = request.json
+        data = responseData.get('values', {})
+        print("Received data:", data)
+
+        placeDescribesId = data.get('placeDescibe')
+        typeOfPlaceId = data.get('typeOfPlace')
+        located = data.get('locatedPlace', {})
+        address = data.get('addAddress', {})
+        guests = data.get('guests', {})
+        amenitiesIds = data.get('offer', [])
+        images = data.get('uploadPhoto', [])
+        title = data.get('shortTitle')
+
+        suggested_price = get_pred(X_test_scaled)
+        print("suggested_price", suggested_price)
+        nearest_price = get_nearest(located)
+        print("nearest_price", nearest_price)
+        print("placeDescribesId", placeDescribesId)
+        print("typeOfPlaceId", typeOfPlaceId)
+        print("address", address)
+        print("title", title)
+
+    if title and placeDescribesId and typeOfPlaceId and located and address and guests and amenitiesIds and images and request.method == 'POST':
+        id = mongo.db.prediction.insert_one({
+            "shortTitle": title, "placeDescibe": placeDescribesId, "typeOfPlace": typeOfPlaceId,
+            "locatedPlace": located, "addAddress": address, "guests": guests, "offer": amenitiesIds, "uploadPhoto": images,
+            "suggested_price": suggested_price,
+            "nearest_price": nearest_price
+        })
+
+        resp = jsonify({'message': 'Suggested price successfully created!',
+                       "suggested_price": suggested_price, "nearest_price": nearest_price})
+        resp.status_code = 201  # Created status code
+        return resp
+
     else:
-        return jsonify({"message": "Property not found"}), 404
+        resp = jsonify({'error': 'Invalid data or missing values'})
+        resp.status_code = 400  # Bad Request status code
+        return resp
+
+def get_pred(X_test_scaled):
+    suggested_price = HistGradientBoostingRegressor_model.predict(X_test_scaled)[0]
+    formatted_price = round(np.exp(suggested_price), 2)
+    return formatted_price
+
+def get_nearest(located):
+    latitude = located.get('lat')
+    longitude = located.get('lon')
+    if latitude is not None and longitude is not None:
+        latitude = float(latitude)
+        longitude = float(longitude)
+        location_data = np.array([[latitude, longitude]])
+        print(location_data)
+        imputer = SimpleImputer(strategy='median')
+        location_data = imputer.fit_transform(location_data)
+        k = 3
+        nn_model = NearestNeighbors(n_neighbors=k)
+        nn_model.fit(google_locations)
+        neighbors_indices = nn_model.kneighbors(
+            location_data, n_neighbors=k, return_distance=False)
+        print(neighbors_indices)
+        avg_neighbor_price = round(
+            property_df.loc[neighbors_indices[0], "price"].mean(), 2)
+        return avg_neighbor_price
+    else:
+        # Handle the case where 'lat' or 'lon' are None
+        return None
 
 
-CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
-
-property_data = list(mongo.db.allproperties.find())
-
-data = pd.DataFrame(property_data)
-
-property_df = data.drop(columns=['_id', 'userId', 'title', 'placeDescribesId', 'typeOfPlaceId', 'images', 'located', 'guests', 'price',
-                        'amenitiesIds', 'address', 'decideReservations', 'discounts', 'status', 'createdAt', 'updatedAt', '__v'])
-print(property_df)
-
-# Extract the reviews from the DataFrame
-reviews = np.array(property_df['description'])
-test_reviews = reviews[::]
-sample_review_ids = []
-test_reviews = np.array(test_reviews)
-
-for sample_review_id in sample_review_ids:
-    description = test_reviews[sample_review_id]
-    print('REVIEW:', description)
-    print('Predicted Sentiment polarity:',
-          TextBlob(description).sentiment.polarity)
-    print('-' * 60)
-
-# Calculate sentiment polarity for all test reviews
-sentiment_polarity = [
-    TextBlob(review).sentiment.polarity for review in test_reviews]
-print(sentiment_polarity)
 
 
-@price_prediction_routes.route('/description', methods=['POST', 'OPTIONS'])
-@cross_origin(origin="localhost", headers=["Content-Type", "authorization"])
-def handle_options():
+
+
+
+# @cross_origin(origin="localhost", headers=["Content-Type", "authorization"])
+@price_predict_routes.route('/description', methods=['POST', 'OPTIONS'])
+def handle_description_options():
     if request.method == 'OPTIONS':
         response = make_response()
         response.headers.add("Access-Control-Allow-Origin", "*")
@@ -122,5 +172,37 @@ def get_emotion_from_text(description):
         return 'neutral'
 
 
-if __name__ == '__main__':
-    app.run('localhost', 5002)
+# if __name__ == '__main__':
+#     app.run('localhost', 5002)
+
+
+
+
+# CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
+
+# property_data = list(mongo.db.allproperties.find())
+
+# data = pd.DataFrame(property_data)
+
+# property_df = data.drop(columns=['_id', 'userId', 'title', 'placeDescribesId', 'typeOfPlaceId', 'images', 'located', 'guests', 'price',
+#                         'amenitiesIds', 'address', 'decideReservations', 'discounts', 'status', 'createdAt', 'updatedAt', '__v'])
+# print(property_df)
+
+# # Extract the reviews from the DataFrame
+# reviews = np.array(property_df['description'])
+# test_reviews = reviews[::]
+# sample_review_ids = []
+# test_reviews = np.array(test_reviews)
+
+# for sample_review_id in sample_review_ids:
+#     description = test_reviews[sample_review_id]
+#     print('REVIEW:', description)
+#     print('Predicted Sentiment polarity:',
+#           TextBlob(description).sentiment.polarity)
+#     print('-' * 60)
+
+# # Calculate sentiment polarity for all test reviews
+# sentiment_polarity = [
+#     TextBlob(review).sentiment.polarity for review in test_reviews]
+# print(sentiment_polarity)
+
