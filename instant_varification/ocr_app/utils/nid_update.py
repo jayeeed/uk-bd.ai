@@ -7,12 +7,19 @@ def update_collection(user_id, regex_data):
     client = pymongo.MongoClient("mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/")
     db = client["airbnb"]
     user_collection = db["users"]
+    invoice_collection = db["bookings"]
 
     #print(user_id)
     existing_user = user_collection.find_one({'_id': user_id})
     print(existing_user['email'])
     if not existing_user:
         return jsonify({'error': 'User not found'}, 404)
+    
+    print(regex_data["invoiceNo"])
+    
+    existing_booking =  invoice_collection.find_one({'invoiceId': regex_data["invoiceNo"]})
+    if not existing_booking:
+        return jsonify({'error': 'book-in not found'}, 404)
 
 
 
