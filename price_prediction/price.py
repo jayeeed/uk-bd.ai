@@ -62,10 +62,12 @@ if num_samples >= k:
     
     # Identify rows with non-numeric values in the "price" column
     non_numeric_rows = property_df[property_df["price"].isnull()]
+
     # Replace non-numeric values in the "price" column with a default value (e.g., 0)
     property_df["price"] = pd.to_numeric(property_df["price"], errors="coerce").fillna(0)
-    
     print(non_numeric_rows)
+    
+
 
     avg_neighbor_prices = []
     for indices in neighbors_indices:
@@ -190,13 +192,14 @@ print("Mean Squared Error:", mse)
 # Save the model to a file using joblib
 # joblib.dump(ridge_model, 'ridge_model.joblib')
 
-joblib.dump(HistGradientBoostingRegressor_model, 'model.joblib')
-joblib.dump(scaler, 'scaler.joblib')
+
+joblib.dump(HistGradientBoostingRegressor_model, 'price_prediction/ml_models/model.joblib')
+joblib.dump(scaler, 'price_prediction/ml_models/scaler.joblib')
 
 # Load the model from the file using joblib
 # loaded_model = joblib.load('ridge_model.joblib')
 
-loaded_model = joblib.load('model.joblib')
+loaded_model = joblib.load('price_prediction/ml_models/model.joblib')
 
 
 # # @app.route('/predict', methods=['POST', 'OPTIONS'])

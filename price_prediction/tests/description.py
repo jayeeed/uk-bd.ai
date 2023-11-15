@@ -109,5 +109,5 @@ def get_emotion_from_text(description):
         return 'neutral'
 
 
-if __name__ == '__main__':
-    app.run('localhost', 5002)
+# if __name__ == '__main__':
+#     app.run('localhost', 5002)
