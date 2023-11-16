@@ -5,6 +5,7 @@ from price_prediction.price import X_test_scaled,HistGradientBoostingRegressor_m
 # import pandas as pd
 import numpy as np
 from textblob import TextBlob
+from db.db_config import price_prediction, description_collection
 # from flask_cors import CORS, cross_origin
 # from app import mongo
 
@@ -48,7 +49,7 @@ def handle_price_options():
         print("title", title)
 
     if title and placeDescribesId and typeOfPlaceId and located and address and guests and amenitiesIds and images and request.method == 'POST':
-        id = mongo.db.prediction.insert_one({
+        id = price_prediction.insert_one({
             "shortTitle": title, "placeDescibe": placeDescribesId, "typeOfPlace": typeOfPlaceId,
             "locatedPlace": located, "addAddress": address, "guests": guests, "offer": amenitiesIds, "uploadPhoto": images,
             "suggested_price": suggested_price,
@@ -123,7 +124,7 @@ def handle_description_options():
         print(emotion)
 
     if description and request.method == 'POST':
-        id = mongo.db.description.insert_one({
+        id = description_collection.insert_one({
             "description": description,
             "sentiment": sentiment,
             "emotion": emotion

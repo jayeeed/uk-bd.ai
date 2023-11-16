@@ -7,6 +7,9 @@ db = client['airbnb']
 properties_collection = db['allproperties']
 recommended_collection = db['recommended_properties']
 bookings_collection = db['bookings']
+price_prediction = db["prediction"]
+description_collection = db["description"] 
+# allProperties_collection =db['allproperties']
 
 def get_data():
     data_from_mongodb = properties_collection.find()
