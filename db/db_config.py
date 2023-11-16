@@ -1,18 +1,12 @@
 from pymongo import MongoClient
 import pandas as pd
 
-# client = MongoClient('mongodb+srv://xy3d:XgB8JVGTuWGd50kp@cluster0.20iimjx.mongodb.net/')
 client = MongoClient('mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/')
 
 db = client['airbnb']
-if db!=None:
-    print(" db connected")
-    
-    
-properties_collection = db['properties']
+properties_collection = db['allproperties']
 recommended_collection = db['recommended_properties']
-allProperties_collection = db["allproperties"]
-
+bookings_collection = db['bookings']
 
 def get_data():
     data_from_mongodb = properties_collection.find()
