@@ -73,9 +73,20 @@ def preprocess_data(data_df):
     
     return all_features
 
-def train_model(all_features):
+def train_model(all_features, batch_size=32):
     model = NearestNeighbors(n_neighbors=5, metric='euclidean')
-    model.fit(all_features)
+    
+    # Calculate the number of batches
+    num_batches = len(all_features) // batch_size
+    
+    # Wrap the training loop with tqdm for a progress bar
+    with tqdm(total=len(all_features), desc="Training") as pbar:
+        for i in range(0, len(all_features), batch_size):
+            batch = all_features[i:i+batch_size]
+            model.fit(batch)
+            
+            # Update the progress bar after each batch
+            pbar.update(min(batch_size, len(all_features) - i))
     
     return model
     
