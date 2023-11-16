@@ -38,7 +38,7 @@ data = pd.DataFrame(property_data)
 
 property_df = data.drop(columns=['_id', 'userId', 'title', 'images', 'description',
                         'decideReservations', 'discounts', 'status', 'createdAt', 'updatedAt', '__v'])
-print(property_df)
+# print(property_df)
 
 # property_df.dropna(inplace=True)
 
@@ -46,7 +46,7 @@ property_df['lat'] = property_df['located'].apply(lambda x: x['lat'])
 property_df['lon'] = property_df['located'].apply(lambda x: x['lon'])
 
 google_locations = property_df[['lat', 'lon']].values
-print(google_locations)
+# print(google_locations)
 
 k = 3  # Number of neighbors to consider
 
@@ -74,7 +74,7 @@ if num_samples >= k:
         avg_price = property_df.loc[indices, "price"].mean()
         avg_neighbor_prices.append(avg_price)
     property_df["avg_neighbor_price"] = avg_neighbor_prices
-    print(property_df["avg_neighbor_price"])
+    # print(property_df["avg_neighbor_price"])
 else:
     print("Not enough samples for k neighbors.")
 
@@ -90,7 +90,7 @@ print(numeric_features)
 
 numeric_df = property_df[numeric_features].fillna(
     property_df[numeric_features].mean())
-print(numeric_df)
+# print(numeric_df)
 
 
 # Function to expand the 'amenitiesIds' array into separate columns
@@ -130,37 +130,37 @@ property_df = pd.concat([property_df, expanded_address_df], axis=1)
 # Define categorical features
 categorical_features = ['placeDescribesId', 'typeOfPlaceId'] + \
     list(expanded_amenities_df.columns) + list(expanded_address_df.columns)
-print(categorical_features)
+# print(categorical_features)
 
 categorical_df = property_df[categorical_features].fillna(
     property_df[categorical_features].mode().iloc[0])
-print(categorical_df)
+# print(categorical_df)
 
 label_encoder = LabelEncoder()
 for feature in categorical_features:
     categorical_df[feature] = label_encoder.fit_transform(
         categorical_df[feature])
-print(categorical_df[feature])
+# print(categorical_df[feature])
 
 # Combine numeric and categorical DataFrames
 combined_df = pd.concat([numeric_df, categorical_df], axis=1)
-print(combined_df)
+# print(combined_df)
 
 combined_df['price'] = pd.to_numeric(property_df['price'], errors='coerce')
 
 # Remove extreme outliers in base_price
 price_df = property_df[combined_df['price'] < 5000]
-print(price_df)
+# print(price_df)
 
 # Transformation
 combined_df['log_base_price'] = np.log(combined_df['price'])
-print(combined_df['log_base_price'])
+# print(combined_df['log_base_price'])
 
 
 X = combined_df.drop(columns=["price", "log_base_price"])
 y = combined_df["log_base_price"]
-print(X)
-print(y)
+# print(X)
+# print(y)
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42)
@@ -185,8 +185,8 @@ mse = mean_squared_error(y_test, y_pred)
 # print("Ridge Regression Model:", ridge_model)
 # print("Ridge Regression Model:", y_pred)
 
-print("Hist Gradient Boosting Regressor Model:", y_pred)
-print("Mean Squared Error:", mse)
+# print("Hist Gradient Boosting Regressor Model:", y_pred)
+# print("Mean Squared Error:", mse)
 
 
 # Save the model to a file using joblib
