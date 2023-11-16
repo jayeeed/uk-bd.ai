@@ -9,6 +9,9 @@ recommended_collection = db['recommended_properties']
 bookings_collection = db['bookings']
 price_prediction = db["prediction"]
 description_collection = db["description"] 
+chatbot_predicted_ques_ans_collection = db["chatbot_predicted_ques_ans"] 
+chatbot_question_ans_collection = db["chatbot_question_ans"]
+chatbot_human_ans_collection = db["chatbot_human_ans"]
 # allProperties_collection =db['allproperties']
 
 def get_data():

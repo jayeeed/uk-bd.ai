@@ -1,26 +1,29 @@
-from flask import jsonify, Flask
-from flask_cors import CORS
-from flask_pymongo import PyMongo
+# from flask import jsonify, Flask
 
-app = Flask(__name__)
-CORS(app)
-app.config["MONGO_URI"] = "mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/airbnb"
-try:
-    mongo = PyMongo(app)
-    print("____________________connection successfull____________________________")
+from db.db_config import chatbot_predicted_ques_ans_collection ,chatbot_question_ans_collection,chatbot_human_ans_collection 
 
-except Exception as e:
-    print(f"error________________{e}")
+# from flask_cors import CORS
+# from flask_pymongo import PyMongo
+
+# app = Flask(__name__)
+# CORS(app)
+# app.config["MONGO_URI"] = "mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/airbnb"
+# try:
+#     mongo = PyMongo(app)
+#     print("____________________connection successfull____________________________")
+
+# except Exception as e:
+#     print(f"error________________{e}")
 
 # gets all the question answer from the database
 
 
 def get_data():
     question_ans = []
-    collection = mongo.db.chatbot_question_ans
+    collection = chatbot_question_ans_collection  
     data = list(collection.find({}))
 
-    if len(list) > 0:
+    if len(data) > 0:
         print(data)
         for item in data:
             question_ans.append(
@@ -38,7 +41,7 @@ def overwrite_data(new_data):
     # Specify the collection name (replace 'chatbot_question_ans' with your actual collection name)
 
     try:
-        collection = mongo.db.chatbot_question_ans
+        collection = chatbot_question_ans_collection
     except Exception as e:
         print(f"error________________{e}")
 
@@ -62,7 +65,8 @@ def human_ans_post(human_ans):
     json_obj = {"human_ans": human_ans}
 
     try:
-        collection = mongo.db.chatbot_human_ans
+        collection = chatbot_human_ans_collection
+
         collection.insert_one(json_obj)
         return {'message': 'human ans uploaded'}
     except Exception as e:
@@ -72,7 +76,8 @@ def human_ans_post(human_ans):
 def human_ans_get():
     human_ans = []
     str = ""
-    collection = mongo.db.chatbot_human_ans
+    collection = chatbot_human_ans_collection 
+
     data = list(collection.find({}))
     print(data)
     for item in data:
@@ -85,7 +90,7 @@ def human_ans_get():
 def predicted_ques_ans_post(predicted_ans):
 
     try:
-        collection = mongo.db.chatbot_predicted_ques_ans
+        collection = chatbot_predicted_ques_ans_collection
         collection.insert_one(predicted_ans)
         return {'message': 'predicted answer uploaded'}
     except Exception as e:
@@ -97,7 +102,7 @@ def predicted_ques_ans_get(predicted_ans):
     question_ans = []
 
     try:
-        collection = mongo.db.chatbot_predicted_ques_ans
+        collection = chatbot_predicted_ques_ans_collection
         data = list(collection.find({}))
     except Exception as e:
         print(f"error________________{e}")
