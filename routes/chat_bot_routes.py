@@ -81,7 +81,7 @@ def train():
 @chatBot_routes.route("/chat_bot", methods=["POST"])
 def chat():
     user_query = request.json
-
+    
     if "text" not in user_query or not isinstance(user_query, dict):
         return jsonify({"error": "Invalid inpu format"}), 400
 
