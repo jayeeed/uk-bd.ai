@@ -13,7 +13,6 @@ from sklearn.model_selection import train_test_split
 import joblib
 from db.db_config import allProperties_collection
 
-# app = Flask(__name__)
 
 # CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
 
@@ -23,16 +22,8 @@ from db.db_config import allProperties_collection
 property_data = list(allProperties_collection.find())
 
 
-
-# df = pd.DataFrame(property_data)
-# print(df)
-
 data = pd.DataFrame(property_data)
 # print(data)
-
-# duplicates = df.apply(lambda x: x.duplicated()).sum()
-# print(duplicates)
-# data = df.drop_duplicates()
 
 # print(data)
 
@@ -65,13 +56,13 @@ if num_samples >= k:
 
     # Replace non-numeric values in the "price" column with a default value (e.g., 0)
     property_df["price"] = pd.to_numeric(property_df["price"], errors="coerce").fillna(0)
-    print(non_numeric_rows)
+    # print(non_numeric_rows)
     
 
 
     avg_neighbor_prices = []
     for indices in neighbors_indices:
-        avg_price = property_df.loc[indices, "price"].mean()
+        avg_price = property_df.loc[indices, "price"].mean()  # this line have a parsing issue. for preventing the parsing issue Vai_bashar modified line: 55 to 59
         avg_neighbor_prices.append(avg_price)
     property_df["avg_neighbor_price"] = avg_neighbor_prices
     print(property_df["avg_neighbor_price"])
@@ -110,8 +101,6 @@ expanded_amenities_df = property_df.apply(expand_amenities, axis=1)
 property_df = pd.concat([property_df, expanded_amenities_df], axis=1)
 
 # Function to expand the 'address' object into separate columns
-
-
 def expand_address(row):
     address_data = row['address']
     expanded_address = {}
@@ -170,121 +159,25 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-# ridge_model = Ridge()
-# ridge_model.fit(X_train_scaled, y_train)
 
-
-# y_pred = ridge_model.predict(X_test_scaled)
-# print(y_pred)
 
 HistGradientBoostingRegressor_model = HistGradientBoostingRegressor()
 HistGradientBoostingRegressor_model.fit(X_train_scaled, y_train)
 y_pred = HistGradientBoostingRegressor_model.predict(X_test_scaled)
 
 mse = mean_squared_error(y_test, y_pred)
-# print("Ridge Regression Model:", ridge_model)
-# print("Ridge Regression Model:", y_pred)
+
 
 print("Hist Gradient Boosting Regressor Model:", y_pred)
 print("Mean Squared Error:", mse)
 
 
-# Save the model to a file using joblib
-# joblib.dump(ridge_model, 'ridge_model.joblib')
-
 
 joblib.dump(HistGradientBoostingRegressor_model, 'price_prediction/ml_models/model.joblib')
 joblib.dump(scaler, 'price_prediction/ml_models/scaler.joblib')
 
-# Load the model from the file using joblib
-# loaded_model = joblib.load('ridge_model.joblib')
 
 loaded_model = joblib.load('price_prediction/ml_models/model.joblib')
 
 
-# # @app.route('/predict', methods=['POST', 'OPTIONS'])
-# @app.route('/price', methods=['POST', 'OPTIONS'])
-# @cross_origin(origin="localhost", headers=["Content-Type", "authorization"])
-# def handle_options():
-#     if request.method == 'OPTIONS':
-#         response = make_response()
-#         response.headers.add("Access-Control-Allow-Origin", "*")
-#         # response.headers.add("Access-Control-Allow-Origin", "http://localhost:3003")
-#         response.headers.add("Access-Control-Allow-Headers", "Content-Type")
-#         response.headers.add("Access-Control-Allow-Methods", "OPTIONS, POST")
-#         return response
 
-#     elif request.method == 'POST':
-#         responseData = request.json
-#         data = responseData.get('values', {})
-#         print("Received data:", data)
-
-#         placeDescribesId = data.get('placeDescibe')
-#         typeOfPlaceId = data.get('typeOfPlace')
-#         located = data.get('locatedPlace', {})
-#         address = data.get('addAddress', {})
-#         guests = data.get('guests', {})
-#         amenitiesIds = data.get('offer', [])
-#         images = data.get('uploadPhoto', [])
-#         title = data.get('shortTitle')
-
-#         suggested_price = get_pred(X_test_scaled)
-#         print("suggested_price", suggested_price)
-#         nearest_price = get_nearest(located)
-#         print("nearest_price", nearest_price)
-#         print("placeDescribesId", placeDescribesId)
-#         print("typeOfPlaceId", typeOfPlaceId)
-#         print("address", address)
-#         print("title", title)
-
-#     if title and placeDescribesId and typeOfPlaceId and located and address and guests and amenitiesIds and images and request.method == 'POST':
-#         id = mongo.db.prediction.insert_one({
-#             "shortTitle": title, "placeDescibe": placeDescribesId, "typeOfPlace": typeOfPlaceId,
-#             "locatedPlace": located, "addAddress": address, "guests": guests, "offer": amenitiesIds, "uploadPhoto": images,
-#             "suggested_price": suggested_price,
-#             "nearest_price": nearest_price
-#         })
-
-#         resp = jsonify({'message': 'Suggested price successfully created!',
-#                        "suggested_price": suggested_price, "nearest_price": nearest_price})
-#         resp.status_code = 201  # Created status code
-#         return resp
-
-#     else:
-#         resp = jsonify({'error': 'Invalid data or missing values'})
-#         resp.status_code = 400  # Bad Request status code
-#         return resp
-
-
-# def get_pred(X_test_scaled):
-#     suggested_price = model.predict(X_test_scaled)[0]
-#     formatted_price = round(np.exp(suggested_price), 2)
-#     return formatted_price
-
-
-# def get_nearest(located):
-#     latitude = located.get('lat')
-#     longitude = located.get('lon')
-#     if latitude is not None and longitude is not None:
-#         latitude = float(latitude)
-#         longitude = float(longitude)
-#         location_data = np.array([[latitude, longitude]])
-#         print(location_data)
-#         imputer = SimpleImputer(strategy='median')
-#         location_data = imputer.fit_transform(location_data)
-#         k = 3
-#         nn_model = NearestNeighbors(n_neighbors=k)
-#         nn_model.fit(locations)
-#         neighbors_indices = nn_model.kneighbors(
-#             location_data, n_neighbors=k, return_distance=False)
-#         print(neighbors_indices)
-#         avg_neighbor_price = round(
-#             property_df.loc[neighbors_indices[0], "price"].mean(), 2)
-#         return avg_neighbor_price
-#     else:
-#         # Handle the case where 'lat' or 'lon' are None
-#         return None
-
-
-# if __name__ == '__main__':
-#     app.run('localhost', 5001)
