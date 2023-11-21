@@ -10,7 +10,9 @@ from textblob import TextBlob
 
 price_predict_routes = Blueprint('price_predict_routes', __name__)
 
+from flask_cors import CORS
 
+CORS(search_properties_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
 
 # @app.route('/predict', methods=['POST', 'OPTIONS'])
 # @cross_origin(origin="localhost", headers=["Content-Type", "authorization"])

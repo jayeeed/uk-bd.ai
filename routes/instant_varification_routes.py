@@ -8,7 +8,9 @@ from instant_varification.ocr_app import os, current_working_directory
 from instant_varification.ocr_app.utils import ai_methods, regx_im, invoice_check, nid_update
 
 
+# from flask_cors import CORS
 
+# CORS(search_properties_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
 
 verify_routes = Blueprint('verify_routes', __name__)
 
