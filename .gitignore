@@ -4,3 +4,4 @@ db/__pycache__
 models/__pycache__
 routes/__pycache__
 instant_varification/__pycache__
+venv/pyvenv.cfg
