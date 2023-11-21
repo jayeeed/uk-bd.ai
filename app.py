@@ -22,7 +22,7 @@ app.register_blueprint(price_predict_routes)
 app.register_blueprint(verify_routes)
 
 
-
+print("bashar git updated")
 
 
 
@@ -31,20 +31,3 @@ port = int(os.environ.get("PORT", 7050))
 if __name__ == '__main__':
    app.run(debug=True, port=port, host='0.0.0.0')
 
-
-# app = Flask(__name__, 
-# template_folder='../templates',
-# static_folder='../static')
-
-
-
-# from flask import Flask
-# from flask_pymongo import PyMongo
-# from flask_cors import CORS, cross_origin
-
-# app = Flask(__name__)
-# app.secret_key = "secret key"
-# app.config["MONGO_URI"] = "mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/airbnb"
-# # app.config["MONGO_URI"] = "mongodb://localhost:27017/price_prediction"
-# app.config["CORS_HEADERS"] = "Content-Type"
-# mongo = PyMongo(app)
