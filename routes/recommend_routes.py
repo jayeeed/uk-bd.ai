@@ -5,7 +5,7 @@ from bson import ObjectId
 
 search_properties_route = Blueprint('search_properties_route', __name__)
 
-CORS(search_properties_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
+# CORS(search_properties_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
 
 @search_properties_route.route('/api/recommended/<string:renter_user_id>', methods=['GET'])
 def recommended_properties(renter_user_id):
