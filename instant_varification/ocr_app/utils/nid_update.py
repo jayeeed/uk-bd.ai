@@ -11,7 +11,7 @@ def update_collection(user_id, regex_data):
 
     #print(user_id)
     existing_user = user_collection.find_one({'_id': user_id})
-    print(existing_user['email'])
+    #print(existing_user['email'])
     if not existing_user:
         return jsonify({'error': 'User not found'}, 404)
     

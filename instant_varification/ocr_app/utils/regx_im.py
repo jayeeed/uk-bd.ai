@@ -17,7 +17,7 @@ info = {
         "dob": ""
     }
 
-key_list = ["ID NO", "Name:" ,"Date of Birth:"]
+key_list = ["ID NO:", "Name:" ,"Date of Birth:"]
 
 def text_open():
     searched_lines=[]         
