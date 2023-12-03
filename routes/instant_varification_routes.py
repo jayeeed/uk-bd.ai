@@ -14,6 +14,44 @@ verify_routes = Blueprint('verify_routes', __name__)
 
 
 
+
+
+# @verify_routes.route('/api/idVerification/check', methods=['POST'])
+# def id_check():
+#     print(request.headers)
+#     print(request.form)
+#     print(request.files)
+    
+#     # if 'file' not in request.files:
+#     #     return {"error": "File not found in request"}, 400
+#     # else:
+#     #     print(request.files['file'])
+
+#     if 'file' not in request.files:
+#         return jsonify({'error': 'File not found in request'},400)
+    
+#     file = request.files['file']
+#     filename = 'uploaded_data_file' + "." + file.filename.rsplit(".", 1)[1]
+#     file.save(os.path.join(str(current_working_directory) + "/static/temp/" + filename))
+    
+#     ai_methods.text_extracter(filename)  # assuming text_extracter() returns text as a string
+    
+#     regex_data = regx_im.text_to_info()
+
+#     # print(regex_data)
+
+#     invoice_matched =  invoice_check.info_matching(regex_data)
+
+#     print(invoice_matched)
+#     if invoice_matched:
+#         response_data = {'success': invoice_matched}
+#         return jsonify(response_data)
+    
+#     return jsonify({'message':' Upload unsuccessfull! '})
+
+
+
+
 @verify_routes.route('/api/idVerification/upload', methods=['POST'])
 def upload_file():
     print(request.headers)
@@ -65,21 +103,21 @@ def update_entity():
         return jsonify({'error': 'File not found in request'},400)
     
     file = request.files['file']
-
     # Get userID from the request form
     user_id = request.form.get('userId')
 
     filename = 'uploaded_data_file' + "." + file.filename.rsplit(".", 1)[1]
     file.save("static/temp/" + filename)
     
-    ai_methods.text_extracter(filename)  # assuming text_extracter() returns text as a string
+    ai_methods.text_extracter(filename) 
+    # assuming text_extracter() returns text as a string
     
     regex_data = regx_im.text_to_info()
 
     # Call the function to update the collection
     updated = nid_update.update_collection(user_id, regex_data)
 
-    if updated:
+    if updated == True:
         return jsonify({'success':'NID OCR is completed! and stored'})
     else:
         return jsonify({'error': 'Failed to update the collection'},500)

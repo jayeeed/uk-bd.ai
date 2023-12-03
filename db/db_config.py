@@ -4,6 +4,7 @@ import pandas as pd
 client = MongoClient('mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/')
 
 db = client['airbnb']
+user_collection =db["users"]
 properties_collection = db['allproperties']
 recommended_collection = db['recommended_properties']
 bookings_collection = db['bookings']

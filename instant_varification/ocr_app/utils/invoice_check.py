@@ -1,22 +1,20 @@
+from bson.objectid import ObjectId
+
+from db.db_config import  db
+
 def info_matching(info):
     #print(type(info))
-
-    import pymongo
-    client = pymongo.MongoClient("mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/")
-    db = client["airbnb"]
 
     if db != None :
         print("db connected")
 
         if info["nid"]:
-            query = {"nid": info["nid"]}
+            query = {"regex_data.nid": info["nid"]}
             print("nid :",info["nid"])
         else:
             query = {"invoiceId": info["invoiceNo"]}
             print("invoiceNo :",info["invoiceNo"])
 
-
-        
 
         # Get the users collection
         users_collection = db["users"]
