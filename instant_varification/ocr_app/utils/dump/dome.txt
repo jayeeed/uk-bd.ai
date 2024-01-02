@@ -1,3 +1,0 @@
-AFter payment page there will be form for payment method.
-
-Host admin panel renter tile clicked show the info of reservation and upload the captured photo then system give a confirmation alert
