@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 # from flask_cors import CORS, cross_origin
 import joblib
-from db.db_config import allProperties_collection
+from db.db_config import properties_collection
 
 
 # CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
@@ -19,7 +19,7 @@ from db.db_config import allProperties_collection
 # Load the property data from MongoDB
 # property_data = list(mongo.db.price.find())
 
-property_data = list(allProperties_collection.find())
+property_data = list(properties_collection.find())
 
 
 data = pd.DataFrame(property_data)
