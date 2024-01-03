@@ -8,9 +8,8 @@ db = client['airbnb']
 properties_collection = db['allproperties']
 recommended_collection = db['recommended_properties']
 bookings_collection = db['bookings']
-sentiment_reviews_collection = db['sentiment_reviews']
+sentiment_collection = db['reviews']
 FAQ_ans_corpus = db['ans_corpus']
-
 
 def get_data():
     data_from_mongodb = properties_collection.find()
@@ -18,7 +17,7 @@ def get_data():
     return data_df
 
 
-def insert_sentiment_data(sentence, sentiment_label):
-    post = {"sentence": sentence, "sentiment": sentiment_label}
-    post_id = sentiment_reviews_collection.insert_one(post).inserted_id
-    return post_id
+# def insert_sentiment_data(sentence, sentiment_label):
+#     post = {"sentence": sentence, "sentiment": sentiment_label}
+#     post_id = sentiment_collection.insert_one(post).inserted_id
+#     return post_id

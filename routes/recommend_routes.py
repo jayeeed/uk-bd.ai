@@ -3,11 +3,11 @@ from models.recommend_model import get_recommendations, save_recommendations, sa
 from flask_cors import CORS, cross_origin
 from bson import ObjectId
 
-search_properties_route = Blueprint('search_properties_route', __name__)
+recommend_route = Blueprint('recommend_route', __name__)
 
-CORS(search_properties_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
+CORS(recommend_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
 
-@search_properties_route.route('/api/recommended/<string:renter_user_id>', methods=['GET'])
+@recommend_route.route('/api/recommended/<string:renter_user_id>', methods=['GET'])
 def recommended_properties(renter_user_id):
     try:
         recommended_properties = get_recommendations(renter_user_id)
@@ -17,7 +17,7 @@ def recommended_properties(renter_user_id):
         print(f"Error in recommended_properties endpoint: {e}")
         return jsonify({"error": "Internal Server Error"}), 500
 
-@search_properties_route.route('/api/save', methods=['POST'])
+@recommend_route.route('/api/save', methods=['POST'])
 def save_selected_property():
     try:
         data = request.json  # Assuming you're sending JSON data in the request

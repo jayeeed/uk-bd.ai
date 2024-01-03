@@ -4,6 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 from bson import ObjectId
 from db.db_config import get_data, recommended_collection, bookings_collection
+
 def preprocess_data(data_df):
     
     ##################################################################

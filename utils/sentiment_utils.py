@@ -1,6 +1,9 @@
 import pandas as pd
-from db import review_collection
+from db.db_config import sentiment_collection
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+import nltk
+nltk.download('vader_lexicon')
 
 sia = SentimentIntensityAnalyzer()
 
@@ -13,10 +16,8 @@ def get_sentiment_label(sentence):
     else:
         return 'Neutral'
 
-
-
 def data_clean():
-    cursor = review_collection.find({})
+    cursor = sentiment_collection.find({})
     # Convert documents to a list of dictionaries
     documents_list = list(cursor)
     review_df = pd.DataFrame(documents_list)

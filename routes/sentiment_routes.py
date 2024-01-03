@@ -1,38 +1,85 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, Flask, render_template, request, jsonify
+import pymongo
+from bson import ObjectId
+from pymongo import MongoClient
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from db.db_config import insert_sentiment_data
+from utils.sentiment_utils import data_clean, get_sentiment_label
+
+import nltk
+nltk.download('vader_lexicon')
 
 sentiment_route = Blueprint('sentiment_route', __name__)
 
-sia = SentimentIntensityAnalyzer()
+# CORS(voice_search_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
 
-def get_sentiment_label(sentence):
-    sentiment = sia.polarity_scores(sentence)
-    if sentiment['compound'] >= 0.05:
-        return 'Positive'
-    elif sentiment['compound'] <= -0.05:
-        return 'Negative'
-    else:
-        return 'Neutral'
+@sentiment_route.route('/insert_sentiment', methods=['POST'])
+def insert_sentiment():
+    if request.method == 'POST':
+        if request.headers.get('content-type') == 'application/json':
+            json_data = request.get_json()
+            reviewMessage = json_data.get('reviewMessage')
+            propertyId = json_data.get('propertyId')
+            reviewedBy = json_data.get('reviewedBy')
+            print(propertyId)
+        
+        sentiment_label = get_sentiment_label(reviewMessage)
+        
+        with pymongo.MongoClient('mongodb+srv://ipsita:Ipsita%402023@uk-bd0.u3pngqk.mongodb.net/') as client:
+            db = client['airbnb']
+            collection = db['reviews']
+            # print(collection)
+            
+            property_id_to_find = {
+                "propertyId": ObjectId(propertyId),
+                "reviewedBy": ObjectId(reviewedBy)
+            }
 
-@sentiment_route.route('/sentiment', methods=['POST'])
-def index():
+            # Finding the relevant document
+            document_to_update = collection.find_one({
+                "propertyId": propertyId , "reviewedBy":reviewedBy})
+
+
+            if document_to_update:
+                #print(document_to_update)
+                # Update the document with sentiment_label
+                collection.update_one(
+                    {"_id": document_to_update["_id"]},  # Use _id for updating
+                    # {"_id": ObjectId("657ead0acb652787604f8881")}, 
+                    {"$set": {"sentiment": sentiment_label ,
+                              "reviewMessage": reviewMessage}}
+                )
+                response_data = {
+                    "sentence": reviewMessage,
+                    "result": "Document updated successfully",
+                    "sentiment": sentiment_label
+                }
+            else:
+                response_data = {
+                    "sentence": reviewMessage,
+                    "result": "Document not found for the given propertyId and reviewedBy",
+                    "sentiment": sentiment_label
+                }
+        
+        return jsonify(response_data)
+    
+    return jsonify({"error": "Only POST requests are supported on this endpoint."})
+
+@sentiment_route.route('/get_review_sentiment', methods=['POST'])
+def get_review_sentiment():
     if request.method == 'POST':
         # Check if request content-type is JSON
         if request.headers.get('content-type') == 'application/json':
             json_data = request.get_json()
-            sentence = json_data.get('sentence')
+            propertyId = json_data.get('propertyId')
         else:
-            sentence = request.form.get('sentence')
-
-        sentiment_label = get_sentiment_label(sentence)
-        post_id = insert_sentiment_data(sentence, sentiment_label)
-
-        response_data = {
-            "sentence": sentence,
-            "sentiment": sentiment_label,
-            "post_id": str(post_id)
-        }
-        return jsonify(response_data)
-
+            propertyId = request.form.get('propertyId')
+        
+        positive_percentage, negative_percentage = data_clean()
+        
+        response = {
+        "Positive": f"{positive_percentage:.2f}%",
+        "Negative": f"{negative_percentage:.2f}%"
+    }
+        return jsonify(response)
+    
     return jsonify({"error": "Only POST requests are supported on this endpoint."})
