@@ -5,7 +5,7 @@ import re
 from transformers import pipeline
 import pickle
 import spacy
-from utility.ML_chat_bot import get_meaning
+from utils.ML_chat_bot import get_meaning
 nlp = spacy.load("en_core_web_sm")
 
 

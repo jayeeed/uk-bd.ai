@@ -2,9 +2,9 @@
 from flask import request, jsonify, Blueprint
 from flask_cors import CORS
 from models.FAQ_chat import get_data, overwrite_data, overwrite_data
-from utility.ML_chat_bot import find_ans, reload_ans_corpus_file
-from utility.check_ans import is_ans
-from utility.is_question import is_ques, add_question_mark
+from utils.ML_chat_bot import find_ans, reload_ans_corpus_file
+from utils.check_ans import is_ans
+from utils.is_question import is_ques, add_question_mark
 
 # to get all the question answer form mongodb set by the user to view and edit
 FAQ_chat_route = Blueprint('FAQ_chat_route', __name__)

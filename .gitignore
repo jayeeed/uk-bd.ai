@@ -4,3 +4,6 @@ venv
 db/__pycache__
 models/__pycache__
 routes/__pycache__
+data/qa_model.pkl
+utils/__pycache__/
+

@@ -7,7 +7,6 @@ from routes.property_routes import property_routes
 # from routes.instant_varification_routes import verify_routes
 from routes.FAQ_chat import FAQ_chat_route
 
-
 app = Flask(__name__)
 
 app.register_blueprint(search_properties_route)
