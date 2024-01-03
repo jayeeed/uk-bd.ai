@@ -1,4 +1,4 @@
-# Stage 2: Build Python Flask Server
+# Stage 3: Build Python Flask Server
 FROM python:3.11.6 as flask-server-builder
 
 # Set the working directory
