@@ -1,23 +1,37 @@
-from flask import request, jsonify, make_response, Blueprint
-from sklearn.impute import SimpleImputer
-from sklearn.neighbors import NearestNeighbors
-from price_prediction.price import X_test_scaled,HistGradientBoostingRegressor_model,google_locations,property_df
-# import pandas as pd
+from flask import Blueprint, request, jsonify,make_response
+from flask_cors import CORS ,cross_origin
 import numpy as np
 from textblob import TextBlob
-# from flask_cors import CORS, cross_origin
-# from app import mongo
+from sklearn.impute import SimpleImputer
+from sklearn.neighbors import NearestNeighbors
+from db.db_config import price_prediction, description_collection
+from features.price_prediction.price import X_test_scaled,HistGradientBoostingRegressor_model,google_locations,property_df
 
 price_predict_routes = Blueprint('price_predict_routes', __name__)
 
-from flask_cors import CORS
 
-# CORS(search_properties_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
+
+# CORS(price_predict_routes, resources={r"/api/price/*": {"origins": "http://localhost:3009/add-properties"}})
+
+CORS(price_predict_routes, resources={
+    r"/api/price": {"origins": "http://localhost:3009"},
+    r"/api/description": {"origins": "http://localhost:3009/add-properties"}})
+
+
+# CORS(price_predict_routes, resources={})
+
 
 # @app.route('/predict', methods=['POST', 'OPTIONS'])
 # @cross_origin(origin="localhost", headers=["Content-Type", "authorization"])
-@price_predict_routes.route('/price', methods=['POST', 'OPTIONS'])
+@price_predict_routes.route('/api/price', methods=['POST', 'OPTIONS'])
+@cross_origin(supports_credentials=True)
 def handle_price_options():
+    """
+    This function handles the price prediction request.
+    It receives the necessary data from the request body, predicts the price using a machine learning model,
+    finds the nearest price based on location, and inserts the data into a database. If all required data is present,
+    a success message with the predicted price and nearest price is returned, otherwise an error message is returned.
+    """
     if request.method == 'OPTIONS':
         response = make_response()
         response.headers.add("Access-Control-Allow-Origin", "*")
@@ -29,7 +43,7 @@ def handle_price_options():
     elif request.method == 'POST':
         responseData = request.json
         data = responseData.get('values', {})
-        print("Received data:", data)
+        # print("Received data:", data)
 
         placeDescribesId = data.get('placeDescibe')
         typeOfPlaceId = data.get('typeOfPlace')
@@ -41,16 +55,16 @@ def handle_price_options():
         title = data.get('shortTitle')
 
         suggested_price = get_pred(X_test_scaled)
-        print("suggested_price", suggested_price)
+        # print("suggested_price", suggested_price)
         nearest_price = get_nearest(located)
-        print("nearest_price", nearest_price)
-        print("placeDescribesId", placeDescribesId)
-        print("typeOfPlaceId", typeOfPlaceId)
-        print("address", address)
-        print("title", title)
+        # print("nearest_price", nearest_price)
+        # print("placeDescribesId", placeDescribesId)
+        # print("typeOfPlaceId", typeOfPlaceId)
+        # print("address", address)
+        # print("title", title)
 
     if title and placeDescribesId and typeOfPlaceId and located and address and guests and amenitiesIds and images and request.method == 'POST':
-        id = mongo.db.prediction.insert_one({
+        id = price_prediction.insert_one({  
             "shortTitle": title, "placeDescibe": placeDescribesId, "typeOfPlace": typeOfPlaceId,
             "locatedPlace": located, "addAddress": address, "guests": guests, "offer": amenitiesIds, "uploadPhoto": images,
             "suggested_price": suggested_price,
@@ -63,7 +77,7 @@ def handle_price_options():
         return resp
 
     else:
-        resp = jsonify({'error': 'Invalid data or missing values'})
+        resp = jsonify({'error': 'Invalid data or missing vmake_responsealues'})
         resp.status_code = 400  # Bad Request status code
         return resp
 
@@ -79,7 +93,7 @@ def get_nearest(located):
         latitude = float(latitude)
         longitude = float(longitude)
         location_data = np.array([[latitude, longitude]])
-        print(location_data)
+        # print(location_data)
         imputer = SimpleImputer(strategy='median')
         location_data = imputer.fit_transform(location_data)
         k = 3
@@ -87,7 +101,7 @@ def get_nearest(located):
         nn_model.fit(google_locations)
         neighbors_indices = nn_model.kneighbors(
             location_data, n_neighbors=k, return_distance=False)
-        print(neighbors_indices)
+        # print(neighbors_indices)
         avg_neighbor_price = round(
             property_df.loc[neighbors_indices[0], "price"].mean(), 2)
         return avg_neighbor_price
@@ -96,14 +110,15 @@ def get_nearest(located):
         return None
 
 
-
-
-
-
-
 # @cross_origin(origin="localhost", headers=["Content-Type", "authorization"])
-@price_predict_routes.route('/description', methods=['POST', 'OPTIONS'])
+@price_predict_routes.route('/api/description', methods=['POST', 'OPTIONS'])
+@cross_origin(supports_credentials=True)
 def handle_description_options():
+    """
+    This function handles the description request.
+    It receives the description from the request body, predicts the sentiment and emotion using machine learning models,
+    and inserts the data into a database. If all required data is present, a success message with the predicted sentiment and emotion is returned, otherwise an error message is returned.
+    """
     if request.method == 'OPTIONS':
         response = make_response()
         response.headers.add("Access-Control-Allow-Origin", "*")
@@ -115,17 +130,17 @@ def handle_description_options():
     elif request.method == 'POST':
 
         data = request.json
-        print("Received data:", data)
+        # print("Received data:", data)
         description = data.get('text')
 
         sentiment = get_predict(description)
-        print(sentiment)
-        print("description", description)
+        # print(sentiment)
+        # print("description", description)
         emotion = get_emotion_from_text(description)
-        print(emotion)
+        # print(emotion)
 
     if description and request.method == 'POST':
-        id = mongo.db.description.insert_one({
+        id = description_collection.insert_one({  
             "description": description,
             "sentiment": sentiment,
             "emotion": emotion
@@ -142,6 +157,10 @@ def handle_description_options():
 
 
 def get_predict(description):
+    """
+    This function uses the VADER sentiment analysis algorithm to extract emotions from a given text.
+    It returns a dictionary containing the emotions and their scores.
+    """
     if description is not None and isinstance(description, str):
         sentiment_polarity = TextBlob(description).sentiment.polarity
 
@@ -155,6 +174,10 @@ def get_predict(description):
 
 
 def get_emotion_from_text(description):
+    """
+    This function uses a simple heuristic to extract emotions from a given text.
+    It returns a string representing the emotion, or 'neutral' if no emotion is detected.
+    """
     if description is not None and isinstance(description, str):
         blob = TextBlob(description)
         polarity = blob.sentiment.polarity
@@ -174,8 +197,12 @@ def get_emotion_from_text(description):
         return 'neutral'
 
 
-# if __name__ == '__main__':
-#     app.run('localhost', 5002)
+
+
+
+
+
+
 
 
 
@@ -207,3 +234,4 @@ def get_emotion_from_text(description):
 # sentiment_polarity = [
 #     TextBlob(review).sentiment.polarity for review in test_reviews]
 # print(sentiment_polarity)
+

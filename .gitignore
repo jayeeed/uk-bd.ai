@@ -1,10 +1,35 @@
-.vscode
-.venv
-venv
-data
+__pycache__/
 db/__pycache__
+features/__pycache__
 models/__pycache__
 routes/__pycache__
-utils/__pycache__/
-.vscode/settings.json
-sentiment_final/__pycache__/
+instant_varification/__pycache__
+
+# Ignore compiled Python files and virtual environment
+*.pyc
+.venv/
+.venv/ *
+.vscode
+env
+venv
+
+# Ignore Flask debugger and logs
+flask_debug.log*
+flask_debug_*.log*
+flask_request_logger.log*
+flask_request_logger_*.log*
+flask_wtf.csrf.log*
+flask_wtf_csrf.log*
+flask_migrate.versioning.*
+flask_migrate.versions/*
+flask_migrate.undo/*
+flask_sqlalchemy.migration_history.*
+flask_sqlalchemy.migration_versions/*
+flask_sqlalchemy.migrations/*
+
+# Ignore Flask session data and cache files
+session/ *
+cache/ *
+features/faq_chat/ml_models/tokenizer.pkl
+features/price_prediction/ml_models/model.joblib
+features/faq_chat/ml_models/qa_model.pkl

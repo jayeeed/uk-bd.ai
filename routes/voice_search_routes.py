@@ -1,8 +1,11 @@
-from flask import Blueprint, Flask, request, jsonify
-from flask_cors import CORS
+from db.db_config import properties_collection
+from features.voice_search.utils import utils
+from flask import Blueprint, request, jsonify
 from bson import json_util, ObjectId
 import json
-from db.db_config import get_data
+from flask_cors import CORS, cross_origin
+
+voice_search_routes = Blueprint('voice_search_routes', __name__)
 
 class CustomJSONEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -10,38 +13,28 @@ class CustomJSONEncoder(json.JSONEncoder):
             return str(obj)
         return super().default(obj)
 
-voice_search_route = Blueprint('voice_search_route', __name__)
+voice_search_routes.json_encoder = CustomJSONEncoder
 
-# CORS(voice_search_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
+# from flask_cors import CORS
+CORS(voice_search_routes, resources={r"/api": {"origins": "http://localhost:3009"}})
 
-@voice_search_route.route("/search", methods=['GET'])
+
+
+
+
+@voice_search_routes.route("/api/search", methods=['GET'])
+@cross_origin(supports_credentials=True)
 def search_autocomplete():
     try:
         query = request.args.get("searchText", "").lower()
         tokens = query.split(" ")
-
-        clauses = [
-            {
-                "$or": [
-                    {"title": {"$regex": token, "$options": "i"}},
-                    {"description": {"$regex": token, "$options": "i"}},
-                    {"located.display_name": {"$regex": token, "$options": "i"}},
-                    {"located.address.country": {"$regex": token, "$options": "i"}},
-                    {"address.country": {"$regex": token, "$options": "i"}},
-                    {"address.city": {"$regex": token, "$options": "i"}},
-                    {"address.state": {"$regex": token, "$options": "i"}}
-                ]
-            }
-            for token in tokens
-        ]
-        payload = {"$and": clauses}
-        cursor = get_data.find(payload).limit(10)
-
-        result_list = list(cursor)
-        result_json = json_util.dumps(result_list, default=json_util.default)
-        response_data = json.loads(result_json)
-
-        return jsonify(response_data)
-
+    
+        response_data = utils.voice_search(tokens)
+    
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+       # response_data = json.loads(result_json)
+        
+    return jsonify(response_data)
+

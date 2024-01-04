@@ -1,3 +1,7 @@
 # AI features for UKBD
 # ................................................
-lmgukk
+
+need to install tesseract, 
+need to install transformers,
+need to install nltk
+
