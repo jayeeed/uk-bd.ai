@@ -1,20 +1,33 @@
 # Stage 3: Build Python Flask Server
-FROM python:3.11.6 as flask-server-builder
+FROM ubuntu:latest
+
+# Copy the rest of the Flask
+# Update and install necessary packages
+RUN apt-get update && \
+    apt-get install -y python3.10 python3-pip && \
+    apt-get install -y tesseract-ocr-ben && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
 WORKDIR /usr/src/app
 
-# Copy the requirements.txt file to the working directory
+# Copy only the requirements file to leverage Docker cache
 COPY requirements.txt .
 
-# Install Flask dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Install Python packages
+RUN pip install --no-cache-dir -r requirements.txt && \
+	pip uninstall bson -y && pip uninstall pymongo -y && \
+	pip install pymongo
 
-# Copy the rest of the Flask server code
-COPY . .
-
-# Expose the port on which the Flask server will run
+# Make port 5050 available to the world outside this container
 EXPOSE 5000
 
-# Start the Flask server
-CMD ["python", "app.py"]
+# Define environment variable
+ENV NAME Airbnb
+
+# Copy the rest of your application files into the container
+COPY . .
+
+# Run app.py when the container launches
+CMD ["python3", "app.py"]
+

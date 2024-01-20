@@ -28,7 +28,7 @@ def ans_corpus_get():
 def ans_corpus_post():
     ans_corpus = request.json
     if "text" not in ans_corpus:  # or not isinstance(ans_corpus, dict):   # type: ignore
-        return jsonify({"error": "Invalid inpu format"}), 400
+        return jsonify({"error": "Invalid input format"}), 400
     else:
         overwrite_data(ans_corpus["text"])
         return jsonify({"response": "Posted"}), 200

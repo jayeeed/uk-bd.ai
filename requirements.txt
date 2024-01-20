@@ -45,11 +45,12 @@ pillow==10.2.0
 preshed==3.0.9
 pydantic==2.5.3
 pydantic_core==2.14.6
-pymongo==4.6.1
+pymongo==3.12.0
 PyMuPDF==1.23.8
 PyMuPDFb==1.23.7
 pytesseract==0.3.10
 python-dateutil==2.8.2
+python-dotenv==1.0.0
 pytz==2023.3.post1
 PyYAML==6.0.1
 regex==2023.12.25

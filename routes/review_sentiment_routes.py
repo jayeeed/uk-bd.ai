@@ -71,6 +71,8 @@ def get_review_sentiment():
             propertyId = json_data.get('propertyId')
         else:
             propertyId = request.form.get('propertyId')
+            
+        print(propertyId)
         
         positive_percentage, negative_percentage = data_clean(propertyId)
         

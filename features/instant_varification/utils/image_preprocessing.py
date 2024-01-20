@@ -8,7 +8,8 @@ from features.instant_varification import os, current_working_directory, extract
 if os.name == 'nt':
     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-
+else:
+	pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 
 
 
