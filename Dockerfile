@@ -16,11 +16,11 @@ COPY requirements.txt .
 
 # Install Python packages
 RUN pip install --no-cache-dir -r requirements.txt && \
-	pip uninstall bson -y && pip uninstall pymongo -y && \
-	pip install pymongo
+    pip uninstall bson -y && pip uninstall pymongo -y && \
+    pip install pymongo
 
 # Make port 5050 available to the world outside this container
-EXPOSE 5000
+EXPOSE 7050
 
 # Define environment variable
 ENV NAME Airbnb
