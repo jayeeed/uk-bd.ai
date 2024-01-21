@@ -1,7 +1,19 @@
 import nltk
+import os
+
+nltk_data_path = '/nltk_data'
+
+# Check if NLTK data exists at the specified path
+if not os.path.exists(nltk_data_path):
+    print("NLTK data not found. Downloading...")
+    
+    # Download NLTK data
+    nltk.download("vader_lexicon",download_dir=nltk_data_path)
+    
+    print("Download complete.")
 
 nltk.data.path.append("/nltk_data")
-# nltk.download("vader_lexicon")
+
 
 from flask import Flask
 from routes.recommend_routes import recommeded_properties_route
