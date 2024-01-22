@@ -1,7 +1,7 @@
 import nltk
 import os
 
-nltk_data_path = '/nltk_data'
+nltk_data_path = 'nltk_data'
 
 # Check if NLTK data exists at the specified path
 if not os.path.exists(nltk_data_path):

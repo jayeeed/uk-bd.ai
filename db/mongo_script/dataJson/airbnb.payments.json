@@ -1,0 +1,1502 @@
+[{
+  "_id": {
+    "$oid": "652bacc0a371e787994e0e81"
+  },
+  "stripeId": "pi_3O1QLWA4LMwIA5Dr10C72xNV",
+  "userId": {
+    "$oid": "65084433fc8f09c500095406"
+  },
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 1054.1699999999998,
+  "discountAmount": 1219.53,
+  "serviceFee": 206.7,
+  "discountPercentage": 59,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-15T09:11:28.118Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-15T09:11:28.118Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "652bada2d804e18523e2b160"
+  },
+  "stripeId": "pi_3O1QPUA4LMwIA5Dr1HWVk0uM",
+  "userId": {
+    "$oid": "65084433fc8f09c500095406"
+  },
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 302.1,
+  "discountAmount": 280.9,
+  "serviceFee": 53,
+  "discountPercentage": 53,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-15T09:15:14.515Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-15T09:15:14.515Z"
+  },
+  "__v": 0
+},
+
+{
+  "_id": {
+    "$oid": "652f9b90d630f0bba5308226"
+  },
+  "stripeId": "pi_3O2VObA4LMwIA5Dr09TToI8P",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 0,
+  "discountAmount": 0,
+  "serviceFee": 0,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-18T08:47:12.900Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-18T08:47:12.900Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534b78ab4cb206646592a98"
+  },
+  "stripeId": "pi_3O3uVYA4LMwIA5Dr0P5m10mC",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 0,
+  "discountAmount": 0,
+  "serviceFee": 0,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T05:47:54.946Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T05:47:54.946Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534b82eb4cb206646592a9f"
+  },
+  "stripeId": "pi_3O3uYEA4LMwIA5Dr1LIYmKwV",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 0,
+  "discountAmount": 0,
+  "serviceFee": 0,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T05:50:38.128Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T05:50:38.128Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534c569b2aa427f4175c781"
+  },
+  "stripeId": "pi_3O3vQzA4LMwIA5Dr1x8CKe9A",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T06:47:05.036Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T06:47:05.036Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534c646c1e11decfda34f76"
+  },
+  "stripeId": "pi_3O3vUZA4LMwIA5Dr1UdMpeDa",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T06:50:46.887Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T06:50:46.887Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e0f63a4f9fa967408e5a"
+  },
+  "stripeId": "pi_3O3xGlA4LMwIA5Dr0l17MPcC",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T08:44:38.134Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T08:44:38.134Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e2023a4f9fa967408e60"
+  },
+  "stripeId": "pi_3O3xL5A4LMwIA5Dr0LaPnIHv",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 111.30000000000001,
+  "discountAmount": 180.2,
+  "serviceFee": 26.5,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T08:49:06.497Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T08:49:06.497Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e2713a4f9fa967408e66"
+  },
+  "stripeId": "pi_3O3xMqA4LMwIA5Dr1jfRpbpL",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T08:50:57.930Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T08:50:57.930Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e3123a4f9fa967408e87"
+  },
+  "stripeId": "pi_3O3xORA4LMwIA5Dr0BhoXsCq",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T08:53:38.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T08:53:38.853Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e3fe3a4f9fa967408e8f"
+  },
+  "stripeId": "pi_3O3xTDA4LMwIA5Dr0BYvPDWP",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T08:57:34.411Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T08:57:34.411Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e4333a4f9fa967408e95"
+  },
+  "stripeId": "pi_3O3xU1A4LMwIA5Dr0OjgkVPJ",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T08:58:27.446Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T08:58:27.446Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e53a3a4f9fa967408eeb"
+  },
+  "stripeId": "pi_3O3xYKA4LMwIA5Dr0SfU2fAH",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T09:02:50.740Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:02:50.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e59c3a4f9fa967408f2a"
+  },
+  "stripeId": "pi_3O3xZxA4LMwIA5Dr0fQVfpkI",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T09:04:28.379Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:04:28.379Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e5f03a4f9fa967408f58"
+  },
+  "stripeId": "pi_3O3xbIA4LMwIA5Dr1i49H1si",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T09:05:52.276Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:05:52.276Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e6333a4f9fa967408f73"
+  },
+  "stripeId": "pi_3O3xcCA4LMwIA5Dr1OsJQRcr",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T09:06:59.694Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:06:59.694Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e6843a4f9fa967408fa0"
+  },
+  "stripeId": "pi_3O3xdeA4LMwIA5Dr1Sev6GyQ",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T09:08:20.437Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:08:20.437Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534e85f3a4f9fa967409137"
+  },
+  "stripeId": "pi_3O3xlFA4LMwIA5Dr0kNSHZyh",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T09:16:15.888Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:16:15.888Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534ee3f3a4f9fa967409641"
+  },
+  "stripeId": "pi_3O3y9bA4LMwIA5Dr0ODiRkW1",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 155.82000000000002,
+  "discountAmount": 252.28,
+  "serviceFee": 37.1,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T09:41:19.472Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:41:19.472Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534f2cfd31067e687b5f72f"
+  },
+  "stripeId": "pi_3O3ySRA4LMwIA5Dr0iVnDH5Q",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T10:00:47.038Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T10:00:47.038Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534f55ce03ad223c0cdcb4c"
+  },
+  "stripeId": "pi_3O3ybcA4LMwIA5Dr0tr0LLQ7",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.03999999999999,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T10:11:40.888Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T10:11:40.888Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6534f870384b8e34add5cb00"
+  },
+  "stripeId": "pi_3O3yoxA4LMwIA5Dr1Vg3qtre",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 271.89000000000004,
+  "discountAmount": 252.81,
+  "serviceFee": 47.7,
+  "discountPercentage": 53,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-22T10:24:48.793Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T10:24:48.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6538cddadf50947bb5b3091f"
+  },
+  "stripeId": "pi_3O52BsA4LMwIA5Dr0HyY3Ms5",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 133.56,
+  "discountAmount": 216.24,
+  "serviceFee": 31.8,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-25T08:12:10.596Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T08:12:10.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6538d87592f69598d8878d4e"
+  },
+  "stripeId": "pi_3O52teA4LMwIA5Dr15BCeThV",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 133.56,
+  "discountAmount": 216.24,
+  "serviceFee": 31.8,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-25T08:57:25.225Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T08:57:25.225Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6538e3bfb8bb620cc66d1ada"
+  },
+  "stripeId": "pi_3O53eIA4LMwIA5Dr1OVrcQT4",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-25T09:45:35.918Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T09:45:35.918Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6538e61585fa4f89b3c24fe1"
+  },
+  "stripeId": "pi_3O53nuA4LMwIA5Dr1J3WpZMM",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-25T09:55:33.747Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T09:55:33.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6538e6fef50a32c69f14d174"
+  },
+  "stripeId": "pi_3O53rjA4LMwIA5Dr1DFEXglY",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-25T09:59:26.760Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T09:59:26.760Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6538e7a6844a4016cfa3af17"
+  },
+  "stripeId": "pi_3O53uFA4LMwIA5Dr1j3wBk32",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-25T10:02:14.239Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T10:02:14.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6538f1dbd6857aa01e16e30b"
+  },
+  "stripeId": "pi_3O54WGA4LMwIA5Dr1awtgQ5U",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 111.3,
+  "discountAmount": 180.2,
+  "serviceFee": 26.5,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-25T10:45:47.601Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-25T10:45:47.601Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a3d4c4d8c7e6da578eb84"
+  },
+  "stripeId": "pi_3O5Qf8A4LMwIA5Dr0N64dgV5",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T10:19:56.839Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T10:19:56.839Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a3e54dec8b21adcf1fd1c"
+  },
+  "stripeId": "pi_3O5QjOA4LMwIA5Dr0WR1foDT",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T10:24:20.475Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T10:24:20.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a3ef0211340734406d3e0"
+  },
+  "stripeId": "pi_3O5QlsA4LMwIA5Dr0EyJ8hbc",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 111.3,
+  "discountAmount": 180.2,
+  "serviceFee": 26.5,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T10:26:56.636Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T10:26:56.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a3f69ef8960b7a9d3ada7"
+  },
+  "stripeId": "pi_3O5QnrA4LMwIA5Dr1vPdlHGa",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T10:28:57.714Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T10:28:57.714Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a4071d312f2f7ea8091aa"
+  },
+  "stripeId": "pi_3O5Qs4A4LMwIA5Dr1BQON6iM",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T10:33:22.017Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T10:33:22.017Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a4105414143d54305da6b"
+  },
+  "stripeId": "pi_3O5Qu4A4LMwIA5Dr1yJ2fwy3",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T10:35:49.126Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T10:35:49.126Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a432f655abccdcb81fda2"
+  },
+  "stripeId": "pi_3O5R3MA4LMwIA5Dr1yqkNgHp",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.04,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T10:45:03.720Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T10:45:03.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a4fbb6c29d18894b96e97"
+  },
+  "stripeId": "pi_3O5RtCA4LMwIA5Dr05j8IpGt",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 111.3,
+  "discountAmount": 180.2,
+  "serviceFee": 26.5,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T11:38:35.956Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T11:38:35.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a5001a5993706f1b7febc"
+  },
+  "stripeId": "pi_3O5RuMA4LMwIA5Dr1Hr50H0e",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 111.3,
+  "discountAmount": 180.2,
+  "serviceFee": 26.5,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T11:39:45.663Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T11:39:45.663Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a50671ce12b97a6571482"
+  },
+  "stripeId": "pi_3O5RvQA4LMwIA5Dr0aQqK9kS",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 111.3,
+  "discountAmount": 180.2,
+  "serviceFee": 26.5,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T11:41:27.307Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T11:41:27.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a5583d428b3a267b15972"
+  },
+  "stripeId": "pi_3O5SH4A4LMwIA5Dr1R7OrYby",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T12:03:15.928Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T12:03:15.928Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a55c64a9f69df7627e736"
+  },
+  "stripeId": "pi_3O5SIBA4LMwIA5Dr0RVAFBl0",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T12:04:22.189Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T12:04:22.189Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a56721e82c6d81a16b007"
+  },
+  "stripeId": "pi_3O5SKxA4LMwIA5Dr0nqkUEmZ",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T12:07:14.142Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T12:07:14.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a56c6d50958251f621aa5"
+  },
+  "stripeId": "pi_3O5SMIA4LMwIA5Dr0HuRCVPX",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 44.52,
+  "discountAmount": 72.08,
+  "serviceFee": 10.6,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T12:08:38.953Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T12:08:38.953Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653a5881431085e4a62190aa"
+  },
+  "stripeId": "pi_3O5STSA4LMwIA5Dr0CQIwUr7",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 89.04,
+  "discountAmount": 144.16,
+  "serviceFee": 21.2,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-26T12:16:01.326Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T12:16:01.326Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653e423c32f10cecd6663554"
+  },
+  "stripeId": "pi_3O6XBRA4LMwIA5Dr0EBkKNx2",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 1243.38,
+  "discountAmount": 1438.42,
+  "serviceFee": 243.8,
+  "discountPercentage": 59,
+  "currency": "usd",
+  "createdAt": {
+    "$date": "2023-10-29T11:30:04.079Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-29T11:30:04.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65473b52d2225a56ed9f31f1"
+  },
+  "stripeId": "pi_3O90AIA4LMwIA5Dr1VQmijTg",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 755.25,
+  "discountAmount": 702.25,
+  "serviceFee": 132.5,
+  "discountPercentage": 53,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-05T06:50:58.779Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-05T06:50:58.779Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6549e1ffd4de650c92a3d562"
+  },
+  "stripeId": "pi_3O9jM5A4LMwIA5Dr1aKGQOUD",
+  "propertyId": {
+    "$oid": "651e88f56e9814a70ffdcf05"
+  },
+  "originalPrice": 53,
+  "actualPrice": 66.78,
+  "discountAmount": 108.12,
+  "serviceFee": 15.9,
+  "discountPercentage": 68,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-07T07:06:39.869Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-07T07:06:39.869Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "654f94d74067586f9a381f13"
+  },
+  "stripeId": "pi_3OBIVhA4LMwIA5Dr0GANOKqN",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 0,
+  "discountAmount": 0,
+  "serviceFee": 0,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-11T14:51:03.829Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-11T14:51:03.829Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "654f9a744067586f9a382548"
+  },
+  "stripeId": "pi_3OBItAA4LMwIA5Dr02rpsEMn",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 47250,
+  "discountAmount": 2250,
+  "serviceFee": 4500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-11T15:15:00.356Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-11T15:15:00.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "654fa0a54067586f9a382d8e"
+  },
+  "stripeId": "pi_3OBJIvA4LMwIA5Dr0OiRdaKw",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 15750,
+  "discountAmount": 750,
+  "serviceFee": 1500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-11T15:41:25.042Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-11T15:41:25.042Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65506153cdb27726d241a8c6"
+  },
+  "stripeId": "pi_3OBW8TA4LMwIA5Dr1CWcVFW5",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 15750,
+  "discountAmount": 750,
+  "serviceFee": 1500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-12T05:23:31.165Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-12T05:23:31.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6550619acdb27726d241a902"
+  },
+  "stripeId": "pi_3OBW9NA4LMwIA5Dr18qyZ2aH",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 0,
+  "discountAmount": 0,
+  "serviceFee": 0,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-12T05:24:42.504Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-12T05:24:42.504Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6550645191644d27786c670a"
+  },
+  "stripeId": "pi_3OBWKpA4LMwIA5Dr0w3BBrJT",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 15750,
+  "discountAmount": 750,
+  "serviceFee": 1500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-12T05:36:17.154Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-12T05:36:17.154Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6551c57bd4f86692f989315c"
+  },
+  "stripeId": "pi_3OBtqyA4LMwIA5Dr0RJMGEjG",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 15750,
+  "discountAmount": 750,
+  "serviceFee": 1500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-13T06:43:07.046Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-13T06:43:07.046Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "655352a375eccc14fb925bb5"
+  },
+  "stripeId": "pi_3OCKIyA4LMwIA5Dr1YaTokrF",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 15750,
+  "discountAmount": 750,
+  "serviceFee": 1500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-14T10:57:39.279Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-14T10:57:39.279Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6553588875eccc14fb925e2a"
+  },
+  "stripeId": "pi_3OCKh5A4LMwIA5Dr0tQs0f0n",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 15750,
+  "discountAmount": 750,
+  "serviceFee": 1500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-14T11:22:48.955Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-14T11:22:48.955Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65536c4475eccc14fb92707c"
+  },
+  "stripeId": "pi_3OCM0oA4LMwIA5Dr0sAhUgP7",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 31500,
+  "discountAmount": 1500,
+  "serviceFee": 3000,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-14T12:47:00.409Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-14T12:47:00.409Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6555e47060d4dc76371cfdca"
+  },
+  "stripeId": "pi_3OD26wA4LMwIA5Dr1IkdaYpx",
+  "propertyId": {
+    "$oid": "654f41721ce6072bd9c1b4d0"
+  },
+  "originalPrice": 15000,
+  "actualPrice": 15750,
+  "discountAmount": 750,
+  "serviceFee": 1500,
+  "discountPercentage": 5,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-16T09:44:16.425Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-16T09:44:16.425Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6561cb47f5d08290c63288a9"
+  },
+  "stripeId": "pi_3OGJ1SA4LMwIA5Dr0H53opsU",
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "originalPrice": 1000,
+  "actualPrice": 1100,
+  "discountAmount": 0,
+  "serviceFee": 100,
+  "discountPercentage": null,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-25T10:24:07.468Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-25T10:24:07.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6563221ca9af5848e20f4398"
+  },
+  "stripeId": "pi_3OGfplA4LMwIA5Dr0DWMEKYZ",
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "originalPrice": 1000,
+  "actualPrice": 1100,
+  "discountAmount": 0,
+  "serviceFee": 100,
+  "discountPercentage": null,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-26T10:46:52.831Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-26T10:46:52.831Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656490e8b47c73b0e618f627"
+  },
+  "stripeId": "pi_3OH4HPA4LMwIA5Dr0oCNnu4h",
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "originalPrice": 1000,
+  "actualPrice": 0,
+  "discountAmount": 0,
+  "serviceFee": 0,
+  "discountPercentage": null,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-27T12:51:52.705Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T12:51:52.705Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6564964b851e93e5d987619d"
+  },
+  "stripeId": "pi_3OH4ddA4LMwIA5Dr0HjWbfrW",
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "originalPrice": 1000,
+  "actualPrice": 1100,
+  "discountAmount": 0,
+  "serviceFee": 100,
+  "discountPercentage": null,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-27T13:14:51.606Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T13:14:51.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65657f0249e643010168fcf5"
+  },
+  "stripeId": "pi_3OHK8jA4LMwIA5Dr0jhInbU2",
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "originalPrice": 1000,
+  "actualPrice": 1100,
+  "discountAmount": 0,
+  "serviceFee": 100,
+  "discountPercentage": null,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-11-28T05:47:46.456Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-28T05:47:46.456Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6580154218b10291d248faa2"
+  },
+  "stripeId": "pi_3OOdPiA4LMwIA5Dr1iOSPfzY",
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "originalPrice": 1000,
+  "actualPrice": 39600,
+  "discountAmount": 8800,
+  "serviceFee": 4400,
+  "discountPercentage": 20,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-12-18T09:47:46.598Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-18T09:47:46.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6580293d5207dc1385d62268"
+  },
+  "stripeId": "pi_3OOek1A4LMwIA5Dr0i37ZxIa",
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "originalPrice": 1000,
+  "actualPrice": 26600,
+  "discountAmount": 4200,
+  "serviceFee": 2800,
+  "discountPercentage": 15,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2023-12-18T11:13:01.935Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-18T11:13:01.935Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6596d40192429ed0d68ccdc8"
+  },
+  "stripeId": "pi_3OUtBmA4LMwIA5Dr1fAehHSo",
+  "propertyId": {
+    "$oid": "6578369508c78cd927752a2b"
+  },
+  "originalPrice": 143,
+  "actualPrice": 0,
+  "discountAmount": 0,
+  "serviceFee": 0,
+  "discountPercentage": null,
+  "currency": "usd",
+  "status": "paid",
+  "createdAt": {
+    "$date": "2024-01-04T15:51:29.813Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-04T15:51:29.813Z"
+  },
+  "__v": 0
+}]

@@ -33,3 +33,5 @@ cache/ *
 features/faq_chat/ml_models/tokenizer.pkl
 features/price_prediction/ml_models/model.joblib
 features/faq_chat/ml_models/qa_model.pkl
+mongo_script.zip
+features/price_prediction/ml_models/scaler.joblib

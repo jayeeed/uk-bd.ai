@@ -1,5 +1,6 @@
 # Stage 3: Build Python Flask Server
-FROM ubuntu:latest
+# FROM ubuntu:latest
+FROM python:3.10-slim
 
 # Copy the rest of the Flask
 # Update and install necessary packages
