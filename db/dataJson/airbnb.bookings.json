@@ -1,0 +1,365 @@
+[{
+  "_id": {
+    "$oid": "6561cb47f5d08290c63288ab"
+  },
+  "invoiceId": 1700907818,
+  "paymentId": {
+    "$oid": "6561cb47f5d08290c63288a9"
+  },
+  "renterUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "renterName": "Vai Bashar",
+  "renterEmail": "bashar@example.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "2023-11-24T18:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2023-11-25T18:00:00.000Z"
+  },
+  "stayDays": 1,
+  "adults": 0,
+  "children": 0,
+  "infants": 0,
+  "pets": 1,
+  "addressLine1": "Elephant Road, , ",
+  "city": "",
+  "country": "Bangladesh",
+  "postalCode": "",
+  "status": "booked",
+  "createdAt": {
+    "$date": "2023-11-25T10:24:07.791Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-04T05:40:31.948Z"
+  },
+  "__v": 0,
+  "reviewStatus": "reviewed"
+},
+{
+  "_id": {
+    "$oid": "6563221da9af5848e20f439a"
+  },
+  "invoiceId": 1700995505,
+  "paymentId": {
+    "$oid": "6563221ca9af5848e20f4398"
+  },
+  "renterUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "renterName": "Vai Bashar",
+  "renterEmail": "bashar@example.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "2023-11-25T18:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2023-11-26T18:00:00.000Z"
+  },
+  "stayDays": 1,
+  "adults": 0,
+  "children": 0,
+  "infants": 0,
+  "pets": 0,
+  "addressLine1": "Elephant Road, , ",
+  "city": "",
+  "country": "Bangladesh",
+  "postalCode": "",
+  "status": "active",
+  "createdAt": {
+    "$date": "2023-11-26T10:46:53.152Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:57:53.186Z"
+  },
+  "__v": 0,
+  "reviewStatus": "reviewed"
+},
+{
+  "_id": {
+    "$oid": "656490e9b47c73b0e618f629"
+  },
+  "invoiceId": 1701089475,
+  "paymentId": {
+    "$oid": "656490e8b47c73b0e618f627"
+  },
+  "renterUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "renterName": "Vai Bashar",
+  "renterEmail": "bashar@example.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  },
+  "stayDays": 0,
+  "adults": 0,
+  "children": 0,
+  "infants": 0,
+  "pets": 0,
+  "addressLine1": "Elephant Road, , ",
+  "city": "",
+  "country": "Bangladesh",
+  "postalCode": "",
+  "status": "booked",
+  "createdAt": {
+    "$date": "2023-11-27T12:51:53.037Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T12:51:53.037Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6564964b851e93e5d987619f"
+  },
+  "invoiceId": 1701090853,
+  "paymentId": {
+    "$oid": "6564964b851e93e5d987619d"
+  },
+  "renterUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "renterName": "Vai Bashar",
+  "renterEmail": "bashar@example.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "2023-11-26T18:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2023-11-27T18:00:00.000Z"
+  },
+  "stayDays": 1,
+  "adults": 2,
+  "children": 0,
+  "infants": 0,
+  "pets": 0,
+  "addressLine1": "Elephant Road, , ",
+  "city": "",
+  "country": "Bangladesh",
+  "postalCode": "",
+  "status": "booked",
+  "createdAt": {
+    "$date": "2023-11-27T13:14:51.927Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-17T08:10:50.882Z"
+  },
+  "__v": 0,
+  "reviewStatus": "reviewed"
+},
+{
+  "_id": {
+    "$oid": "65657f0249e643010168fcf7"
+  },
+  "invoiceId": 1701150441,
+  "paymentId": {
+    "$oid": "65657f0249e643010168fcf5"
+  },
+  "renterUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "renterName": "Vai Bashar",
+  "renterEmail": "bashar@example.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "2023-11-27T18:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2023-11-28T18:00:00.000Z"
+  },
+  "stayDays": 1,
+  "adults": 1,
+  "children": 1,
+  "infants": 0,
+  "pets": 0,
+  "addressLine1": "Elephant Road, , ",
+  "city": "",
+  "country": "Bangladesh",
+  "postalCode": "",
+  "status": "booked",
+  "createdAt": {
+    "$date": "2023-11-28T05:47:46.782Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-04T05:55:07.661Z"
+  },
+  "__v": 0,
+  "reviewStatus": "reviewed"
+},
+{
+  "_id": {
+    "$oid": "6580154318b10291d248faa4"
+  },
+  "invoiceId": 1702892826,
+  "paymentId": {
+    "$oid": "6580154218b10291d248faa2"
+  },
+  "renterUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "renterName": "Vai Bashar",
+  "renterEmail": "bashar@example.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "2023-12-17T18:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2024-01-30T18:00:00.000Z"
+  },
+  "stayDays": 44,
+  "adults": 2,
+  "children": 1,
+  "infants": 0,
+  "pets": 0,
+  "addressLine1": "Elephant Road, , ",
+  "city": "Notun dhaka",
+  "country": "Bangladesh",
+  "postalCode": "1205",
+  "status": "booked",
+  "createdAt": {
+    "$date": "2023-12-18T09:47:47.580Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-18T09:47:47.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6580293e5207dc1385d6226a"
+  },
+  "invoiceId": 1702897929,
+  "paymentId": {
+    "$oid": "6580293d5207dc1385d62268"
+  },
+  "renterUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "renterName": "Vai Bashar",
+  "renterEmail": "bashar@example.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "2024-01-31T18:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2024-02-28T18:00:00.000Z"
+  },
+  "stayDays": 28,
+  "adults": 3,
+  "children": 1,
+  "infants": 0,
+  "pets": 0,
+  "addressLine1": "Elephant Road, , ",
+  "city": "Notun dhaka",
+  "country": "Bangladesh",
+  "postalCode": "1205",
+  "status": "booked",
+  "createdAt": {
+    "$date": "2023-12-18T11:13:02.457Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T03:19:11.612Z"
+  },
+  "__v": 0,
+  "reviewStatus": "reviewed"
+},
+{
+  "_id": {
+    "$oid": "6596d40292429ed0d68ccdca"
+  },
+  "invoiceId": 1704383434,
+  "paymentId": {
+    "$oid": "6596d40192429ed0d68ccdc8"
+  },
+  "renterUserId": {
+    "$oid": "6596bc1092429ed0d68cbb5b"
+  },
+  "hostUserId": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "propertyId": {
+    "$oid": "6578369508c78cd927752a2b"
+  },
+  "renterName": "Jayed Bin Jahangir",
+  "renterEmail": "jayedbinjahangir@gmail.com",
+  "hostName": "Vai Bashar",
+  "hostEmail": "bashar@example.com",
+  "startDate": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  },
+  "stayDays": 0,
+  "adults": 0,
+  "children": 0,
+  "infants": 0,
+  "pets": 0,
+  "addressLine1": "Elephant Road, , ",
+  "city": "",
+  "country": "India",
+  "postalCode": "",
+  "status": "booked",
+  "createdAt": {
+    "$date": "2024-01-04T15:51:30.199Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-04T15:51:30.199Z"
+  },
+  "__v": 0
+}]

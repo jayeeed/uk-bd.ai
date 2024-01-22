@@ -1,0 +1,376 @@
+[{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be65"
+  },
+  "title": "Pool table",
+  "icon": "game-icons:pool-table-corner",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be5a"
+  },
+  "title": "Kitchen",
+  "icon": "fa6-solid:kitchen-set",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be61"
+  },
+  "title": "Hot tub",
+  "icon": "mdi:hot-tub",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be60"
+  },
+  "title": "Pool",
+  "icon": "ic:baseline-pool",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be93"
+  },
+  "title": "Hut",
+  "icon": "game-icons:hut",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be89"
+  },
+  "title": "Camper",
+  "icon": "mdi:campervan",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be86"
+  },
+  "title": "Bed & breakfast",
+  "icon": "fluent-mdl2:breakfast",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be8a"
+  },
+  "title": "Castle",
+  "icon": "ph:castle-turret",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be96"
+  },
+  "title": "Tower",
+  "icon": "tdesign:lighthouse-1",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be5c"
+  },
+  "title": "Free parking on premises",
+  "icon": "fa-solid:car",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be70"
+  },
+  "title": "Carbon monoxide alarm",
+  "icon": "mdi:smoke-detector-variant-alert",
+  "type": "safety"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be90"
+  },
+  "title": "Hotel",
+  "icon": "lucide:hotel",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be91"
+  },
+  "title": "Houseboat",
+  "icon": "material-symbols:houseboat-sharp",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be94"
+  },
+  "title": "Tent",
+  "icon": "ph:tent-light",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be98"
+  },
+  "title": "Windmill",
+  "icon": "mingcute:dutch-windmill-line",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be87"
+  },
+  "title": "Boat",
+  "icon": "clarity:boat-line",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be6e"
+  },
+  "title": "First aid kit",
+  "icon": "clarity:first-aid-kit-line",
+  "type": "safety"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be58"
+  },
+  "title": "Wifi",
+  "icon": "ion:wifi",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be95"
+  },
+  "title": "Tiny home",
+  "icon": "ph:warehouse-light",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be67"
+  },
+  "title": "Piano",
+  "icon": "game-icons:grand-piano",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be97"
+  },
+  "title": "Treehouse",
+  "icon": "game-icons:treehouse",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be69"
+  },
+  "title": "Lake access",
+  "icon": "ic:outline-houseboat",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be5b"
+  },
+  "title": "Washer",
+  "icon": "fluent:washer-20-regular",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be59"
+  },
+  "title": "Tv",
+  "icon": "heroicons:tv",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be64"
+  },
+  "title": "Outdoor dining area",
+  "icon": "wpf:dining-room",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be83"
+  },
+  "title": "House",
+  "icon": "pepicons-pencil:house",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be6d"
+  },
+  "title": "Smoke alarm",
+  "icon": "mdi:smoke-detector-variant",
+  "type": "safety"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be88"
+  },
+  "title": "Cabin",
+  "icon": "material-symbols:cabin",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be8f"
+  },
+  "title": "Guesthouse",
+  "icon": "tdesign:houses-2",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be5e"
+  },
+  "title": "Air conditioning",
+  "icon": "streamline:travel-hotel-air-conditioner-heating-ac-air-hvac-cool-cooling-cold-hot-conditioning",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be6a"
+  },
+  "title": "Beach access",
+  "icon": "streamline:travel-places-beach-island-waves-outdoor-recreation-tree-beach-palm-wave-water",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be84"
+  },
+  "title": "Apartment",
+  "icon": "material-symbols:apartment",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be85"
+  },
+  "title": "Barn",
+  "icon": "mdi:barn",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be8b"
+  },
+  "title": "Cave",
+  "icon": "game-icons:cave-entrance",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be8e"
+  },
+  "title": "Farm",
+  "icon": "streamline:nature-ecology-green-house-glass-building-plants-crops-produce-farm",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be5f"
+  },
+  "title": "Dedicated workspace",
+  "icon": "icon-park-twotone:table-lamp",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be66"
+  },
+  "title": "Indoor fireplace",
+  "icon": "mdi:fireplace",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be63"
+  },
+  "title": "BBQ grill",
+  "icon": "streamline:food-barbeque-pot-cook-grill-bbq-drink-cooking-nutrition-pot-barbecue-grilling-food-cauldron",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be6b"
+  },
+  "title": "Ski-in/Ski-out",
+  "icon": "mdi:ski",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be62"
+  },
+  "title": "Patio",
+  "icon": "mdi:patio",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be68"
+  },
+  "title": "Exercise equipment",
+  "icon": "healthicons:exercise-outline",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be6c"
+  },
+  "title": "Outdoor shower",
+  "icon": "icon-park-outline:shower-head",
+  "type": "standout"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be8d"
+  },
+  "title": "Dome",
+  "icon": "fa6-solid:landmark-dome",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be5d"
+  },
+  "title": "Paid parking on premises",
+  "icon": "maki:parking-paid",
+  "type": "offer"
+},
+{
+  "_id": {
+    "$oid": "64ec2a9d65ced6fc0568be6f"
+  },
+  "title": "Fire extinguisher",
+  "icon": "ph:fire-extinguisher",
+  "type": "safety"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be8c"
+  },
+  "title": "Container",
+  "icon": "clarity:container-line",
+  "type": "describe"
+},
+{
+  "_id": {
+    "$oid": "64ec6d2065ced6fc0568be92"
+  },
+  "title": "Kezhan",
+  "icon": "tdesign:teahouse",
+  "type": "describe"
+}]

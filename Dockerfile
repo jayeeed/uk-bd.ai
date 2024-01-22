@@ -9,6 +9,9 @@ RUN apt-get update && \
     apt-get install -y tesseract-ocr-ben && \
     rm -rf /var/lib/apt/lists/*
 
+# Set the NLTK data directory
+ENV NLTK_DATA /usr/src/app/nltk_data
+
 # Set the working directory
 WORKDIR /usr/src/app
 
@@ -18,13 +21,14 @@ COPY requirements.txt .
 # Install Python packages
 RUN pip install --no-cache-dir -r requirements.txt && \
     pip uninstall bson -y && pip uninstall pymongo -y && \
-    pip install pymongo
+    pip install pymongo && \
+    pip install python-dotenv
 
 # Make port 5050 available to the world outside this container
 EXPOSE 7050
 
 # Define environment variable
-ENV NAME Airbnb
+# ENV NAME Airbnb
 
 # Copy the rest of your application files into the container
 COPY . .

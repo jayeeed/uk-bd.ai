@@ -1,0 +1,800 @@
+[{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2442a"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:30:40.066Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:30:40.066Z"
+  },
+  "sentiment": "Positive",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2442b"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "good",
+  "CommunicationRating": 4,
+  "RecommendRating": 4,
+  "ServicesRating": 4,
+  "LocationRating": 5,
+  "overAllRating": 4.25,
+  "createdAt": {
+    "$date": "2023-11-27T07:15:47.387Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:15:47.387Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2442c"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:33:21.556Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:33:21.556Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2442d"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "good",
+  "CommunicationRating": 4,
+  "RecommendRating": 4,
+  "ServicesRating": 4,
+  "LocationRating": 5,
+  "overAllRating": 4.25,
+  "createdAt": {
+    "$date": "2023-11-27T07:19:23.886Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:19:23.886Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2442e"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:43:46.681Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:43:46.681Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2442f"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T08:02:54.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T08:02:54.772Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24430"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "GOOD",
+  "CommunicationRating": 4,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:30:31.637Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:30:31.637Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24431"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T08:04:22.648Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T08:04:22.648Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24432"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T08:40:49.123Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T08:40:49.123Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24433"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:40:04.914Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:40:04.914Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24434"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T06:11:28.342Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T06:11:28.342Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24435"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T08:04:23.746Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T08:04:23.746Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24436"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:39:16.575Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:39:16.575Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24437"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:35:09.406Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:35:09.406Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24438"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "bad",
+  "CommunicationRating": 1,
+  "RecommendRating": 1,
+  "ServicesRating": 1,
+  "LocationRating": 1,
+  "overAllRating": 1,
+  "createdAt": {
+    "$date": "2023-11-27T06:11:37.510Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T06:11:37.510Z"
+  },
+  "sentiment": "Negative"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24439"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:47:13.104Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:47:13.104Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2443a"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T08:04:24.500Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T08:04:24.500Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2443b"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:45:51.934Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:45:51.934Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2443c"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "super good",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-12-04T05:40:31.936Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-04T05:40:31.936Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2443d"
+  },
+  "sentiment": "Positive",
+  "sentence": "I Enjoyed my living very much. The rooms were Clean."
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2443e"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "GOOD",
+  "CommunicationRating": 4,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:29:18.429Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:29:18.429Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2443f"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:39:38.468Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:39:38.468Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24440"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:42:18.481Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:42:18.481Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24441"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "super good",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-12-17T08:10:50.871Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-17T08:10:50.871Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24442"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "not so good, its ok, but service was so bad",
+  "CommunicationRating": 5,
+  "RecommendRating": 2,
+  "ServicesRating": 1,
+  "LocationRating": 3,
+  "overAllRating": 2.75,
+  "createdAt": {
+    "$date": "2023-12-04T05:55:07.657Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-04T05:55:07.657Z"
+  },
+  "sentiment": "Negative"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24443"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:39:12.290Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:39:12.290Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24444"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:45:09.970Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:45:09.970Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24445"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:47:18.792Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:47:18.792Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24446"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "hoioihhio",
+  "CommunicationRating": 5,
+  "RecommendRating": 5,
+  "ServicesRating": 5,
+  "LocationRating": 5,
+  "overAllRating": 5,
+  "createdAt": {
+    "$date": "2023-11-27T07:39:08.646Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:39:08.646Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24447"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:51:23.786Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:51:23.786Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24448"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "good",
+  "CommunicationRating": 4,
+  "RecommendRating": 4,
+  "ServicesRating": 4,
+  "LocationRating": 5,
+  "overAllRating": 4.25,
+  "createdAt": {
+    "$date": "2023-11-27T07:24:33.318Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T07:24:33.318Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b24449"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:47:11.135Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:47:11.135Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2444a"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "goood",
+  "CommunicationRating": 5,
+  "RecommendRating": 4,
+  "ServicesRating": 5,
+  "LocationRating": 4,
+  "overAllRating": 4.5,
+  "createdAt": {
+    "$date": "2023-11-27T09:49:32.318Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T09:49:32.318Z"
+  },
+  "sentiment": "Positive"
+},
+{
+  "_id": {
+    "$oid": "65ab71e234e9c83c86b2444b"
+  },
+  "propertyId": {
+    "$oid": "6561cab5f5d08290c6328547"
+  },
+  "reviewedBy": {
+    "$oid": "6561c8daf5d08290c6327551"
+  },
+  "reviewMessage": "bad",
+  "CommunicationRating": 1,
+  "RecommendRating": 1,
+  "ServicesRating": 1,
+  "LocationRating": 1,
+  "overAllRating": 1,
+  "createdAt": {
+    "$date": "2024-01-20T03:19:11.602Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T03:19:11.602Z"
+  },
+  "sentiment": "Negative"
+}]
