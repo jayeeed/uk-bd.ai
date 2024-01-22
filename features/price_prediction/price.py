@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify, make_response
 import pandas as pd
 import numpy as np
@@ -13,8 +14,15 @@ from sklearn.model_selection import train_test_split
 import joblib
 from db.db_config import properties_collection
 
+import os
+load_dotenv()
 
-# CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
+CORS_ORIGIN = os.getenv('CORS_ORIGIN')
+
+print(type(CORS_ORIGIN))
+
+
+# CORS(app, resources={r"/add-properties": {"origins": CORS_ORIGIN}})
 
 # Load the property data from MongoDB
 # property_data = list(mongo.db.price.find())
@@ -32,6 +40,11 @@ property_df = data.drop(columns=['_id', 'userId', 'title', 'images', 'descriptio
 # print(property_df)
 
 # property_df.dropna(inplace=True)
+
+# property_df['lat'] = property_df['located'].apply(lambda x: x['lat'] if isinstance(x, dict) and 'lat' in x else x)
+
+# property_df['lon'] = property_df['located'].apply(lambda x: x['lon'] if isinstance(x, dict) and 'lon' in x else x)
+
 
 property_df['lat'] = property_df['located'].apply(lambda x: x['lat'])
 property_df['lon'] = property_df['located'].apply(lambda x: x['lon'])
@@ -127,8 +140,8 @@ categorical_df = property_df[categorical_features].fillna(
 
 label_encoder = LabelEncoder()
 for feature in categorical_features:
-    categorical_df[feature] = label_encoder.fit_transform(
-        categorical_df[feature])
+    categorical_df[feature] = categorical_df[feature].apply(lambda x: str(x) if isinstance(x, dict) else x)
+    categorical_df[feature] = label_encoder.fit_transform(categorical_df[feature])
 # print(categorical_df[feature])
 
 # Combine numeric and categorical DataFrames

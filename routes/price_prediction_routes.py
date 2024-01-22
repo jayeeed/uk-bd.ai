@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from flask import Blueprint, request, jsonify,make_response
 from flask_cors import CORS ,cross_origin
 import numpy as np
@@ -10,11 +11,18 @@ from features.price_prediction.price import X_test_scaled,HistGradientBoostingRe
 price_predict_routes = Blueprint('price_predict_routes', __name__)
 
 
+import os
+load_dotenv()
+
+CORS_ORIGIN = os.getenv('CORS_ORIGIN')
+
+print(type(CORS_ORIGIN))
+
 
 # CORS(price_predict_routes, resources={r"/api/price/*": {"origins": "http://localhost:3009/add-properties"}})
 
 CORS(price_predict_routes, resources={
-    r"/api/price": {"origins": "http://localhost:3009"},
+    r"/api/price": {"origins": CORS_ORIGIN},
     r"/api/description": {"origins": "http://localhost:3009/add-properties"}})
 
 
@@ -207,7 +215,7 @@ def get_emotion_from_text(description):
 
 
 
-# CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
+# CORS(app, resources={r"/add-properties": {"origins": CORS_ORIGIN}})
 
 # property_data = list(mongo.db.allproperties.find())
 

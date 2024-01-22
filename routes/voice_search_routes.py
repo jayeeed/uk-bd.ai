@@ -1,9 +1,18 @@
+from dotenv import load_dotenv
 from db.db_config import properties_collection
 from features.voice_search.utils import utils
 from flask import Blueprint, request, jsonify
 from bson import json_util, ObjectId
 import json
 from flask_cors import CORS, cross_origin
+
+
+import os
+load_dotenv()
+
+CORS_ORIGIN = os.getenv('CORS_ORIGIN')
+
+print(type(CORS_ORIGIN))
 
 voice_search_routes = Blueprint('voice_search_routes', __name__)
 
@@ -16,7 +25,7 @@ class CustomJSONEncoder(json.JSONEncoder):
 voice_search_routes.json_encoder = CustomJSONEncoder
 
 # from flask_cors import CORS
-CORS(voice_search_routes, resources={r"/api": {"origins": "http://localhost:3009"}})
+CORS(voice_search_routes, resources={r"/api": {"origins": CORS_ORIGIN}})
 
 
 

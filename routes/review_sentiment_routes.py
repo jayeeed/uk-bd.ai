@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from db.db_config import review_collection
 from flask import Blueprint, request, jsonify
 
@@ -10,7 +11,17 @@ review_sentiment_routes = Blueprint('review_sentiment_routes', __name__)
 
 # from flask_cors import CORS
 
-CORS(review_sentiment_routes, resources={r"/api/*": {"origins": "http://localhost:3009"}})
+
+import os
+load_dotenv()
+
+CORS_ORIGIN = os.getenv('CORS_ORIGIN')
+
+print(type(CORS_ORIGIN))
+
+
+
+CORS(review_sentiment_routes, resources={r"/api/*": {"origins": CORS_ORIGIN}})
 
 @review_sentiment_routes.route('/api/insert_sentiment', methods=['POST'])
 def insert_sentiment():

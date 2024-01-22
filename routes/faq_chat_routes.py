@@ -1,5 +1,6 @@
 # /home/vaib/Desktop/projectB/uk-bd.ai/faq_chat
 
+from dotenv import load_dotenv
 from flask import request, jsonify, Blueprint
 from flask_cors import CORS, cross_origin
 from features.faq_chat.ml_models.faq_chat_model import get_data, overwrite_data, overwrite_data
@@ -10,9 +11,16 @@ from features.faq_chat.utility.is_question import is_ques, add_question_mark
 # to get all the question answer form mongodb set by the user to view and edit
 faq_chat_route = Blueprint('faq_chat_route', __name__)
 
+import os
+load_dotenv()
+
+CORS_ORIGIN = os.getenv('CORS_ORIGIN')
+
+print(type(CORS_ORIGIN))
+
 CORS(faq_chat_route)
 # CORS(price_predict_routes, resources={
-#     r"/api/faq_chat_route": {"origins": "http://localhost:3009"})
+#     r"/api/faq_chat_route": {"origins": CORS_ORIGIN})
 
 @faq_chat_route.route("/ans_corpus_get", methods=["GET"])  # type: ignore
 def ans_corpus_get():

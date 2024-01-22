@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify, make_response
 import pandas as pd
 import numpy as np
@@ -7,7 +8,15 @@ from app import mongo
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/add-properties": {"origins": "http://localhost:3009"}})
+
+import os
+load_dotenv()
+
+CORS_ORIGIN = os.getenv('CORS_ORIGIN')
+
+print(type(CORS_ORIGIN))
+
+CORS(app, resources={r"/add-properties": {"origins": CORS_ORIGIN}})
 
 property_data = list(mongo.db.allproperties.find())
 

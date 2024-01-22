@@ -1,10 +1,20 @@
+from dotenv import load_dotenv
 from features.recommend_properties.ml_models.recommend_model import get_recommendations, save_success
 from flask import Blueprint, request, jsonify
 from flask_cors import CORS
 
 recommeded_properties_route = Blueprint('recommeded_properties_route', __name__)
 
-CORS(recommeded_properties_route, resources={r"/api/recommended/*": {"origins": "http://localhost:3009"}})
+
+import os
+load_dotenv()
+
+CORS_ORIGIN = os.getenv('CORS_ORIGIN')
+
+print(type(CORS_ORIGIN))
+
+
+CORS(recommeded_properties_route, resources={r"/api/recommended/*": {"origins": CORS_ORIGIN}})
 
 @recommeded_properties_route.route('/api/recommended/<string:renter_user_id>', methods=['GET'])
 def recommended_properties(renter_user_id):

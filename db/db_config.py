@@ -23,7 +23,7 @@ for collection in collections:
     init_collection = db[collection]
 
     json_file_name = "airbnb."+collection+".json"
-    json_file_path = 'dataJson/'+json_file_name
+    json_file_path = 'db/dataJson/'+json_file_name
 
     # Check if the JSON file exists
     if not os.path.exists(json_file_path):
